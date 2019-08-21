@@ -104,6 +104,11 @@ app.get('/ket-qua/bang-gia', function (request, response) {
   response.sendFile(filePath);
 });
 
+app.get('/ket-qua/danh-ba', function (request, response) {
+  const filePath = path.resolve(__dirname, './src/pages/resultpage/contact/', 'index.html');
+  response.sendFile(filePath);
+});
+
 app.use('/', express.static('node_modules'));
 app.use('/', express.static('src'));
 

@@ -424,11 +424,6 @@
   .rp-header-top__search-input {
     width: 100%; }
 
-  .rp-search-result-item .post-content--mobile {
-    padding: 10px;
-    width: 100%;
-  }
-
   .rp-header-top__search-input .search-input {
     min-width: unset !important; }
 
@@ -486,9 +481,6 @@
   
   }
   @media only screen and (min-width: 991px) {
-    .item-details__post .actions--mobile {
-      display: none
-    }
   }
 .bold {
   font-weight: bold; }
@@ -559,7 +551,8 @@
     display: table-cell;
     position: relative;
     padding-bottom: 40px;
-    padding-right: 115px; }
+    /* padding-right: 115px;  */
+  }
   .realestate-item .top {
     font-size: 20px;
     color: #363636;
@@ -655,13 +648,6 @@
         margin-bottom: 10px; } 
       .realestate-item .map {
         display: none !important;}
-        .item-details__post .actions--mobile {
-          display: block;
-          float: right;
-        }
-        .item-details__post .actions {
-          display: none;
-        }
     .box-company-info .company-info .avatar {
       margin: 0 !important;
     }
@@ -687,7 +673,12 @@
       .realestate-item .bottom-info span {
         /* width: 100%;
         display: block;  */
-      } }
+      }
+  
+  .item-details__title .ids-title--category .ids-title--category {
+    font-size: 13px;
+    }
+  }
 
 .info-line {
   display: inline-block; }
@@ -785,6 +776,7 @@
           margin-bottom: 20px; }
       .item-details__title .title--rate {
         padding-left: 0 !important;
+        width: 100%;
       }}
   .box-company-info .rating-box {
     margin-top: 10px; }
