@@ -1,0 +1,16 @@
+@import "./pages/_home.css";
+/* @import "pages/_new-detail-popup.css"; */
+@import "./_fonts.css";
+@import "./components/_header.css";
+@import "./components/_footer.css";
+@import "./pages/_news.css";
+@import "./pages/_modal-page.css";
+
+
+body {
+  font-family: 'Roboto';
+}
+
+img {
+  max-width: 100%;
+}

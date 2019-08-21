@@ -1,0 +1,86 @@
+<% layout('../../../layouts/default.ejs') -%>
+<% block('title', 'Bản đồ'); -%>
+<!-- Include styles -->
+<link rel="stylesheet" href="/swiper/dist/css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="../../../assets/stylesheets/pages/_map.css">
+
+<div class="container-fluid">
+  <div class="row flex-xl-nowrap">
+    <div class="col-4 bd-sidebar section-map__result">
+      <div class="map-result-container">
+        <div class="search-input-container d-flex">
+          <div class="search-menu">
+            <button class="border-0">
+              <img src="../../../assets/img/SVG/menu.svg" alt="">
+            </button>
+          </div>
+          <div class="search-input">
+            <input placeholder="Search..." type="text" />
+          </div>
+          <div class="search-icon">
+            <img src="../../../assets/img/SVG/search.svg" alt="">
+          </div>
+        </div>
+        <div class="seperate border-bottom mt-4 mb-2"></div>
+        <div class="search-filter-container ml-2">
+          <div class="dropdown">
+            <button class="btn dropdown-toggle search-filter--btn" type="button" id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Sắp xếp theo
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+        </div>
+        <div class="search-result-container">
+          <%-partial('../../../partials/map/resultItem.ejs')%>
+        </div>
+      </div>
+    </div>
+    <!-- MAP MAINT CONTENT -->
+    <main class="col-8 bd-content section-map__content" style="background-image: url('../../../assets/img/map.png')">
+      <div class="map__container h-100">
+        <div class="map__content h-100">
+          <!-- Include  FILTER BAR FOR MAP-->
+          <%-partial('../../../partials/map/filterBar.ejs')%>
+          <!-- Map notification -->
+          <div id="map-notification" class="map-notification">
+            <div class="map-notification__container">
+              <div class="d-flex map-notification__content justify-content-center">
+                <div class="notification--text">
+                  Có quá nhiều BĐS / Dự án được tìm thấy nhưng chỉ hiển thị tối đa 500 đối tượng, zoom in bản đồ để xem
+                  thêm
+                </div>
+                <div class="ml-2 notification--link">Đã hiểu</div>
+                <div class="notification--background"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Map Zoom -->
+          <div id="map-zoom" class="map-zoom">
+            <div class="map-zoom">
+              <div class="d-flex flex-column map-zoom">
+                <div class="map-zoom--item map-zoom--in">
+                  <div class="map-zoom--btn zoom-in__content">
+                    <img src="../../../assets/img/baseline-in.png" alt="">
+                  </div>
+                </div>
+                <div class="map-zoom--item map-zoom--out">
+                  <div class="map-zoom--btn zoom-out__content">
+                    <img src="../../../assets/img/baseline-out.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+<!-- Include CHAT SIDEBAR -->
+<%-partial('../../../partials/chat/chatSideBar.ejs')%>

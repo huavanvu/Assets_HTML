@@ -1,0 +1,164 @@
+#filterBar {
+  position: absolute;
+  top: 20px;
+  left: 23px;
+  right: 44px;
+  z-index: 1050;
+}
+
+.filterBar__top .row {
+  margin: 0 15px;
+}
+
+.top-additional--filter {
+  border-radius: 2px;
+  opacity: 0.8;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
+  border: solid 0.2px #c1c1c1;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.top-additional--filter:not(:first-child) {
+  margin-left: 13px;
+}
+
+.top-additional--filter:hover {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+  border: solid 0.4px #1a73e8;
+}
+
+.filter__content {
+  position: relative;
+  padding: 9px 7px;
+}
+
+.filter--text {
+  font-size: 14px;
+  color: #3c4043;
+}
+
+.top-additional--filter:hover .filter--text {
+  color: #1a73e8;
+}
+
+/* Button filter type */
+.filter-type--text {
+  margin-right: 5px;
+}
+
+.btn-switch {
+  
+}
+
+.btn-switch__content {
+  font-size: 10px;
+  color: #969696;
+  border-radius: 18px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  border: solid 1px #1a73e8;
+  background-color: #ffffff;
+}
+
+.btn-switch--text {
+  padding: 0 2px;
+  color: #969696;
+  opacity: 0.3;
+}
+
+.btn-switch--text:hover {
+  opacity: 0.8;
+}
+
+.btn-switch--pointer {
+  height: 15px;
+  width: 15px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+  border: solid 1px #1a73e8;
+  border-radius: 50%;
+}
+
+/* Filter Category */
+.dropdown-item {
+  padding: 0;
+}
+.dropdown-item__content {
+  padding: 2px 7px;
+}
+.dropdown-item--text {
+  margin-left: 7px;
+}
+
+.dropdown-menu .input-group {
+  padding: 2px 7px;
+}
+
+.dropdown-menu .form-control:not(:first-child) {
+  margin-left: 5px;
+}
+
+/* Filter Handover Time */
+.filter-more .dropdown-item {
+  margin-bottom: 10px;
+}
+.handover-time .d-flex > *:not(:first-child) {
+  margin-left: 30px;
+}
+
+
+.dropdown-item--title {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.handover-time--input-date {
+  max-width: 100px;
+}
+
+.filter-more__tags .bootstrap-tagsinput {
+  width: 100%;
+  max-width: 400px;
+}
+
+.filter-more__tags .bootstrap-tagsinput .tag {
+  padding: 3px;
+  font-size: 14px;
+  line-height: 1.36;
+  color: #363636;
+  border-radius: 2px;
+  background-color: #e8bb20;
+}
+
+.filter-more__tags .bootstrap-tagsinput .tag [data-role="remove"]::after {
+  content: "\00D7";
+}
+
+/* Map mode */
+.mode__content {
+  position: relative;
+  font-size: 14px;
+  color: #3c4043;
+}
+
+.select-mode {
+  padding: 9px 7px;
+  border-radius: 2px;
+  opacity: 0.8;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
+  border: solid 0.2px #c1c1c1;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.select-mode:hover {
+  color: #1a73e8;
+  border: solid 0.2px #1a73e8;
+}
+
+.mode-satellite {
+  border-left: solid 0.2px transparent;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
+  ;
+}
+

@@ -1,0 +1,318 @@
+<link rel="stylesheet" href="../../../assets/stylesheets/partials/map/filterBar.css">
+<link rel="stylesheet" href="/bootstrap-tagsinput/dist/bootstrap-tagsinput.css">
+
+<!-- FILTER BAR FOR MAP -->
+<div id="filterBar" class="h-100">
+  <div class="filterBar__container">
+    <div class="filterbar__content">
+      <div class="w-100 filterBar__top d-flex justify-content-between">
+        <div class="filterBar__top--additional">
+          <div class="top-additional">
+            <div class="top-additional__container">
+              <div class="top-additional__content">
+                <div class="row">
+                  <!-- Filter Type -->
+                  <div id="filterType" class="top-additional--filter filter-type">
+                    <div class="filter__content d-flex align-items-center">
+                      <div class="filter--text filter-type--text">BDS</div>
+                      <div class="filter-type--switch d-flex align-items-center">
+                        <div class="btn-switch">
+                          <div class="btn-switch__container">
+                            <div class="btn-switch__content d-flex align-items-center">
+                              <span class="btn-switch--text">Dự án</span>
+                              <div class="btn-switch--pointer"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Filter Category -->
+                  <div id="filterCategory"
+                    class="top-additional--filter filter-category"
+                    >
+                    <div class="d-flex align-items-center filter__content dropdown-toggle" data-toggle="dropdown"
+                      aria-hasp>
+                      <div class="filter--text filter-category--text text--center">Loại dự án</div>
+                      <div class="dropdown-menu">
+                        <!-- dropdown item -->
+                        <div class="dropdown-item">
+                          <div class="dropdown-item__content input-group">
+                            <input class="dropdown-item--checkbox" type="checkbox">
+                            <div class="dropdown-item--text">Chung Cư</div>
+                          </div>
+                        </div>
+                        <!-- dropdown item -->
+                        <div class="dropdown-item">
+                          <div class="dropdown-item__content input-group">
+                            <input class="dropdown-item--checkbox" type="checkbox">
+                            <div class="dropdown-item--text">Đô thị</div>
+                          </div>
+                        </div>
+                        <!-- dropdown item -->
+                        <div class="dropdown-item">
+                          <div class="dropdown-item__content input-group">
+                            <input class="dropdown-item--checkbox" type="checkbox">
+                            <div class="dropdown-item--text">Nghỉ dưỡng</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Filter Price -->
+                  <div id="filterPrice"
+                    class="top-additional--filter filter-price"
+                    >
+                    <div class="d-flex align-items-center filter__content dropdown-toggle" data-toggle="dropdown"
+                      aria-hasp>
+                      <div class="filter--text filter-price--text text--center">Mức giá</div>
+                      <div class="dropdown-menu">
+                        <div class="input-group">
+                          <input type="text" placeholder="Min" class="form-control">
+                          <input type="text" placeholder="Max"  class="form-control">
+                        </div>
+                        <!-- Dropdown item -->
+                        <div class="dropdown-item">
+                          <div class="dropdown-item__content">
+                            <span>5 triệu</span>
+                          </div>
+                        </div>
+                        <!-- Dropdown item -->
+                        <div class="dropdown-item">
+                          <div class="dropdown-item__content">
+                            <span>10 triệu</span>
+                          </div>
+                        </div>
+                        <!-- Dropdown item -->
+                        <div class="dropdown-item">
+                          <div class="dropdown-item__content">
+                            <span>15 triệu</span>
+                          </div>
+                        </div>
+                        <!-- Dropdown item -->
+                        <div class="dropdown-item">
+                          <div class="dropdown-item__content">
+                            <span>20 triệu</span>
+                          </div>
+                        </div>
+                        <!-- Dropdown item -->
+                        <div class="dropdown-item">
+                          <div class="dropdown-item__content">
+                            <span>25 triệu</span>
+                          </div>
+                        </div>
+                        <!-- Dropdown item -->
+                        <div class="dropdown-item">
+                          <div class="dropdown-item__content">
+                            <span>30 triệu</span>
+                          </div>
+                        </div>
+                        <!-- Dropdown item -->
+                        <div class="dropdown-item">
+                          <div class="dropdown-item__content">
+                            <span>35 triệu</span>
+                          </div>
+                        </div>
+                        <!-- Dropdown item -->
+                        <div class="dropdown-item">
+                          <div class="dropdown-item__content">
+                            <span>40 triệu</span>
+                          </div>
+                        </div>
+                        <!-- Dropdown item -->
+                        <div class="dropdown-item">
+                          <div class="dropdown-item__content">
+                            <span>45 triệu</span>
+                          </div>
+                        </div>
+                        <!-- Dropdown item -->
+                        <div class="dropdown-item">
+                          <div class="dropdown-item__content">
+                            <span>50 triệu</span>
+                          </div>
+                        </div>
+                        <!-- Dropdown item -->
+                        <div class="dropdown-item">
+                          <div class="dropdown-item__content">
+                            <span>55 triệu</span>
+                          </div>
+                        </div>
+                        <!-- Dropdown item -->
+                        <div class="dropdown-item">
+                          <div class="dropdown-item__content">
+                            <span>60 triệu</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Filter Status -->
+                  <div id="filterStatus"
+                    class="top-additional--filter filter-status"
+                    >
+                    <div class="d-flex align-items-center filter__content dropdown-toggle" data-toggle="dropdown"
+                      aria-hasp>
+                      <div class="filter--text filter-status--text text--center">Tình trạng</div>
+                      <div class="dropdown-menu">
+                        <!-- dropdown item -->
+                        <div class="dropdown-item">
+                          <div class="dropdown-item__content input-group">
+                            <input class="dropdown-item--checkbox" type="checkbox">
+                            <div class="dropdown-item--text">Đang làm</div>
+                          </div>
+                        </div>
+                        <!-- dropdown item -->
+                        <div class="dropdown-item">
+                          <div class="dropdown-item__content input-group">
+                            <input class="dropdown-item--checkbox" type="checkbox">
+                            <div class="dropdown-item--text">Bàn giao</div>
+                          </div>
+                        </div>
+                        <!-- dropdown item -->
+                        <div class="dropdown-item">
+                          <div class="dropdown-item__content input-group">
+                            <input class="dropdown-item--checkbox" type="checkbox">
+                            <div class="dropdown-item--text">Chưa làm</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Filter Invesment -->
+                  <div id="filterInvesment"
+                    class="top-additional--filter filter-invesment"
+                    >
+                    <div class="d-flex align-items-center filter__content dropdown-toggle" data-toggle="dropdown"
+                      aria-hasp>
+                      <div class="filter--text filter-status--text text--center">Chủ đầu tư</div>
+                      <div class="dropdown-menu">
+                        <!-- dropdown item -->
+                        <div class="dropdown-item">
+                          <div class="dropdown-item__content">
+                            <input type="text" placeholder="Ex: Thắng lợi group">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Filter More -->
+                  <div id="filterMore"
+                    class="top-additional--filter filter-more"
+                    >
+                    <div class="d-flex align-items-center filter__content dropdown-toggle" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
+                      <div class="filter--text filter-more--text text--center">Thêm</div>
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <!-- dropdown item -->
+                        <div class="dropdown-item">
+                          <div class="dropdown-item__content">
+                            <div class="handover-time">
+                              <div class="dropdown-item--title handover-time--title">Thời gian bàn giao</div>
+                              <div class="d-flex">
+                                <div class="handover-time--input-date">
+                                  <input class="w-100" type="text" placeholder="Dd/mm/yy">
+                                </div>
+                                <div class="handover-time--checkbox-before">
+                                  <input type="checkbox" name="time-before">
+                                  <span>Trước</span>
+                                </div>
+                                <div class="handover-time--checkbox-after">
+                                  <input type="checkbox" name="time-after">
+                                  <span>Sau</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- dropdown item -->
+                        <div class="dropdown-item">
+                          <div class="dropdown-item__content">
+                            <div class="category-info">
+                              <div class="dropdown-item--title category-info--title">Loại chi tiết</div>
+                              <div class="d-flex">
+                                <select class="category-info__select custom-select" id="selectCategoryInfo">
+                                  <option selected>Vui lòng chọn</option>
+                                  <option value="1">Không có khối đế</option>
+                                  <option value="2">Hướng ngoại</option>
+                                  <option value="3" selected>Không phân loại</option>
+                                  <option value="4">Có khối đế</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- dropdown item -->
+                        <div class="dropdown-item">
+                          <div class="dropdown-item__content">
+                            <div class="filter-more__tags">
+                              <div class="dropdown-item--title category-info--title">Từ khoá</div>
+                              <div class="d-flex">
+                                <input type="text" value="nghỉ dưỡng, Mặt tiền" data-role="tagsinput">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="filterBar__top--map-mode">
+          <div class="map-mode">
+            <div class="map-mode__container">
+              <div class="map-mode__content">
+                <div class="map-mode">
+                  <div class="row mode__content">
+                    <div class="select-mode mode-display">Bản đồ</div>
+                    <div class="select-mode mode-satellite">Vệ tinh</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-100 filterBar__share">
+        <div class="share_content d-flex justify-content-end">
+          <div class="share--btn">
+            <img src="../../assets/img/ic-share-black.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="filterBar__view">
+        <div class="street-view">
+          <div class="street-view__container">
+            <div class="street-view__content">
+              <div class="street-view--item outline-location">
+                <div class="street-view--btn outline-location__content">
+                  <img src="../../assets/img/outline-location.png" alt="">
+                </div>
+              </div>
+              <div class="street-view--item baseline-view">
+                <div class="street-view--btn baseline-view__content">
+                  <img src="../../assets/img/baseline-view.png" alt="">
+                </div>
+              </div>
+              <div class="street-view--item road-perspective">
+                <div class="street-view--btn road-perspective__content">
+                  <img src="../../assets/img/road-perspective.png" alt="">
+                </div>
+              </div>
+              <div class="street-view--item baseline-trip">
+                <div class="street-view--btn baseline-trip__content">
+                  <img src="../../assets/img/baseline-trip.png" alt="" class="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Includes scripts -->
+<script type="text/javascript" src="/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>

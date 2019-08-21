@@ -1,0 +1,248 @@
+.dropdown .btn {
+  padding: 0;
+}
+
+.map-result-container {
+  position: absolute;
+  min-width: 430px;
+  padding-top: 10px;
+  background-color: #fff;
+  z-index: 1060;
+}
+
+/* MAP RESULT - SEARCH BAR */
+.search-input-container {
+  margin: 3px;
+  padding: 7px 10px;
+  border-radius: 23px;
+  box-shadow: 1px 2px 5px 0 rgba(0, 0, 0, 0.2);
+  border: solid 0.3px #969696;
+  background-color: #ffffff;
+}
+
+.search-input-container .search-menu {
+  width: 10%;
+  border-right: 1px solid #ccc;
+}
+
+.search-input-container .search-input {
+  width: 80%;
+}
+
+.search-input-container .search-icon {
+  width: 10%;
+}
+
+.search-input-container .search-input input[type="text"] {
+  width: 100%;
+  outline: none;
+  padding: 2px 10px;
+  border: none;
+}
+
+.search-filter-container .search-filter--btn {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.36;
+  letter-spacing: 0;
+  color: #3c4043;
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* SEARCH RESULT */
+.search-result__item {
+  margin: 6px auto;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+  border-radius: 7px;
+}
+
+.search-result__item .item-container {
+  max-height: 130px;
+  margin: 0 auto;
+}
+
+.search-result__item .item-image {
+  max-height: 130px;
+  max-width: 123px;
+  padding: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.search-result__item .item-details {
+  padding: 8px;
+}
+
+.search-result__item .item-details p {
+  margin-bottom: 8px;
+}
+
+.search-result__item .item-details .row {
+  margin: 0;
+}
+
+.search-result__item .item-details .row p {
+  padding-right: 10px;
+}
+
+.search-result__item .item-details .row p:not(:first-child) {
+  padding-left: 10px;
+}
+
+.search-result__item .item-price .price {
+  /* width: 59px;
+  height: 21px; */
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.31;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #363636;
+}
+
+.search-result__item .item-price .acreage,
+.search-result__item .item-price .ratio {
+  /* width: 54px;
+  height: 21px; */
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.31;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #189655;
+}
+
+.search-result__item .item-type {
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 1.36;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #3b63a1;
+}
+
+.search-result__item .item-details .item-detail img {
+  margin-bottom: 5px;
+}
+
+/* MAP MAIN CONTENT */
+.section-map__content {
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.map__content {
+  position: relative;
+}
+
+/* Map share */
+.share_content {
+  margin-top: 10px;
+  padding-right: 16px;
+}
+.share--btn {
+  max-width: 42px;
+  padding: 7px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  border: solid 0.2px #c1c1c1;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.share--btn:hover {
+  border: solid 0.2px #3b63a1;
+}
+
+/* Street view */
+.filterBar__view {
+  position: absolute;
+  bottom: 62px;
+  left: 0;
+  z-index: 1050;
+}
+
+.street-view--item {
+  padding: 8px;
+  border-radius: 2px;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.street-view--item:not(:first-child) {
+  margin-top: 10px;
+}
+
+.street-view--btn {
+  max-width: 24px;
+}
+
+/* Map Notification */
+#map-notification {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1050;
+}
+
+.notification--background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-backdrop-filter: blur(9px);
+  backdrop-filter: blur(9px);
+  filter: blur(9px);
+  background-color: #000;
+  z-index: 1040;
+}
+
+.notification--text {
+  font-size: 13px;
+  font-weight: 500;
+  color: #ffffff;
+  z-index:1060;
+}
+
+.notification--link {
+  font-size: 12px;
+  color: #fff;
+  text-decoration: underline;
+  z-index:1060;
+}
+
+#map-zoom {
+  position: absolute;
+  right: 76px;
+  bottom: 62px;
+  z-index: 1050;
+}
+
+.map-zoom--item {
+  padding: 8px;
+  border-radius: 2px;
+  border: solid 0.2 transparent;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.map-zoom--item:not(:first-child) {
+  border-top: solid 0.2 transparent;
+}
+
+.map-zoom--btn {
+  max-width: 24px;
+}

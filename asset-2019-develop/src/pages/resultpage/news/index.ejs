@@ -1,0 +1,1347 @@
+<% layout('../../../layouts/default.ejs') -%>
+<% block('title', 'Trang tin tức'); -%>
+
+<link rel="stylesheet" href="/swiper/dist/css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="../../../assets/stylesheets/_index.css">
+<script type="text/javascript" src="../../../assets/scripts/HomePage/index.js"></script>
+
+<!-- <h1>ResultPage</h1> -->
+<!-- <div id="root"></div> -->
+<!-- ================================ Desktop ============================================== -->
+<section class="Result-Page">
+  <div class="line-top"></div>
+  <div class="container">
+    <div class="row">
+      <div class="header-top">
+        <div class="menu-top">
+          <div class="col-md-1 col-xs-1">
+            <img src="../../../assets/img/Iconasset.png" alt="">
+          </div>
+          <div class="col-md-8 col-xs-12">
+            <input type="text" id='myInput'>
+          </div>
+          <div class="list-menu col-md-4 col-xs-4">
+            <ul>
+              <li class="icon-menu sub-item-page-result"><a id="icon-menu" href="#"><img class="img_menu"
+                    src="../../../assets/img/Group 1.png" alt=""></a>
+                <ul id="gr-item" class="sub-menu-2 disable">
+                  <li class="sub-item-2"><a href="#"><img src="../../../assets/img/Group 1569.png" alt="">Tính toán khoản vay</a>
+                  </li>
+                  <li class="sub-item-2"><a href="#"><img src="../../../assets/img/baseline-insert_chart-24px.png" alt="">Tính
+                      toán hiểu
+                      quả Dự án</a></li>
+                  <li class="sub-item-2"><a href="#"><img src="../../../assets/img/baseline-monetization_on-24px.png" alt="">Tài
+                      chính
+                      cá nhân</a></li>
+                </ul>
+              </li>
+              <li><a href="#"><img src="../../../assets/img/Group 22.png" alt=""></a></li>
+              <li><a href="#"><img src="../../../assets/img/ab5a4de46f22fa6dc298f0722ba2277c.png" alt=""></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="menu-bottom">
+          <ul class="btn">
+            <li class="btn-all"><a href="/ket-qua">Tất cả</a></li>
+            <li class="btn-information active-link"><a href="/ket-qua/thong-tin">Thông tin</a></li>
+            <li class="btn-price-list"><a href="/ket-qua/bang-gia">Bảng giá</a></li>
+            <li class="btn-add"><a href="#">Thêm</a></li>
+          </ul>
+        </div>
+        <div class="top-menu">
+          <div class="col-md-11">
+            <ul class="nav container nav-pills edit-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Tin tức
+                  thời sự</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Link 1</a>
+                  <a class="dropdown-item" href="#">Link 2</a>
+                  <a class="dropdown-item" href="#">Link 3</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Kiến
+                  thức - Kinh nghiệm</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Link 1</a>
+                  <a class="dropdown-item" href="#">Link 2</a>
+                  <a class="dropdown-item" href="#">Link 3</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Phân
+                  tích - Nhận định</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Link 1</a>
+                  <a class="dropdown-item" href="#">Link 2</a>
+                  <a class="dropdown-item" href="#">Link 3</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Góc nhìn
+                  bạn đọc</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Link 1</a>
+                  <a class="dropdown-item" href="#">Link 2</a>
+                  <a class="dropdown-item" href="#">Link 3</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle drop" data-toggle="dropdown" href="#">Nhìn ra
+                  thế giới</a>
+                <div class="dropdown-menu world-menu">
+                  <a class="dropdown-item" href="#">Anh</a>
+                  <a class="dropdown-item" href="#">Mỹ</a>
+                  <a class="dropdown-item" href="#">Úc</a>
+                  <a class="dropdown-item" href="#">Nhật</a>
+                  <a class="dropdown-item" href="#">Singapore</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Cách mua
+                  căn nhà đầu tiên</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Link 1</a>
+                  <a class="dropdown-item" href="#">Link 2</a>
+                  <a class="dropdown-item" href="#">Link 3</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <p class="nav-link"> Khoảng 1.792 kết quả</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="line-menu-bottom"></div>
+      </div>
+
+      <div class="col-md-12 header-content">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 header-right-map">
+              <div class="header-content-2" data-toggle="modal" data-target="#myModal">
+                <img src="../../../assets/img/Group 1695.png" alt="">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-1 avatar-left">
+                      <a class="avatar-page-result" href="#">
+                        <img src="../../../assets/img/Rectangle 97.png" alt="">
+                      </a>
+                    </div>
+
+                    <div class="col-md-11 content-map-right">
+                      <div class="content">
+
+                        <p class="content-2"><a href="#">Asset data new</a> [Chuyên gia
+                          <span class="content-1">3,5 <img src="../../../assets/img/star.png" alt=""></span>]</p>
+                        <p>đã đăng một bài viết trong <a href="#">Thông tin</a></p>
+                        <p class="content-3">15 ngày trước</p>
+                        <a href="#" class="span-content-4">Tòa nhà Lý Chính Thắng đang trong
+                          giai đoạn hoàn thiện</a>
+                        <p class="content-5">Ngày 10-12/05: Có 123 thông báo kế hoạch lựa
+                          chọn nhà thầu chậm .... 1527/QĐ-UBND ngày 14/02/2019; KHLCNT của
+                          Ban Quản lý dự án đầu tư xây .... KHLCNT của Sở Tài chính tỉnh
+                          Hưng …. cho dự án “Mua sắm thiết bị định ....
+                          Hạng mục: Xóm Ao Vàng, Cổ Rùa, Gò Chè, Phúc Lộc, Quyết Thắng,
+                          Tân ...</p>
+                      </div>
+                      <div class="icon-comment-like-share">
+                        <img src="../../../assets/img/ic_chat_bubble_outline_black_24px.png" alt="">
+                        <span>12</span>
+                        <img src="../../../assets/img/ic_like_black_24px.png" alt="">
+                        <span>12</span>
+                        <img src="../../../assets/img/ic_share_black_24px.png" alt="">
+                        <span>12</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="header-content-3">
+                <img src="../../../assets/img/Group 1695.png" alt="">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-1 avatar-left">
+                      <a class="avatar-page-result" href="#">
+                        <img src="../../../assets/img/1pcs-hot-kawaii-small-teddy-bears-plush-toys.png" alt="">
+                      </a>
+                    </div>
+
+                    <div class="col-md-11 content-map-right">
+                      <div class="content">
+                        <!-- <span class="content-1">4,5+ <img src="../../../assets/img/star.png" alt=""> </span> -->
+                        <!-- <p class="content-2">Asset New <span>đã đăng một bài viết trong</span> Thông tin</p> -->
+                        <p class="content-2"><a href="#">Asset data new</a> [Chuyên gia
+                          <span class="content-1">3,5 <img src="../../../assets/img/star.png" alt=""></span>] </p>
+                        <p>đã đăng một bài viết trong <a href="#">Thông tin</a></p>
+                        <p class="content-3">15 ngày trước</p>
+                        <a href="#" class="span-content-4">Tòa nhà Lý Chính Thắng đang trong
+                          giai đoạn hoàn thiện</a>
+                        <p class="content-5">Ngày 10-12/05: Có 123 thông báo kế hoạch lựa
+                          chọn nhà thầu chậm .... 1527/QĐ-UBND ngày 14/02/2019; KHLCNT của
+                          Ban Quản lý dự án đầu tư xây .... KHLCNT của Sở Tài chính tỉnh
+                          Hưng …. cho dự án “Mua sắm thiết bị định ....
+                          Hạng mục: Xóm Ao Vàng, Cổ Rùa, Gò Chè, Phúc Lộc, Quyết Thắng,
+                          Tân ...</p>
+                      </div>
+                      <div class="icon-comment-like-share">
+                        <img src="../../../assets/img/ic_chat_bubble_outline_black_24px.png" alt="">
+                        <span>12</span>
+                        <img src="../../../assets/img/ic_like_black_24px.png" alt="">
+                        <span>12</span>
+                        <img src="../../../assets/img/ic_share_black_24px.png" alt="">
+                        <span>12</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="header-content-4">
+                <img src="../../../assets/img/Group 1695.png" alt="">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-1 avatar-left">
+                      <a class="avatar-page-result" href="#">
+                        <img src="../../../assets/img/chat-avt-3.png" alt="">
+                      </a>
+                    </div>
+
+                    <div class="col-md-11 content-map-right">
+                      <div class="content">
+                        <p class="content-2"><a href="#">Asset data new</a> [Chuyên gia
+                          <span class="content-1">3,5 <img src="../../../assets/img/star.png" alt=""></span>] </p>
+                        <p>đã đăng một bài viết trong <a href="#">Thông tin</a></p>
+                        <p class="content-3">15 ngày trước</p>
+                        <a href="#" class="span-content-4">Tòa nhà Lý Chính Thắng đang trong
+                          giai đoạn hoàn thiện</a>
+                        <p class="content-5">Ngày 10-12/05: Có 123 thông báo kế hoạch lựa
+                          chọn nhà thầu chậm .... 1527/QĐ-UBND ngày 14/02/2019; KHLCNT của
+                          Ban Quản lý dự án đầu tư xây .... KHLCNT của Sở Tài chính tỉnh
+                          Hưng …. cho dự án “Mua sắm thiết bị định ....
+                          Hạng mục: Xóm Ao Vàng, Cổ Rùa, Gò Chè, Phúc Lộc, Quyết Thắng,
+                          Tân ...</p>
+                      </div>
+                      <div class="icon-comment-like-share">
+                        <img src="../../../assets/img/ic_chat_bubble_outline_black_24px.png" alt="">
+                        <span>12</span>
+                        <img src="../../../assets/img/ic_like_black_24px.png" alt="">
+                        <span>12</span>
+                        <img src="../../../assets/img/ic_share_black_24px.png" alt="">
+                        <span>12</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="header-content-7">
+                <img src="../../../assets/img/Group 1695.png" alt="">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-1 avatar-left">
+                      <a class="avatar-page-result" href="#">
+                        <img src="../../../assets/img/Rectangle 97.png" alt="">
+                      </a>
+                    </div>
+
+                    <div class="col-md-11 content-map-right">
+                      <div class="content">
+                        <p class="content-2"><a href="#">Asset data new</a> [Chuyên gia
+                          <span class="content-1">3,5 <img src="../../../assets/img/star.png" alt=""></span>] <a href="#">Tài
+                            nguyên</a> </p>
+                        <p>đã đăng một<a href="#"> Tài nguyên</a></p>
+                        <p class="content-3">20 ngày trước</p>
+                        <div class="row">
+                          <div class="col-md-1 img-7">
+                            <img src="../../../assets/img/Google-PDF-Viewer-logo.png" alt="">
+                          </div>
+                          <div class="col-md-11 content-7">
+                            <p>
+                              Ngày 10-12/05: Có 123 thông báo kế hoạch lựa chọn nhà
+                              thầu chậm.1527/QĐ-UBND ngày 14/02/2019; KHLCNT của Ban
+                              Quản lý dự án đầu tư xây …. KHLCNT của Sở Tài chính tỉnh
+                              Hưng cho dự án “Mua sắm thiết bị định …. Hạng mục: Xóm
+                              Ao Vàng, Cổ Rùa, Gò Chè, Phúc Lộc, Quyết Thắng, Tân …
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="icon-comment-like-share">
+                        <img src="../../../assets/img/ic_chat_bubble_outline_black_24px.png" alt="">
+                        <span>12</span>
+                        <img src="../../../assets/img/ic_like_black_24px.png" alt="">
+                        <span>12</span>
+                        <img src="../../../assets/img/ic_share_black_24px.png" alt="">
+                        <span>12</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="header-content-8">
+                <img src="../../../assets/img/Group 1695.png" alt="">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-1 avatar-left">
+                      <a class="avatar-page-result" href="#">
+                        <img src="../../../assets/img/Rectangle 97.png" alt="">
+                      </a>
+                    </div>
+                    <div class="col-md-11 content-map-right">
+                      <div class="content">
+                        <p class="content-2"><a href="#">Asset data new</a> [Chuyên gia
+                          <span class="content-1">3,5 <img src="../../../assets/img/star.png" alt=""></span>] </p>
+                        <p>đã đăng một<a href="#"> Hỏi đáp</a></p>
+                        <p class="content-3">20 ngày trước</p>
+                        <div class="row">
+                          <div class="col-md-1 img-8">
+                            <img src="../../../assets/img/Group 1710 - map.png" alt="">
+                          </div>
+                          <div class="col-md-11 content-8">
+                            <a href="#">Cần thông tin pháp lý khi mua nhà tại quận 2?
+                            </a>
+                            <p>
+                              Ngày 10-12/05: Có 123 thông báo kế hoạch lựa chọn nhà
+                              thầu chậm.1527/QĐ-UBND ngày 14/02/2019; KHLCNT của Ban
+                              Quản lý dự án đầu tư xây …. KHLCNT của Sở Tài chính tỉnh
+                              Hưng cho dự án “Mua sắm thiết bị định …. Hạng mục: Xóm
+                              Ao Vàng, Cổ Rùa, Gò Chè, Phúc Lộc, Quyết Thắng, Tân …
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="icon-comment-like-share">
+                        <img src="../../../assets/img/ic_chat_bubble_outline_black_24px.png" alt="">
+                        <span>12</span>
+                        <img src="../../../assets/img/ic_like_black_24px.png" alt="">
+                        <span>12</span>
+                        <img src="../../../assets/img/ic_share_black_24px.png" alt="">
+                        <span>12</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-md-2 header-left-map">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-page-result">
+    <div class="container">
+      <div class="row row-pagination-page-result">
+        <div class="pagination-page-result">
+          <a class="pagination-pre" href="#">Trước</a>
+          <ul>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+          </ul>
+          <a class="pagination-next" href="#">Sau</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-page-result-item">
+      <a href="#" class="footer-item-1">Giới thiệu</a>
+      <a href="#" class="footer-item-2">Hướng dẫn</a>
+    </div>
+    <div class="footer-run">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 footer-run-text-1">
+            <marquee behavior="" direction="">
+              <p>Tin nhanh: <span>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
+                  sollicitudin, lorem quis biben</span> <a href="#">Xem nhanh</a> </p>
+            </marquee>
+          </div>
+          <div class="col-md-6 footer-run-text-2">
+            <marquee behavior="" direction="">
+              <p>Giá nhà đất: <span>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
+                  sollicitudin, lorem quis biben</span></p>
+            </marquee>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="page-chat-right">
+  <div class="icon-arrow-on">
+    <img src="../../../assets/img/Path 115.png" alt="">
+  </div>
+  <div class="img-avatar1">
+    <div class="img-avatar-item-1">
+      <div class="icon-onl">
+        <img src="../../../assets/img/Elena-Bou-20151.png" alt="">
+      </div>
+      <div class="img-avatar">
+        <img src="../../../assets/img/chat-avt-1.png" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="img-avatar2">
+    <div class="img-avatar-item-1">
+      <div class="icon-onl">
+        <img src="../../../assets/img/Elena-Bou-20151.png" alt="">
+      </div>
+      <div class="img-avatar">
+        <img src="../../../assets/img/chat-avt-1.png" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="img-avatar3">
+    <div class="img-avatar-item-1">
+      <div class="icon-onl">
+        <img src="../../../assets/img/Elena-Bou-20151.png" alt="">
+      </div>
+      <div class="img-avatar">
+        <img src="../../../assets/img/chat-avt-1.png" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="img-avatar4">
+    <div class="img-avatar-item-1">
+      <div class="icon-onl">
+        <img src="../../../assets/img/Elena-Bou-20151.png" alt="">
+      </div>
+      <div class="img-avatar">
+        <img src="../../../assets/img/chat-avt-1.png" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="img-avatar5">
+    <div class="img-avatar-item-1">
+      <div class="icon-onl">
+        <img src="../../../assets/img/Elena-Bou-20151.png" alt="">
+      </div>
+      <div class="img-avatar">
+        <img src="../../../assets/img/chat-avt-1.png" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="chat-item">
+    <img src="../../../assets/img/chat_message.png" alt="">
+  </div>
+</div>
+
+<!-- =================================================================================== -->
+<!-- ================================= Mobile ================================================ -->
+<!-- <section class="Result-Page-mobile">
+    <div class="header-mobile">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-2">
+                    <div class="logo-icon">
+                        <img src="../../../assets/img/Iconasset.png" alt="">
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                </div>
+                <div class="col-xs-4">
+                    <div class="menu-item-mobile">
+                        <img src="../../../assets/img/Group 1.png" alt="">
+                        <img src="../../../assets/img/Group 22.png" alt="">
+                        <img src="../../../assets/img/ab5a4de46f22fa6dc298f0722ba2277c.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="input-mobile">
+        <input type="text">
+    </div>
+    <div class="menu-mobile">
+        <ul class="ul-menu-mobile">
+            <li><a href="#">Tất cả</a></li>
+            <li><a href="#">Thông tin</a></li>
+            <li><a href="#">Bản đồ</a></li>
+            <li><a href="#">Bảng giá</a></li>
+            <li><a href="#">Thêm</a></li>
+        </ul>
+    </div>
+    <p class="text-distance">Khoảng <span>1.782</span> kết quả</p>
+    <div class="map-mobile">
+        <div class="map-m">
+            <img src="../../../assets/img/map-mobile.png" alt="">
+        </div>
+        <div class="address-mobile">
+            <span>Lý Chính Thắng</span>
+            <p>Quận 3, Tp Hồ Chí Minh</p>
+        </div>
+    </div>
+    <div class="header-mobile-1" data-toggle="modal" data-target="#myModal">
+        <img src="../../../assets/img/Group 1695.png" alt="">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-2 header-img-mobile">
+                    <img src="../../../assets/img/Rectangle 97.png" alt="">
+                </div>
+                <div class="col-xs-10 header-content-mobile">
+                    <p><img src="../../../assets/img/baseline-done-24px.png" alt="">Asset News</p>
+                    <p>đã đăng một bài viết trong <span> Thông tin</span></p>
+                    <p>15 ngày trước</p>
+                </div>
+                <p class="content-mobile-1">Tòa nhà Lý Chính Thắng đang trong giai đoạn hoàn thiện</p>
+                <p class="content-mobile-2">Ngày 10-12/05: Có 123 thông báo kế hoạch lựa chọn nhà
+                    thầu chậm .... 1527/QĐ-UBND ngày 14/02/2019; KHLCNT
+                    của Ban Quản lý dự án đầu tư xây ….</p>
+                <div class="icon-Interactive">
+                    <p><img src="../../../assets/img/ic_chat_bubble_outline_black_24px.png" alt=""> 12</p>
+                    <p><img src="../../../assets/img/ic_like_black_24px.png" alt="">298</p>
+                    <p><img src="../../../assets/img/ic_share_black_24px.png" alt=""> 26</p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="header-mobile-1" data-toggle="modal" data-target="#myModal">
+        <img src="../../../assets/img/Group 1695.png" alt="">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-2 header-img-mobile">
+                    <img src="../../../assets/img/Rectangle 97.png" alt="">
+                </div>
+                <div class="col-xs-10 header-content-mobile">
+                    <p><img src="../../../assets/img/baseline-done-24px.png" alt="">Asset News</p>
+                    <p>đã đăng một bài viết trong <span> Thông tin</span></p>
+                    <p>15 ngày trước</p>
+                </div>
+                <p class="content-mobile-1">Tòa nhà Lý Chính Thắng đang trong giai đoạn hoàn thiện</p>
+                <p class="content-mobile-2">Ngày 10-12/05: Có 123 thông báo kế hoạch lựa chọn nhà
+                    thầu chậm .... 1527/QĐ-UBND ngày 14/02/2019; KHLCNT
+                    của Ban Quản lý dự án đầu tư xây ….</p>
+                <div class="icon-Interactive">
+                    <p><img src="../../../assets/img/ic_chat_bubble_outline_black_24px.png" alt=""> 12</p>
+                    <p><img src="../../../assets/img/ic_like_black_24px.png" alt="">298</p>
+                    <p><img src="../../../assets/img/ic_share_black_24px.png" alt=""> 26</p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="header-mobile-1" data-toggle="modal" data-target="#myModal">
+        <img src="../../../assets/img/Group 1695.png" alt="">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-2 header-img-mobile">
+                    <img src="../../../assets/img/Rectangle 97.png" alt="">
+                </div>
+                <div class="col-xs-10 header-content-mobile">
+                    <p><img src="../../../assets/img/baseline-done-24px.png" alt="">Asset News</p>
+                    <p>đã đăng một bài viết trong <span> Thông tin</span></p>
+                    <p>15 ngày trước</p>
+                </div>
+                <p class="content-mobile-1">Tòa nhà Lý Chính Thắng đang trong giai đoạn hoàn thiện</p>
+                <p class="content-mobile-2">Ngày 10-12/05: Có 123 thông báo kế hoạch lựa chọn nhà
+                    thầu chậm .... 1527/QĐ-UBND ngày 14/02/2019; KHLCNT
+                    của Ban Quản lý dự án đầu tư xây ….</p>
+                <div class="icon-Interactive">
+                    <p><img src="../../../assets/img/ic_chat_bubble_outline_black_24px.png" alt=""> 12</p>
+                    <p><img src="../../../assets/img/ic_like_black_24px.png" alt="">298</p>
+                    <p><img src="../../../assets/img/ic_share_black_24px.png" alt=""> 26</p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="header-mobile-1" data-toggle="modal" data-target="#myModal">
+        <img src="../../../assets/img/Group 1695.png" alt="">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-2 header-img-mobile">
+                    <img src="../../../assets/img/Rectangle 97.png" alt="">
+                </div>
+                <div class="col-xs-10 header-content-mobile">
+                    <p><img src="../../../assets/img/baseline-done-24px.png" alt=""><a href="#">Asset data team</a></p>
+                    <p>đã đăng một <a href="#">Nhà riêng</a> cùng với</p>
+                    <p><a href="#">Homekeys97891</a> cập nhật trạng thái <span>Bán</span></p>
+                    <p>56 ngày trước</p>
+                </div>
+                <div class="header-content-1-item-mobile">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-2 img-header-content-mobile">
+                                <img src="../../../assets/img/tienphongmobile.png" alt="">
+                            </div>
+                            <div class="col-xs-10 header-content-mobile">
+                                <div class="icon-detail">
+                                    <img class="icon-edit" src="../../../assets/img/bxs-edit.png" alt="">
+                                    <img src="../../../assets/img/earth.png" alt="">
+                                    <img src="../../../assets/img/baseline-map-24px.png" alt="">
+                                </div>
+                                <p>2,66 tỷ | <span>60,78m2</span> | <span>150,0 sàn</span></p>
+                                <p>711014P0001-Hồ Thị Kỷ</p>
+                            </div>
+                            <div class="container-detail-mobile">
+                                <p>Nhà xây dựng | Bàn giao T2.2010</p>
+                                <p>Đã hoàn thành | Sổ hồng</p>
+                                <p><span>* Bán </span>| Avalue: 2,65 tỷ | Arent: 7,5 triệu/ tháng</p>
+                                <p><span>47,2 triệu/m2</span>| Trả trước: 700 triệu</p>
+                                <p>Thanh toán: 13,2 triệu/tháng</p>
+                                <p>Hẻm xe hơi | Đường vào 4,5m (LG 5,0m)</p>
+                                <p><img src="../../../assets/img/Group 1780.png" alt=""> 3 tầng <img
+                                        src="../../../assets/img/Group 6.png" alt=""> -- <img src="../../../assets/img/Group 7.png"
+                                        alt=""> 3 <img src="../../../assets/img/outline-near_me-24px.png" alt=""> Đông nam</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="icon-Interactive">
+                    <p><img src="../../../assets/img/ic_chat_bubble_outline_black_24px.png" alt=""> 12</p>
+                    <p><img src="../../../assets/img/ic_like_black_24px.png" alt="">298</p>
+                    <p><img src="../../../assets/img/ic_share_black_24px.png" alt=""> 26</p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="header-mobile-1" data-toggle="modal" data-target="#myModal">
+        <img src="../../../assets/img/Group 1695.png" alt="">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-2 header-img-mobile">
+                    <img src="../../../assets/img/Rectangle 97.png" alt="">
+                </div>
+                <div class="col-xs-10 header-content-mobile">
+                    <p><img src="../../../assets/img/baseline-done-24px.png" alt=""><a href="#">Asset data team</a></p>
+                    <p>đã đăng một <a href="#">Nhà riêng</a> cùng với</p>
+                    <p><a href="#">Homekeys97891</a> cập nhật trạng thái <span>Bán</span></p>
+                    <p>56 ngày trước</p>
+                </div>
+                <div class="header-content-1-item-mobile">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-2 img-header-content-mobile">
+                                <img src="../../../assets/img/tienphongmobile.png" alt="">
+                            </div>
+                            <div class="col-xs-10 header-content-mobile">
+                                <div class="icon-detail">
+                                    <img class="icon-edit" src="../../../assets/img/bxs-edit.png" alt="">
+                                    <img src="../../../assets/img/earth.png" alt="">
+                                    <img src="../../../assets/img/baseline-map-24px.png" alt="">
+                                </div>
+                                <p>2,66 tỷ | <span>60,78m2</span> | <span>150,0 sàn</span></p>
+                                <p>711014P0001-Hồ Thị Kỷ</p>
+                            </div>
+                            <div class="container-detail-mobile">
+                                <p>Nhà xây dựng | Bàn giao T2.2010</p>
+                                <p>Đã hoàn thành | Sổ hồng</p>
+                                <p><span>* Bán </span>| Avalue: 2,65 tỷ | Arent: 7,5 triệu/ tháng</p>
+                                <p><span>47,2 triệu/m2</span>| Trả trước: 700 triệu</p>
+                                <p>Thanh toán: 13,2 triệu/tháng</p>
+                                <p>Hẻm xe hơi | Đường vào 4,5m (LG 5,0m)</p>
+                                <p><img src="../../../assets/img/Group 1780.png" alt=""> 3 tầng <img
+                                        src="../../../assets/img/Group 6.png" alt=""> -- <img src="../../../assets/img/Group 7.png"
+                                        alt=""> 3 <img src="../../../assets/img/outline-near_me-24px.png" alt=""> Đông nam</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="icon-Interactive">
+                    <p><img src="../../../assets/img/ic_chat_bubble_outline_black_24px.png" alt=""> 12</p>
+                    <p><img src="../../../assets/img/ic_like_black_24px.png" alt="">298</p>
+                    <p><img src="../../../assets/img/ic_share_black_24px.png" alt=""> 26</p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="header-mobile-1" data-toggle="modal" data-target="#myModal">
+        <img src="../../../assets/img/Group 1695.png" alt="">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-2 header-img-mobile">
+                    <img src="../../../assets/img/Rectangle 97.png" alt="">
+                </div>
+                <div class="col-xs-10 header-content-mobile">
+                    <p><img src="../../../assets/img/baseline-done-24px.png" alt="">Asset News</p>
+                    <p>đã đăng một bài viết trong <span> Thông tin</span></p>
+                    <p>29 ngày trước</p>
+                </div>
+                <div class="img-map-detail-mobile">
+                    <img src="../../../assets/img/Screen Shotat 8.26.44 PM.png" alt="">
+                </div>
+                <div class="content-map-detail-mobile">
+                    <p>Lý Chính Thắng</p>
+                    <p>Phường 7, Quận Tân Bình, Hồ Chí Minh</p>
+                    <p>Bất động sản trên đường này</p>
+                    <p>12 <span> đất nền</span>&nbsp;&nbsp;&nbsp;&nbsp; 09 <span> căn hộ</span></p>
+                    <p>Phân đoạn: <span>Toàn đường</span></p>
+                    <p>Hiện hữu 15,5m | Lộ giới 15,5m</p>
+                    <p>Theo bảng giá: 20.5tr/m hệ số 2.0</p>
+                    <p>Avalue: 140tr/m2</p>
+                    <p>Gợi ý kinh doanh: Làm khách sạn</p>
+                </div>
+                <div class="icon-Interactive">
+                    <p><img src="../../../assets/img/ic_chat_bubble_outline_black_24px.png" alt=""> 12</p>
+                    <p><img src="../../../assets/img/ic_like_black_24px.png" alt="">298</p>
+                    <p><img src="../../../assets/img/ic_share_black_24px.png" alt=""> 26</p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="header-mobile-1" data-toggle="modal" data-target="#myModal">
+        <img src="../../../assets/img/Group 1695.png" alt="">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-2 header-img-mobile">
+                    <img src="../../../assets/img/Rectangle 97.png" alt="">
+                </div>
+                <div class="col-xs-10 header-content-mobile">
+                    <p><img src="../../../assets/img/baseline-done-24px.png" alt="">Asset News</p>
+                    <p>đã đăng một <a href="#"> Thông tin</a></p>
+                    <p>29 ngày trước</p>
+                </div>
+                <div class="img-map-detail-mobile-1">
+                    <img src="../../../assets/img/Screen Shot-map.png" alt="">
+                    <div class="dev-text-cm-map">
+                        <p>89 Lý Chính Thắng Phường 7, Quận Tân Bình, Hồ Chí Minh</p>
+                    </div>
+                </div>
+                <div class="content-map-detail-mobile-1">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <img src="../../../assets/img/Rectangle 77.png" alt="">
+                            </div>
+                            <div class="col-xs-9 content-map-item-mobile">
+                                <p>Song Kim Land</p>
+                                <p>89 Lý Chính Thắng, Phường 7,<br>Quận Tân Bình, Hồ Chí Minh</p>
+                                <p>(+84) 098176761</p>
+                                <p>
+                                    <img src="../../../assets/img/star.png" alt="">
+                                    <img src="../../../assets/img/star.png" alt="">
+                                    <img src="../../../assets/img/star.png" alt="">
+                                    <img src="../../../assets/img/star.png" alt="">
+                                    <img src="../../../assets/img/star.png" alt="">
+                                    <a href="#">540 total reviews</a>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="icon-Interactive">
+                    <p><img src="../../../assets/img/ic_chat_bubble_outline_black_24px.png" alt=""> 12</p>
+                    <p><img src="../../../assets/img/ic_like_black_24px.png" alt="">298</p>
+                    <p><img src="../../../assets/img/ic_share_black_24px.png" alt=""> 26</p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="header-mobile-1" data-toggle="modal" data-target="#myModal">
+        <img src="../../../assets/img/Group 1695.png" alt="">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-2 header-img-mobile">
+                    <img src="../../../assets/img/Rectangle 97.png" alt="">
+                </div>
+                <div class="col-xs-10 header-content-mobile">
+                    <p><img src="../../../assets/img/baseline-done-24px.png" alt="">Asset News</p>
+                    <p>đã đăng một bài viết trong <span> Thông tin</span></p>
+                    <p>15 ngày trước</p>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-3 img-detail-mobile">
+                            <img src="../../../assets/img/Google-PDF-Viewer-logo.png" alt="">
+                        </div>
+                        <div class="col-xs-9 content-detail-mobile">
+                            <p>Ngày 10-12/05: Có 123 thông báo kế hoạch lựa chọn nhà thầu chậm.1527/QĐ-UBND ngày
+                                14/02/2019;
+                                KHLCNT của Ban Quản lý dự án đầu tư xây ….</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="icon-Interactive">
+                    <p><img src="../../../assets/img/ic_chat_bubble_outline_black_24px.png" alt=""> 12</p>
+                    <p><img src="../../../assets/img/ic_like_black_24px.png" alt="">298</p>
+                    <p><img src="../../../assets/img/ic_share_black_24px.png" alt=""> 26</p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="header-mobile-1" data-toggle="modal" data-target="#myModal">
+        <img src="../../../assets/img/Group 1695.png" alt="">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-2 header-img-mobile">
+                    <img src="../../../assets/img/Rectangle 97.png" alt="">
+                </div>
+                <div class="col-xs-10 header-content-mobile">
+                    <p><img src="../../../assets/img/baseline-done-24px.png" alt="">Asset News</p>
+                    <p>đã đăng một bài viết trong <span> Thông tin</span></p>
+                    <p>15 ngày trước</p>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-3 img-detail-mobile">
+                            <img src="../../../assets/img/Group 1710 - map.png" alt="">
+                        </div>
+                        <div class="col-xs-9 content-detail-mobile">
+                            <p>
+                                <span>Cần thông tin pháp lý khi mua nhà tại quận 12?</span>
+                                Ngày 10-12/05: Có 123 thông báo kế hoạch lựa chọn nhà thầu chậm.
+                                1527/QĐ-UBND ngày 14/02/2019
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="icon-Interactive">
+                    <p><img src="../../../assets/img/ic_chat_bubble_outline_black_24px.png" alt=""> 12</p>
+                    <p><img src="../../../assets/img/ic_like_black_24px.png" alt="">298</p>
+                    <p><img src="../../../assets/img/ic_share_black_24px.png" alt=""> 26</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer-page-result">
+        <div class="container">
+            <div class="row row-pagination-page-result">
+                <div class="pagination-page-result">
+                    <a class="pagination-pre" href="#">Trước</a>
+                    <ul>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                    </ul>
+                    <a class="pagination-next" href="#">Sau</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-page-result-item">
+            <a href="#" class="footer-item-1">Giới thiệu</a>
+            <a href="#" class="footer-item-2">Hướng dẫn</a>
+        </div>
+        <div class="footer-run">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 footer-run-text-1">
+                        <marquee behavior="" direction="">
+                            <p>Tin nhanh: <span>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
+                                    sollicitudin, lorem quis biben</span> <a href="#">Xem nhanh</a> </p>
+                        </marquee>
+                    </div>
+                    <div class="col-md-6 footer-run-text-2">
+                        <marquee behavior="" direction="">
+                            <p>Giá nhà đất: <span>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
+                                    sollicitudin, lorem quis biben</span></p>
+                        </marquee>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</section> -->
+
+<!------------------------
+                ------------------- Modal body  DESTOP---------------------------->
+<!-- Modal of div-->
+<div class="modal font" id="myModal" onscroll="scrollFunction()">
+  <div class="modal-dialog total-style">
+    <!-- <div class="modal-dialog"> -->
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header color-bar">
+        <!-- <button type="button" class="close close-button" data-dismiss="modal">&times;</button> -->
+        <button type="button" class=" close close-button" data-dismiss="modal">
+          <!-- <img class="outline-clear-24px " src="../../../../assets/img/outline-clear-24-px@3x.png" alt=""> -->
+          &times;
+        </button>
+
+      </div>
+
+      <!------------------------
+                ------------------- Modal body  DESTOP---------------------------->
+      <div class="modal-body">
+        <div class="div d-flex flex-column absolute show-content hide">
+          <span class="text-top text-7">Nam Anh</span>
+          <p class="text-8">03 ngày trước</p>
+          <button type="button" class="btn btn-outline-primary btn-follow mt-2">Theo dõi </button>
+          <hr class="hr-4">
+          <div class="icon-comment-like-share-3 row">
+            <div class="d-flex flex-column edit-icon-left">
+              <p>
+                <img src="../../../assets/img/SVG/like.svg" alt="">
+              </p>
+              <p>
+                <img src="../../../assets/img/ic_like_black_24px.png" alt="">
+              </p>
+              <p>
+                <img src="../../../assets/img/SVG/icon-2.svg" alt="">
+              </p>
+
+            </div>
+            <div class="d-flex flex-column ml-1 edit-content-left">
+              <p>298</p>
+              <p class="mt-1">26</p>
+              <p class="data-3">34</p>
+            </div>
+          </div>
+        </div>
+        <div class="container relative">
+          <div class="row">
+            <!-- <div class="col-md-1 text-left">
+                        </div> -->
+            <div class="text-detail col-12 container content-mobile">
+              <div class="avatar-left d-flex flex-">
+                <!-- <div> -->
+                <img class="mr-3 logo-detail" src="../../../assets/img/chat-avt-5.png" />
+                <div class="content-detail-1 d-flex justify-content-around">
+                  <div>
+                    <span class="text-top text-7">Nam Anh</span>
+                    <span class="content-hide-top ml-2">[
+                      <span class="small-text">Chuyên gia</span>
+                      <span class="content-1">
+                        3,5+
+                        <img class="edit-star" src="../../../assets/img/SVG/star.svg">
+                      </span>
+                      ]</span>
+                    <p class="text-8">03 ngày trước</p>
+                  </div>
+                  <div class="d-flex bg-light button-top">
+                    <div class="mb-2">
+                      <button class="button btn-heart-top">
+                        <img src="../../../assets/img/ic_like_black_24px.png">Like
+                      </button>
+                    </div>
+                    <div class="mb-2 ">
+                      <button class="button btn-like-top">
+                        <img src="../../../assets/img/ic_share_black_24px.png" alt=""> Share
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h3 class="show-text-title">Vì sao hầu hết người đi mua nhà đều
+                ưa chuộng những căn hộ
+                đã hoàn
+                thiện, đủ tiện nghi và sẵn sàng vào ở? </h3>
+              <img class="edit-picture" src="../../../assets/img/phong_detail.png" />
+              <h3 style="font-size:28px" class="hide-text-title">Vì sao hầu hết người đi mua nhà đều
+                ưa chuộng những căn hộ
+                đã hoàn
+                thiện, đủ tiện nghi và sẵn sàng vào ở? </h3>
+              <p class="edit-font">
+                <p class="text-1" style="font-size:bold">
+                  Giảm áp lực căn hộ hình thành trong tương lai khác biệt quá lớn so với truyền
+                  thông,
+                  những dự án đã hoàn thiện, bàn giao luôn được người mua nhà ưu tiên lựa chọn.
+                  Với chính sách
+                  "Nhận nhà trước – Trả tiền sau" dự án VC2 Golden Heart số 1, Nghiêm Xuân Yêm,
+                  phường Đại Kim,
+                  quận Hoàng Mai nhanh chóng ghi điểm.
+                </p>
+                <p class="text-2 pt-4 pb-3" style="font-weight: bold">
+                  Dự án chuẩn bị bàn giao, giảm thiểu áp lực.
+                </p>
+                <p class="text-3">
+                  Mua nhà là chuyện an cư lạc nghiệp lâu dài. Giá trị của những sản phẩm BĐS không
+                  hề nhỏ.
+                  Chuyện người mua nhà băn khoăn, cân đo đong đếm trước khi đưa ra quyết định là
+                  điều dễ hiểu.
+                  </br>
+                  </br>
+                  Anh Tuấn, nhân viên một sàn giao dịch có nhiều năm kinh nghiệm về phân phối căn
+                  hộ tại Hà
+                  Nội chia sẻ: Hiện nay, nguồn cung nhà phong phú, người mua nhà thường lo ngại
+                  khi đối mặt
+                  với nhiều rủi ro khi lựa chọn những căn hộ trên giấy. Nhất là khi số lượng và
+                  loại hình sản
+                  phẩm tăng nhưng không đi kèm với chất lượng, bàn giao không đúng thời hạn hoặc
+                  thậm chí, sản
+                  phẩm khác xa so với bản vẽ mẫu. Thực tế cũng chứng minh, những dự án đã xây dựng
+                  xong và
+                  tiến hành bàn giao mới ghi điểm trên thị trường và tính thanh khoản sẽ cao.
+                  </br>
+                  </br>
+                  Xét về góc độ kinh tế, những dự án đã hoàn thiện và sẵn sàng bàn giao giúp khách
+                  hàng tiết
+                  kiệm được một khoản phí thuê nhà. Theo thống kê giá thuê nhà của một gia đình
+                  trung bình 5 -
+                  10 triệu đồng mỗi tháng. Khi không phải đặt cọc và bỏ ra vài năm để chờ đợi thì
+                  người mua
+                  nhà hoàn thành và bàn giao đưa vào sử dụng đã tiết kiệm được hàng trăm triệu
+                  đồng.
+                  </br>
+                  </br>
+                  Lựa chọn những dự án đã bàn giao, người mua nhà cũng được hưởng các hạng mục,
+                  tiện ích nội
+                  khu hoàn thiện, trọn vẹn hơn. Dưới áp lực người đi mua nhà có cơ hội được trực
+                  tiếp trải
+                  nghiệm, "mục sở thị" dự án, chủ đầu tư không chỉ phải chú trọng xây dựng dự án,
+                  mà còn phải
+                  chỉn chu, kỹ lưỡng hơn trong từng hạng mục. Ngoài ra, có thời gian tìm hiểu
+                  thông tin pháp
+                  lý của dự án, người mua nhà cũng hạn chế được rủi ro, tranh chấp về giấy tờ sở
+                  hữu sau khi
+                  nhận nhà. Bởi những lý do này, căn hộ đã bàn giao, đưa vào sử dụng luôn hút
+                  khách, đón nhiều
+                  tín hiệu tích cực.
+                </p>
+              </p>
+              <!-- </div> -->
+              <div>
+                <div class="swiper-container">
+                  <div class="swiper-wrapper swiper-content">
+                    <div class="swiper-slide">
+                      <img src="../../../assets/img/toa_nha_2.png" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="../../../assets/img/phong_detail.png" />
+                    </div>
+                  </div>
+                  <!-- Add Arrows -->
+                  <div class="swiper-button-next edit-button-next"></div>
+                  <div class="swiper-button-prev edit-button-prev"></div>
+                </div>
+              </div>
+              <p>
+                <p class="text-2">
+                  Nhận nhà trước, trả tiền sau.
+                </p>
+                <p class="text-4">
+                  Trong bối cảnh những dự án đã hoàn thiện và sẵn sàng bàn giao đang trở thành lựa
+                  chọn được ưu
+                  tiên,
+                  chủ đầu tư không những phải đẩy nhanh tiến độ xây dựng, mà còn phải đưa ra những
+                  chính sách thật
+                  sự
+                  nổi bật.
+                  <br>
+                  <br>
+                  Điển hình như dự án VC2 Golden Heart số 1, Nghiêm Xuân Yêm, phường Đại Kim, quận
+                  Hoàng Mai, nhân
+                  dịp
+                  dự án hoàn thành, bàn giao đưa vào sử dụng vào tháng 6/2019, Chủ đầu tư
+                  Vinaconex 2 đã có chính
+                  sách
+                  ưu đãi đặc biệt hấp dẫn "Nhận nhà trước – Trả tiền sau": Khách hàng chỉ cần
+                  thanh toán 30% giá
+                  trị
+                  căn
+                  hộ là được nhận bàn giao ngay nhà để sử dụng, 70% còn lại trả theo tiến độ thanh
+                  toán linh hoạt.
+                  Chính
+                  sách ưu đãi này sẽ giúp cho khách hàng đang đi thuê vừa có nhà để ở, vừa giải
+                  tỏa được áp lực
+                  tài
+                  chính khi kéo giãn tiến độ thanh toán. Cơ hội chỉ áp dụng cho Khách hàng đặt mua
+                  căn hộ từ ngày
+                  22/5/2019 đến hết 30/6/2019.
+                  <br>
+                  <br>
+                  Ngoài ra, Công ty Vinaconex 2 còn rất nhiều chính sách ưu đãi, hấp dẫn cho Khách
+                  hàng như: chính
+                  sách
+                  ưu đãi lên đến 10% - tương đương gần 200 triệu đồng, Khách hàng nộp đủ 70% giá
+                  trị căn hộ ngay
+                  sau
+                  khi
+                  ký hợp đồng sẽ được tặng thêm 1% giá trị căn hộ , hỗ trợ lãi suất ngân hàng 0%
+                  ...
+                </p>
+              </p>
+              <div class="container text-5">
+                <!-- <span>Tags:</span> -->
+                <div class="d-flex flex-wrap bg-light">
+                  <!-- <div class="mb-2  ">Tags:</div> -->
+                  <span>Tags:</span>
+                  <div class="mb-2 tag-item">Batdongsan</div>
+                  <div class="mb-2  tag-item">Chungcu</div>
+                  <div class="mb-2  tag-item">Tragop</div>
+                  <div class="mb-2  tag-item">Laisuatnganhang</div>
+                  <div class="mb-2  tag-item">Panorama</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-md-2">
+                </div> -->
+        </div>
+        <!----------- Content-bottom --------->
+        <div class="row">
+          <div class="col-md-1">
+          </div>
+          <div class="col-md-10">
+            <div class="hr">
+              <hr class="hr-1">
+            </div>
+            <!-- </div> -->
+            <div class="content-bottom">
+              <p class="font-binh-luan">Bình luận</p>
+              <div class=" media">
+                <!-- <div class=""> -->
+                <img class="mr-3 logo-detail-1" src="../../../assets/img/chat-avt-4.png" />
+                <div class=" media-body content-detail-1">
+                  <span class="content-1"> Lâm Thy Văn Tần </span>
+                  <span class="text-top"> 12:09 - 18/10/2019</span>
+                  <p class="comment-bottom">Đầu tư an toàn, bảo toàn dòng vốn. Cam kết lợi
+                    nhuận 10%/năm. Hỗ trợ lãi suất
+                    0%/tháng. Bảo đảm
+                    chất lượng với đơn vị vận hành quốc tế. Giá trị bất động sản tăng theo
+                    hàng
+                    năm. Cho vay lên tới
+                    65% Cơ hội du lịch miễn phí. Vốn đầu tư từ 600 triệu. Tặng 15 đêm nghỉ
+                    dưỡng.</p>
+                  <div class="icon-comment-like-share">
+                    <span class="pr-2">Trả lời</span>
+                    <img class="pr-2" src="../../../assets/img/ic_chat_bubble_outline_black_24px.png" alt="">
+                    <span class="pr-2">0</span>
+                    <img class="pr-2" src="../../../assets/img/ic_like_black_24px.png" alt="">
+                    <span class="pr-2">687</span>
+                    <img class="pr-2" src="../../../assets/img/ic_share_black_24px.png" alt="">
+                    <span class="pr-2">10</span>
+                  </div>
+                </div>
+                <!-- </div> -->
+              </div>
+              <div class="media avatar-left d-flex comment-detail-bottom">
+                <div class="media avatar-left d-flex comment-detail-bottom"></div>
+                <img class="mr-3 logo-detail-1" src="../../../assets/img/chat-avt-6.png" />
+                <div class="content-detail-1">
+                  <span class="content-1">Nguyễn Thị Tường Anh </span>
+                  <span class="text-top"> 12:09 - 18/10/2019</span>
+                  <p class="comment-bottom">Đầu tư an toàn, bảo toàn dòng vốn. Cam kết lợi nhuận
+                    10%/năm. Hỗ trợ lãi suất
+                    0%/tháng. Bảo đảm
+                    chất lượng với đơn vị vận hành quốc tế. Giá trị bất động sản tăng theo hàng
+                    năm. Cho vay lên tới
+                    65% Cơ hội du lịch miễn phí. Vốn đầu tư từ 600 triệu. Tặng 15 đêm nghỉ
+                    dưỡng.</p>
+                  <div class="icon-comment-like-share">
+                    <span class="pr-2 text-6">Trả lời</span>
+                    <img class="pr-2" src="../../../assets/img/ic_chat_bubble_outline_black_24px.png" alt="">
+                    <span class="pr-2">0</span>
+                    <img class="pr-2" src="../../../assets/img/ic_like_black_24px.png" alt="">
+                    <span class="pr-2">687</span>
+                    <img class="pr-2" src="../../../assets/img/ic_share_black_24px.png" alt="">
+                    <span class="pr-2">10</span>
+                  </div>
+                  <div class="avatar-left d-flex text-comment">
+                    <img class="mr-3 logo-detail-1" src="../../../assets/img/chat-avt-4.png" />
+                    <div class="content-detail-1">
+                      <span class="content-1"> Lâm Thy Văn Tần </span>
+                      <span class="text-top"> 12:09 - 18/10/2019</span>
+                      <p class="comment-bottom">Đầu tư an toàn, bảo toàn dòng vốn. Cam kết lợi
+                        nhuận 10%/năm. Hỗ trợ
+                        lãi suất 0%/tháng. Bảo
+                        đảm
+                        chất lượng với đơn vị vận hành quốc tế. Giá trị bất động sản tăng
+                        theo hàng năm. Cho vay lên
+                        tới
+                        65% Cơ hội du lịch miễn phí. Vốn đầu tư từ 600 triệu. Tặng 15 đêm
+                        nghỉ dưỡng.</p>
+                    </div>
+                  </div>
+                  <div class="avatar-left d-flex text-comment">
+                    <img class="mr-3 logo-detail-1" src="../../../assets/img/chat-avt-4.png" />
+                    <div class="content-detail-1">
+                      <span class="content-1"> Lâm Thy Văn Tần </span>
+                      <span class="text-top"> 12:09 - 18/10/2019</span>
+                      <p class="comment-bottom">Đầu tư an toàn, bảo toàn dòng vốn. Cam kết lợi
+                        nhuận 10%/năm. Hỗ trợ
+                        lãi suất 0%/tháng. Bảo
+                        đảm
+                        chất lượng với đơn vị vận hành quốc tế. Giá trị bất động sản tăng
+                        theo hàng năm. Cho vay lên
+                        tới
+                        65% Cơ hội du lịch miễn phí. Vốn đầu tư từ 600 triệu. Tặng 15 đêm
+                        nghỉ dưỡng.</p>
+                    </div>
+                  </div>
+                  <div class="avatar-left d-flex text-comment text-chat-avt-6">
+                    <img class="mr-3 logo-detail-1" src="../../../assets/img/chat-avt-4.png" />
+                    <textarea class="form-control edit-form" rows="5" id="comment"
+                      placeholder="Viết bình luận tại đây...."></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hr">
+              <hr class="hr-1">
+            </div>
+            <!-- --------------Picture bottom -------------->
+            <div class="picture-bottom">
+              <p class="font-binh-luan">Các bài viết liên quan</p>
+            </div>
+            <div class="picture-top row ">
+              <!-- <div class="row"> -->
+              <div class="row" style="width: 95%; margin: 20px auto">
+                <div class="col-md-3 pl-2 pr-2 mt-2">
+                  <div class="card2 p-2 relative">
+                    <div class="row relative mr-0 ml-0">
+                      <div class="col-md-12 col-5 p-0">
+                        <img src="../../../assets/img/pt-bottom-5.png" width="100%" alt="">
+                      </div>
+                      <div class="col-md-12 col-7 mt-md-3 pl-0">
+                        <div class="text-5">Tòa nhà Lý Chính Thắng đang trong giai đoạn hoàn
+                          thiện</div>
+                        <div class="time mt-md-4 mb-md-2">12:09 - 18/10/2019</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 pl-2 pr-2 mt-2">
+                  <div class="card2 p-2 relative">
+                    <div class="row relative mr-0 ml-0">
+                      <div class="col-md-12 col-5 p-0">
+                        <img src="../../../assets/img/pt-bottom-6.png" width="100%" alt="">
+                      </div>
+                      <div class="col-md-12 col-7 mt-md-3 pl-0">
+                        <div class="title">Tòa nhà Lý Chính Thắng đang trong giai đoạn hoàn
+                          thiện</div>
+                        <div class="time mt-md-4 mb-md-2">12:09 - 18/10/2019</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 pl-2 pr-2 mt-2">
+                  <div class="card2 p-2 relative">
+                    <div class="row relative mr-0 ml-0">
+                      <div class="col-md-12 col-5 p-0">
+                        <img src="../../../assets/img/pt-bottom-7.png" width="100%" alt="">
+                      </div>
+                      <div class="col-md-12 col-7 mt-md-3 pl-0">
+                        <div class="title">Tòa nhà Lý Chính Thắng đang trong giai đoạn hoàn
+                          thiện</div>
+                        <div class="time mt-md-4 mb-md-2">12:09 - 18/10/2019</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 pl-2 pr-2 mt-2">
+                  <div class="card2 p-2 relative">
+                    <div class="row relative mr-0 ml-0">
+                      <div class="col-md-12 col-5 p-0">
+                        <img src="../../../assets/img/pt-bottom-8.png" width="100%" alt="">
+                      </div>
+                      <div class="col-md-12 col-7 mt-md-3 pl-0">
+                        <div class="title">Tòa nhà Lý Chính Thắng đang trong giai đoạn hoàn
+                          thiện</div>
+                        <div class="time mt-md-4 mb-md-2">12:09 - 18/10/2019</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="picture-bottom row mt-2">
+              <!-- <div class="row"> -->
+              <div class="row" style="width: 95%; margin: 20px auto">
+                <div class="col-md-3 pl-2 pr-2 mt-2">
+                  <div class="card2 p-2 relative">
+                    <div class="row relative mr-0 ml-0">
+                      <div class="col-md-12 col-5 p-0">
+                        <img src="../../../assets/img/pt-bottom-5.png" width="100%" alt="">
+                      </div>
+                      <div class="col-md-12 col-7 mt-md-3 pl-0">
+                        <div class="title">Tòa nhà Lý Chính Thắng đang trong giai đoạn hoàn
+                          thiện</div>
+                        <div class="time mt-md-4 mb-md-2">12:09 - 18/10/2019</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 pl-2 pr-2 mt-2">
+                  <div class="card2 p-2 relative">
+                    <div class="row relative mr-0 ml-0">
+                      <div class="col-md-12 col-5 p-0">
+                        <img src="../../../assets/img/pt-bottom-6.png" width="100%" alt="">
+                      </div>
+                      <div class="col-md-12 col-7 mt-md-3 pl-0">
+                        <div class="title">Tòa nhà Lý Chính Thắng đang trong giai đoạn hoàn
+                          thiện</div>
+                        <div class="time mt-md-4 mb-md-2">12:09 - 18/10/2019</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 pl-2 pr-2 mt-2">
+                  <div class="card2 p-2 relative">
+                    <div class="row relative mr-0 ml-0">
+                      <div class="col-md-12 col-5 p-0">
+                        <img src="../../../assets/img/pt-bottom-7.png" width="100%" alt="">
+                      </div>
+                      <div class="col-md-12 col-7 mt-md-3 pl-0">
+                        <div class="title">Tòa nhà Lý Chính Thắng đang trong giai đoạn hoàn
+                          thiện</div>
+                        <div class="time mt-md-4 mb-md-2">12:09 - 18/10/2019</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 pl-2 pr-2 mt-2">
+                  <div class="card2 p-2 relative">
+                    <div class="row relative mr-0 ml-0">
+                      <div class="col-md-12 col-5 p-0">
+                        <img src="../../../assets/img/pt-bottom-8.png " width="100%" alt="">
+                      </div>
+                      <div class="col-md-12 col-7 mt-md-3 pl-0">
+                        <div class="title">Tòa nhà Lý Chính Thắng đang trong giai đoạn hoàn
+                          thiện</div>
+                        <div class="time mt-md-4 mb-md-2">12:09 - 18/10/2019</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-1">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ======================================================================= -->
+
+<!-- Modal of picture in div -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+</script>
+<script src="/swiper/dist/js/swiper.min.js"></script>
+<script src="/js/NewDetailPopup/swiper.js"></script>
+<script src="/js/NewDetailPopup/scroll.js"></script>
+<!-- <script src="/js/NewDetailPage/responsive.js"></script> -->
+
+<!-- ========================================================================================== -->
