@@ -1,0 +1,16 @@
+image: node:8.11.1
+
+stages:
+  - production
+
+production:
+  type: deploy
+  stage: production
+  image: ruby:latest
+  script:
+    - apt-get update -qy
+    - apt-get install -y ruby-dev
+    - gem install dpl
+    - dpl --provider=heroku --app=assets2019 --api-key=$HEROKU_API_KEY
+  only:
+  - devHtml

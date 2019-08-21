@@ -8,6 +8,14 @@
 # testing
 /coverage
 
+# sass auto-generate
+/bin
+prepros-6.config
+# sass cache
+.sass-cache
+# pugjs compile
+
+
 # misc
 .DS_Store
 .env.local
@@ -18,3 +26,4 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+yarn.lock
