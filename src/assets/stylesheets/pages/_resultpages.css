@@ -540,8 +540,8 @@
       top: 0px;
       right: 0px;
       font-size: 20px; }
-      .realestate-item .post-image .like.actived {
-        color: #ff0000; }
+      /* .realestate-item .post-image .like.actived {
+        color: #ff0000; } */
         .realestate-item .post-image .like.actived:before {
           content: "\f004"; }
   .realestate-item .post-content {
@@ -929,4 +929,25 @@
 }
 .opacity {
   opacity: 1!important;
+}
+
+
+/*  footer fixed  */
+
+
+/* shadown styles  */
+.shadown-item__result {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.16)
+}
+
+/* pointer styles */
+.cursor-pointer {
+  cursor: pointer;
+}
+.like.fa.fa-heart-o:hover {
+  color: red;
+  transition: .35s;
+}
+.like.fa.fa-heart-o {
+  transition: .35s;
 }
