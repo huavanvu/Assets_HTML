@@ -4,6 +4,7 @@
     color: #707070;
     padding: 12px, 15px;
     cursor: pointer;
+    font-size: 12px;
 }
 .rp-category__item:hover {
     transition: .2s;
