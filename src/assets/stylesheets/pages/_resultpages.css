@@ -159,7 +159,8 @@
   height: 0;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
   border: solid 1px #F0F0F0;
-  z-index: 1020; }
+  /* z-index: 1020; */
+ }
 
 .result-pages__body::after {
   position: absolute;
@@ -951,9 +952,18 @@
 .like.fa.fa-heart-o {
   transition: .35s;
 }
-.result-pages__header-navigation {
+/* .result-pages__header-navigation {
   overflow-x: scroll;
 }
 .result-pages__header-navigation::-webkit-scrollbar {
   width: 0;
+} */
+.color-3636 {
+  color: #363636;
+}
+.color-red {
+  color: red;
+}
+.color-blue {
+  color: #189655;
 }
