@@ -28,7 +28,7 @@
 }
 .result-item__contact__action {
     right: 20px;
-    top: 20px;
+    top: 15px;
 }
 .result-item__contact .contact-info__name {
     font-size: 1.2rem;
@@ -63,6 +63,14 @@
 }
 .contact-address__map img {
     object-fit: unset;
+}
+.result-item__contact__container:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    transition: .35s;
+    border-radius: 5px;
+}
+.result-item__contact__container {
+    transition: .4s;
 }
 /* end contact item  */
 
