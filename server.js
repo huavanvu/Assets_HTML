@@ -114,6 +114,13 @@ app.get('/ket-qua/tai-nguyen', function (request, response) {
   response.sendFile(filePath);
 });
 
+app.get('/ket-qua/hoi-dap', function (request, response) {
+  const filePath = path.resolve(__dirname, './src/pages/resultpage/question/', 'index.html');
+  response.sendFile(filePath);
+});
+
+
+
 app.use('/', express.static('node_modules'));
 app.use('/', express.static('src'));
 
