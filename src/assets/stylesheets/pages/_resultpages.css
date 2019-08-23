@@ -951,3 +951,9 @@
 .like.fa.fa-heart-o {
   transition: .35s;
 }
+.result-pages__header-navigation {
+  overflow-x: scroll;
+}
+.result-pages__header-navigation::-webkit-scrollbar {
+  width: 0;
+}

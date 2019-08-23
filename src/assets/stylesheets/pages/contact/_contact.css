@@ -4,7 +4,13 @@
     color: #707070;
     padding: 12px, 15px;
     cursor: pointer;
+    font-size: 12px;
 }
+
+.rp-category__item.active {
+    color: black;
+}
+
 .rp-category__item:hover {
     transition: .2s;
     background-color: #f0f0f0;
@@ -16,7 +22,25 @@
 }
 .nav.rp-category__container::-webkit-scrollbar {
     width: 0;
+    display: none;
 }
+.rp-category::before {
+    position: absolute;
+    top: 0;
+    left: -70px;
+    right: -70px;
+    display: block;
+    content: "";
+    height: 0;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+    border: solid 1px #F0F0F0;
+    z-index: 1020;
+}
+.rp-category__total-result {
+    font-size: 13px;
+    color: #707070;
+}
+
 /* end Sub Category  */
 
 /* contact item  */
@@ -109,7 +133,10 @@ nav a:hover {
 @media (min-width: 992px) { 
     .rp-category__container {
         margin-left: 125px;
-        padding: 15px 0;
+        /* padding: 15px 0; */
+    }
+    .rp-category__total-result {
+        padding-left: calc(125px + 1rem);
     }
     .result-item__contact .result-item__contact__avatar {
         width: 120px;
