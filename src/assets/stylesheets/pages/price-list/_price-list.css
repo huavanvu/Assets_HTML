@@ -31,6 +31,12 @@
   font-weight: 500;
   color: #3b63a1;
 }
+.price-container__utilities span img {
+  width: 24px;
+  height: 24px;
+  opacity: .6;
+  padding-right: 5px;
+}
 
 /* end price item  */
 
