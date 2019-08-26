@@ -187,10 +187,23 @@ nav a:hover {
     }
  }
 
+ 
  @media (max-width: 992px) { 
     .rp-category__total-result {
         padding-left: 1rem;
-    },
+    }
+    .result-item__contact .contact-address__map {
+        width: 100%;
+    }
+    .result-item__contact-address {
+        height: 190px;
+    }
+    .contact-address__map__description {
+        font-size: medium;
+    }
+    .contact-address__map img {
+        height: 100% !important;
+    }
  }
  @media (max-width: 768px) { 
     .price-container__content-map .map{

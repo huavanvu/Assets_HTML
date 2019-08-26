@@ -934,14 +934,19 @@
 
 
 /*  footer fixed  */
-.result-pages__footer.layout-footer {
-  position: fixed;
-  bottom: 0;
-}
 .result-pages__body {
   margin-bottom: 88px;
 }
-
+.rs-footer__quick-views.layout-footer__quick-views.d-flex {
+  position: fixed;
+  bottom: 0;
+}
+@media (min-width: 991px) {
+  .result-pages__footer.layout-footer {
+    position: fixed;
+    bottom: 0;
+  }
+}
 /* shadown styles  */
 .shadown-item__result {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.16)
