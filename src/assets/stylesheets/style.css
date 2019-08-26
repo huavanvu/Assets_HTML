@@ -483,10 +483,10 @@ body {
       margin: 10px 0px; }
     .project-detail .project-top .head .status {
       display: inline-block;
-      padding: 6px 10px;
+      padding: 10px 10px;
       color: #f5343b;
       font-weight: bold;
-      font-size: 15px;
+      font-size: 32px;
       text-transform: uppercase;
       border: 1px solid #707070;
       border-radius: 4px;
@@ -601,6 +601,12 @@ body {
     .project-detail .project-info .li:first-child:before {
       display: none; }
     @media (max-width: 480px) {
+      .project-detail .project-top .head .status, .project-detail .project-top .head .rating {
+        font-size: 1.5rem;
+      }
+      
+      .pull-left { float: none !important;}
+      .pull-right { float: none !important;}
       .project-detail .project-info .li {
         display: block; }
         .project-detail .project-info .li:before {

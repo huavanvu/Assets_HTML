@@ -941,10 +941,17 @@
   position: fixed;
   bottom: 0;
 }
+
 @media (min-width: 991px) {
   .result-pages__footer.layout-footer {
     position: fixed;
     bottom: 0;
+  }
+}
+@media (max-width: 991px) {
+  .rs-footer__links.layout-footer__links {
+    position: absolute;
+    margin-bottom: 50px
   }
 }
 /* shadown styles  */
