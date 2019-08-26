@@ -190,7 +190,10 @@ nav a:hover {
  @media (max-width: 992px) { 
     .rp-category__total-result {
         padding-left: 1rem;
-    },
+    }
+    .result-item__contact .contact-address__map {
+        width: 75%;
+    }
  }
  @media (max-width: 768px) { 
     .price-container__content-map .map{

@@ -934,12 +934,12 @@
 
 
 /*  footer fixed  */
-.result-pages__footer.layout-footer {
-  position: fixed;
-  bottom: 0;
-}
 .result-pages__body {
   margin-bottom: 88px;
+}
+.rs-footer__quick-view.layout-footer--quick-view {
+  /* position: fixed;
+  bottom: 0; */
 }
 
 /* shadown styles  */
