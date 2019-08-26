@@ -30,9 +30,9 @@
     <link rel="stylesheet" type="text/css" href="../../vendor/fancybox/jquery.fancybox.min.css">
 </head>
 
-<body>
+<body class="modal-open">
     <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
-    <div id="myModal" class="modal fade" role="dialog">
+    <div id="myModal" class="modal fade show" role="dialog">
         <div class="modal-dialog">
             <!-- Modal content-->
             <div class="modal-content">
@@ -47,7 +47,7 @@
                         <div class="name">Asset News <span class="rating-pos">[Chuyên gia <span class="rating">4,5+
                                     <span class="fa fa-star icon"></span></span>]</span></div>
                         <div class="post-info">
-                            đã đăng một bài viết trong <a href="#" class="cat">Thông tin Quy hoạch</a>
+                            đã đăng một bài viết trong <a href="#" class="cat">Dự án chung cư</a>
                         </div>
                         <div class="date">15 ngày trước</div>
                     </div>
@@ -1838,6 +1838,7 @@
             }
 
         });
+        $('#myModal').modal('show')
 
     </script>
     <style>
