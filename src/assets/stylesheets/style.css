@@ -517,7 +517,13 @@ body {
       vertical-align: middle; }
     @media (max-width: 991px) {
       .project-detail .project-top .head {
-        margin-bottom: 20px; } }
+        margin-bottom: 20px; } 
+      .project-detail .project-top .head .pull-right {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+      }
   .project-detail .project-top .info-price {
     color: #e8bb20; }
   .project-detail .project-top .mobile-show {
