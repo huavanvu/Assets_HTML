@@ -33,10 +33,10 @@
 <body>
     <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
     <div id="myModal" class="modal fade" role="dialog">
-        <div class="modal-dialog" style="max-width: 1200px;width: 100%;">
+        <div class="modal-dialog" style="width: 100%;">
             <!-- Modal content-->
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header pt-1 pb-4">
                     <h4 class="modal-title">Thông tin mở rộng</h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
@@ -54,8 +54,8 @@
                         <div class="project-top">
                             <div class="head">
                                 <div class="pull-left">
-                                    <div class="sub">Dự án chung cư</div>
-                                    <h1 class="title">Madison 15 Thi Sách</h1>
+                                    <div class="sub">Dự án nghỉ dưỡng</div>
+                                    <h1 class="title">FLC Quy Nhơn</h1>
                                     <div class="sub location">Số 15 Đường Thi Sách, phường Bến Nghé, quận 1</div>
                                 </div>
                                 <div class="pull-right" style="margin-top: 10px;">
@@ -342,7 +342,7 @@
                                 </div>
                             </div>
                             <div class="section-content">
-                                <table class="table-ttpl table-ttpl-detail">
+                                <table class="table-ttpl table-ttpl-detail rounded border">
                                     <tr>
                                         <td class="key">Công nhận chủ đầu tư</td>
                                         <td class="value">Có</td>
@@ -534,8 +534,12 @@
                                             </div>
                                             <div class="banmotatt">
                                                 <div class="title">Bản đồ mô tả giá thị trường</div>
-                                                <div class="map">
-                                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOWtrEsVuuVUGis4u44PiERqkyo6PtEikKbhlbSmjlCTuAZLmM" alt="" style="width: 100%;">
+                                                <div class="row">
+                                                  <div class=" col-sm-12 col-xs-12">
+                                                      <div class="map">
+                                                        <img src="../../assets/img/map_PM@3x.png" alt="" style="width: 100%;">
+                                                      </div>
+                                                  </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -682,7 +686,7 @@
                                             <div class="title">
                                                 Biểu đồ lịch sử giá
                                             </div>
-                                            <div id="chart-ls"></div>
+                                            <div id="chart-ls" class="over-inherit"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -718,7 +722,7 @@
                                                         <div class="form-group">
                                                             <div class="label-text">Khoản vay</div>
                                                             <div class="input">
-                                                                <input type="text"class="form-control" value="8.400.000.000">
+                                                                <input type="text" class="form-control fw-5 color-2929" value="8.400.000.000">
                                                             </div>
                                                             <div class="note" style="font-size: 12px;color: #505050;margin-top: 5px;">Tám tỷ bốn trăm đồng</div>
                                                         </div>
@@ -771,7 +775,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-sm-3 col-xs-12 textcenter" style="padding-top: 20px;">
+                                        <div class="col-sm-3 col-xs-12 textcenter d-flex align-items-center justify-content-around">
                                             <button class="btn btn-main">
                                                 Tải ngay
                                             </button>
@@ -936,6 +940,7 @@
         </div>
     </div>
     <script type="text/javascript">
+        $('#myModal').modal('show');
         $("#chart").highcharts({
             chart: {
                 type: 'pie',

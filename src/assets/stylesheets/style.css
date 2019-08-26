@@ -81,7 +81,7 @@ body {
 
 .list-check .check-action {
   margin-bottom: 20px; }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .list-check .check-action {
     width: 50%;
     float: left;
@@ -632,7 +632,7 @@ body {
     left: 0px;
     margin-top: 20px; } }
 .project-detail h2 {
-  font-size: 20px;
+  font-size: 2rem;
   margin: 0px;
   margin-bottom: 20px; }
 .project-detail .section {
@@ -1017,3 +1017,14 @@ body {
     padding: 10px; } }
 
 /*# sourceMappingURL=style.css.map */
+
+/* Atomic */
+.color-2929 {
+  color: #292929;
+}
+.over-inherit {
+  overflow: inherit !important;
+}
+.fw-5 {
+  font-weight: 500;
+}
