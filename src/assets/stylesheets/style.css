@@ -559,6 +559,7 @@ body {
         color: #363636; }
         .project-detail .project-top .head .status {
           padding: 10px 0px;
+          font-size: 32px;
           border: 0px; }
           .project-detail .project-top .head .status:before, .project-detail .project-top .head .status:after {
             display: none; }
