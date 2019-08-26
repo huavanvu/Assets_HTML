@@ -23,7 +23,8 @@
 .price-container__content-info_others {
   font-size: 14px;
 }
-.price-container__content-info_status, .price-container__content-info_vendor {
+/* .price-container__content-info_status, */
+ .price-container__content-info_vendor {
   font-size: 14px;
 }
 .price-header__info-name {
@@ -36,6 +37,12 @@
   height: 24px;
   opacity: .6;
   padding-right: 5px;
+}
+.color-red  {
+  color: red;
+}
+.f-18 {
+  font-size: 18px;
 }
 
 /* end price item  */
