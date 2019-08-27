@@ -67,6 +67,11 @@ app.get('/nha-rieng', function (request, response) {
   response.sendFile(filePath);
 });
 
+app.get('/hoi-dap', function (request, response) {
+  const filePath = path.resolve(__dirname, './src/pages/modalpage/', 'hoi-dap.html');
+  response.sendFile(filePath);
+});
+
 app.get('/thong-tin-mo-rong-duong', function (request, response) {
   const filePath = path.resolve(__dirname, './src/pages/modalpage/', 'thong-tin-mo-rong-duong.html');
   response.sendFile(filePath);
@@ -119,6 +124,10 @@ app.get('/ket-qua/hoi-dap', function (request, response) {
   response.sendFile(filePath);
 });
 
+app.get('/ket-qua/hoi-dap-chi-tiet', function (request, response) {
+  const filePath = path.resolve(__dirname, './src/pages/resultpage/question-detail', 'index.html');
+  response.sendFile(filePath);
+});
 
 
 app.use('/', express.static('node_modules'));

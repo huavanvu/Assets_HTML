@@ -1,0 +1,13 @@
+.question-detail__comment {
+  min-height: 175px;
+}
+.question-detail__comment-panel {
+  padding: 10px 24px;
+}
+.question-detail__comment-panel .nav-tabs .nav-link.active {
+  border: 0;
+  border-bottom: 3px red solid;
+}
+.question-detail__comment-panel .nav-tabs .nav-link:hover {
+  border-color: none;
+}

@@ -1126,3 +1126,41 @@ body {
 #to-top i {
   transform: rotateZ(-45deg)
 }
+.col-1-5 {
+  width: 12.49995%;
+}
+.divider-5  {
+  width: 100%;
+  height: 3px;
+  background-color: black;
+}
+.modal-question__section-name {
+  font-size: 1.5rem;
+}
+.login-to-comment {
+  background-color: #FFBF00;
+}
+.modal-question-container .avatar-comment img{
+  width: 36px;
+  height: 36px;
+}
+.modal-question-container .avatar-comment {
+  margin-right: 16px;
+}
+.comment-relative__time {
+  color: #707070;
+  font-size: 12px;
+}
+.modal-question__info-name {
+  font-size: 16px;
+  color: #3B63A1;
+}
+.modal-question__info-time-comment, .modal-question__info-id-comment {
+  color: #707070;
+  font-size: 12px;
+}
+@media (max-width: 576px) {
+  .modal-question__info-time-comment {
+    padding-left: 0 !important;
+  }
+}
