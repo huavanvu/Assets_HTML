@@ -1058,24 +1058,22 @@ body {
 
 /* modal style  */
 
-.project-detail__acreage {
-  
+.project-detail__acreage:hover .project-detail__acreage-more {
+  transition: .2s;
+  opacity: 1;
+  visibility: visible;
 }
 .project-detail__acreage-more {
-  bottom: 105%;
+  bottom: 150%;
   background-color: #fff;
   white-space: nowrap;
   left: 50%;
   transform: translateX(-50%);
   transition: .2s;
-  opacity: 1;
-  visibility: visible;
+  opacity: 0;
+  visibility: hidden;
 }
-.project-detail__acreage-more::before {
-  border-color: rgba(194, 225, 245, 0);
-	border-top-color: #c2e1f5;
-	border-width: 36px;
-	margin-left: -36px;
+.project-detail__acreage-more-contaniner::before {
   top: 100%;
 	left: 50%;
 	border: solid transparent;
@@ -1084,7 +1082,10 @@ body {
 	width: 0;
 	position: absolute;
   pointer-events: none;
-  background: #88b7d5;
+  border-color: rgba(194, 225, 245, 0);
+	border-top-color:#ffffff;
+	border-width: 24px;
+	margin-left: -24px;
 }
 .project-detail__acreage-more table tr td {
   white-space: nowrap;
@@ -1093,4 +1094,8 @@ body {
   padding-top:7.5px;
   padding-bottom:7.5px;
   padding-right:20px;       
+}
+.project-detail__acreage-more table tr td:first-child {
+  color: #707070;
+  padding-right: 10px;
 }
