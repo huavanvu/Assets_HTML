@@ -30,9 +30,9 @@
     <link rel="stylesheet" type="text/css" href="../../vendor/fancybox/jquery.fancybox.min.css">
 </head>
 
-<body class="modal-open">
+<body>
     <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
-    <div id="myModal" class="modal fade show" role="dialog">
+    <div id="myModal" class="modal fade" role="dialog">
         <div class="modal-dialog">
             <!-- Modal content-->
             <div class="modal-content">
@@ -84,7 +84,7 @@
                                 </div>
                                 <div class="pull-right d-flex align-items-center" style="margin-top: 10px;">
                                     <div class="status">Đang mở bán</div>
-                                    <div>
+                                    <!-- <div>
                                         <div class="rating">
                                             3.5/5
                                         </div>
@@ -92,7 +92,7 @@
                                         <div class="capture">
                                             <img src="../../assets/img/icons/1244.png" alt="">
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <div class="clearfix"></div>
                             </div>
@@ -146,11 +146,13 @@
                                     <div class="li">Thanh toán: <span>20.4tr/tháng</span></div>
                                 </div>
                                 <div class="project-info">
-                                    <div class="li">Hẻm xe hơi</div>
-                                    <div class="li">Đường vào 15,0m (LG 15,0m)</div>
+                                  <div class="li">Hẻm xe hơi</div>
+                                  <div class="li">Đường vào 15,0m (LG 15,0m)</div>
+                                  <div class="li project-info__untilities">
                                     <div class="li"><span><i class="fa fa-bed" aria-hidden="true"></i> </span>3</div>
-                                    <div class="li"><span><i class="fas fa-bath"></i></span>8</div>
+                                    <div class="li"><span><img src="./../../assets/img/Group 7.png" alt=""></span>8</div>
                                     <div class="li"><span><i class="fa fa-location-arrow pr-2"></i>Đông nam</span></div>
+                                  </div>
                                 </div>
                                 <div class="bottom">
                                     <div class="rating">
@@ -1404,6 +1406,9 @@
             </div>
         </div>
     </div>
+    <div id="to-top" class="position-absolute">
+        <button class="btn p-3 rounded"> <i class="fa fa-location-arrow"></i> </button>
+    </div>
     <script type="text/javascript">
 
 
@@ -1565,8 +1570,6 @@
 
         });
         $('#myModal').modal('show');
-
-
     </script>
     <style>
         .table-ttpl-detail{
