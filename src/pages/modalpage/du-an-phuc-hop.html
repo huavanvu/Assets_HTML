@@ -33,10 +33,10 @@
 <body>
     <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
     <div id="myModal" class="modal fade" role="dialog">
-        <div class="modal-dialog" style="max-width: 1200px;width: 100%;">
+        <div class="modal-dialog">
             <!-- Modal content-->
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header pt-1 pb-4">
                     <h4 class="modal-title">Thông tin mở rộng</h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
@@ -47,7 +47,7 @@
                             </div>
                             <div class="name">Asset News <span class="rating-pos">[Chuyên gia <span class="rating">4,5+ <span class="fa fa-star icon"></span></span>]</span></div>
                             <div class="post-info">
-                                đã đăng một bài viết trong <a href="#" class="cat">Dự án nghỉ dưỡng</a>
+                                đã đăng một bài viết trong <a href="#" class="cat">Dự án phức hợp</a>
                             </div>
                             <div class="date">15 ngày trước</div>
                         </div>
@@ -55,18 +55,20 @@
                             <div class="project-top">
                                 <div class="head">
                                     <div class="pull-left">
-                                        <div class="sub">Dự án chung cư</div>
-                                        <h1 class="title">Madison 15 Thi Sách</h1>
+                                        <div class="sub">Dự án phức hợp</div>
+                                        <h1 class="title">Kikyo Resident</h1>
                                         <div class="sub location">Số 15 Đường Thi Sách, phường Bến Nghé, quận 1</div>
                                     </div>
-                                    <div class="pull-right" style="margin-top: 10px;">
+                                    <div class="pull-right d-flex align-items-center" style="margin-top: 10px;">
                                         <div class="status">Đang mở bán</div>
-                                        <div class="rating">
-                                            3.5/5
-                                        </div>
-                                        <span class="icon fa fa-star" style="vertical-align: middle; color: #e8bb20; margin-right: 10px;"></span>
-                                        <div class="capture">
-                                            <img src="../../assets/img/icons/1244.png" alt="">
+                                        <div>
+                                            <div class="rating">
+                                                3.5/5
+                                            </div>
+                                            <span class="icon fa fa-star" style="vertical-align: middle; color: #e8bb20; margin-right: 10px;"></span>
+                                            <div class="capture">
+                                                <img src="../../assets/img/icons/1244.png" alt="">
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="clearfix"></div>
@@ -74,7 +76,7 @@
                                 <div class="image">
                                     <img src="https://cdn.vietnambiz.vn/stores/news_dataimages/tinnv/012018/28/15/2617_phoi-canh-chung-cu-gamuda-ho-yen-so-5.jpg" alt="">
                                 </div>
-                                <div class="mobile-show">
+                                <div class="mobile-show mt-3">
                                     <div class="rating pull-left">
                                         <span class="star fa fa-star"></span>
                                         <span class="star fa fa-star"></span>
@@ -449,10 +451,10 @@
                                 </div>
                                 <div class="section-content">
                                     <div class="row">
-                                        <div class=" col-md-9 col-sm-12 col-xs-12">
+                                        <div class=" col-lg-9 col-sm-12 col-xs-12">
                                             <img src="../../assets/img/map_PM@3x.png" alt="placeholder+image" class="img-responsive">
                                         </div>
-                                        <div class="col-md-3 col-sm-12 col-xs-12">
+                                        <div class="col-lg-3 col-sm-12 col-xs-12">
                                             <div class="head"><h2 class="title">Tiện ích</h2></div>
                                              <div class="list-check">
                                                 <div class="check-action">
@@ -683,7 +685,7 @@
                                                 <div class="title">
                                                     Biểu đồ lịch sử giá
                                                 </div>
-                                                <div id="chart-ls"></div>
+                                                <div id="chart-ls" class="over-inherit"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -772,7 +774,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-sm-3 col-xs-12 textcenter" style="padding-top: 20px;">
+                                            <div class="col-sm-3 col-xs-12 textcenter d-flex justify-content-around align-items-center">
                                                 <button class="btn btn-main">
                                                     Tải ngay
                                                 </button>
