@@ -87,6 +87,7 @@ body {
   }
 }
 @media (max-width: 992px) {
+  #to-top { display: none !important;}
   .list-check .check-action {
     width: 50%;
     float: left;
@@ -301,6 +302,18 @@ body {
     background: #3b63a1 !important;
     color: #fff; }
 @media (max-width: 768px) {
+  .box-comments .comment-content {
+    display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  }
+  .li.project-info__untilities .li:not(:first-child){
+    padding-left:  10px; 
+  }
+  .li.project-info__untilities{
+    margin-top: 7px;
+  }
   .nav-page {
     position: absolute;
     bottom: 40px;
@@ -450,7 +463,7 @@ body {
 
 .project-detail .project-top {
   border-radius: 5px;
-  overflow: hidden;
+  /* overflow: hidden; */
   padding: 36px;
   position: relative; }
   .project-detail .project-top .image {
@@ -460,6 +473,7 @@ body {
     right: 0px;
     bottom: 0px; }
   .project-detail .project-top img {
+    max-height: 100%;
     width: 100%; }
   .project-detail .project-top:before {
     position: absolute;
@@ -528,6 +542,9 @@ body {
         display: flex;
         justify-content: space-between;
         width: 100%;
+      }
+      .project-detail .project-top .head .title {
+        font-size: 1rem;
       }
       }
   .project-detail .project-top .info-price {
@@ -613,9 +630,11 @@ body {
       .section .head .pull-left { float: none !important;}
       .section .head .pull-right { float: none !important;}
       .project-detail .project-info .li {
-        display: block; }
+        /* display: block;  */
+      }
         .project-detail .project-info .li:before {
-          display: none; } }
+          display: none; } 
+        }
   .project-detail .project-info.-important {
     font-weight: 500; }
 .project-detail .bottom .rating {
@@ -1035,7 +1054,7 @@ body {
     width: 100%; } }
 @media (max-width: 768px) {
   .modal-body {
-    padding: 10px; } }
+    padding: 10px 15px; } }
 
 /*# sourceMappingURL=style.css.map */
 
@@ -1098,4 +1117,12 @@ body {
 .project-detail__acreage-more table tr td:first-child {
   color: #707070;
   padding-right: 10px;
+}
+#to-top {
+  right: 2%;
+  bottom: 2%;
+  z-index: 9990;
+}
+#to-top i {
+  transform: rotateZ(-45deg)
 }
