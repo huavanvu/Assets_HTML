@@ -16,4 +16,5 @@ $(document).ready(function() {
   $('.status__love-icon').on('click', function (e) {
     $(this).toggleClass( "active" );
   })
+
 })

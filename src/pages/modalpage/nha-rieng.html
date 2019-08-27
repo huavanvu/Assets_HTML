@@ -56,7 +56,30 @@
                             <div class="head">
                                 <div class="pull-left">
                                     <div class="sub">Nhà riêng</div>
-                                    <h1 class="title">4.500 Triệu &nbsp; | &nbsp; 68m <sup>2</sup> &nbsp; | &nbsp; 10,0 x 6,8m </h1>
+                                    <h1 class="title">4.500 Triệu &nbsp; |  
+                                      <span class="project-detail__acreage cursor-pointer position-relative">
+                                        &nbsp; 68m<sup>2</sup> &nbsp;
+                                        <div class="project-detail__acreage-more  position-absolute rounded p-2">
+                                          <div class="project-detail__acreage-more-contaniner position-relative">
+                                            <table>
+                                                <tr>
+                                                  <td>60m<sup>2</sup></td>
+                                                  <td>Diện tích được công nhận</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>8m<sup>2</sup></td>
+                                                  <td>Diện tích quốc lộ giới</td>
+                                                </tr>
+                                                  <tr>
+                                                    <td>60m<sup>2</sup></td>
+                                                    <td>Diện tích được công nhận</td>
+                                                  </tr>
+                                              </table>
+                                          </div>
+                                        </div>
+                                      </span>
+                                      | &nbsp; 10,0 x 6,8m 
+                                    </h1>
                                     <div class="sub location">Số 15 Đường Thi Sách, phường Bến Nghé, quận 1</div>
                                 </div>
                                 <div class="pull-right d-flex align-items-center" style="margin-top: 10px;">
@@ -89,7 +112,7 @@
                                         <span class="fa fa-image icon"></span>
                                     </button>
                                     <button class="btn">
-                                        <span></span>
+                                        <span class="fa fa-cube  icon"></span>
                                     </button>
                                     <button class="btn">
                                         <span class="fa fa-play-circle-o  icon"></span>
@@ -125,6 +148,9 @@
                                 <div class="project-info">
                                     <div class="li">Hẻm xe hơi</div>
                                     <div class="li">Đường vào 15,0m (LG 15,0m)</div>
+                                    <div class="li"><span><i class="fa fa-bed" aria-hidden="true"></i> </span>3</div>
+                                    <div class="li"><span><i class="fas fa-bath"></i></span>8</div>
+                                    <div class="li"><span><i class="fa fa-location-arrow pr-2"></i>Đông nam</span></div>
                                 </div>
                                 <div class="bottom">
                                     <div class="rating">
@@ -149,7 +175,7 @@
                                                 <img src="http://farm8.staticflickr.com/7289/16207238089_0124105172_m.jpg" alt="" />
                                             </a>
                                         </div>
-                                        <a class="btn gallery" data-fancybox="images"  data-type="image" href="http://farm6.staticflickr.com/5444/17679973232_568353a624_b.jpg" >
+                                        <a class="btn pb-4 gallery" data-fancybox="images"  data-type="image" href="http://farm6.staticflickr.com/5444/17679973232_568353a624_b.jpg" >
                                             <span class="fa fa-image icon"></span>
                                         </a>
                                         <script type="text/javascript">
@@ -160,10 +186,10 @@
                                                 }
                                             });
                                         </script>
-                                        <button class="btn">
+                                        <button class="btn pb-4">
                                             <span class="fa fa-cube  icon"></span>
                                         </button>
-                                        <button class="btn">
+                                        <button class="btn pb-4 mr-4">
                                             <span class="fa fa-play-circle-o  icon"></span>
                                         </button>
                                         <div class="mapbox">
@@ -202,7 +228,7 @@
                             </div>
                             <div class="section-content">
                                 <div class="table-content">
-                                    <table class="table-ttpl table-ttpl-detail rounded border">
+                                    <table class="table-ttpl table-ttpl-detail">
                                         <tr>
                                             <td class="key">Công nhận chủ đầu tư</td>
                                             <td class="value nowrap">Có</td>
@@ -1224,7 +1250,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="box-chart">
+                                <div class="box-chart text-center">
                                     <div class="chart-content">
                                         <div id="chart" style="width: 250px;"> </div>
                                         <div class="total">~123,9 triệu/ tháng</div>
@@ -1538,7 +1564,8 @@
             }
 
         });
-        $('#myModal').modal('show')
+        $('#myModal').modal('show');
+
 
     </script>
     <style>

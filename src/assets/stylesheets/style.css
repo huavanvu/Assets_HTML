@@ -81,6 +81,11 @@ body {
 
 .list-check .check-action {
   margin-bottom: 20px; }
+@media (min-width: 992px) {
+  .box-chart {
+    text-align: unset !important;
+  }
+}
 @media (max-width: 992px) {
   .list-check .check-action {
     width: 50%;
@@ -486,7 +491,7 @@ body {
       padding: 10px 10px;
       color: #f5343b;
       font-weight: bold;
-      font-size: 32px;
+      font-size: 18px;
       text-transform: uppercase;
       border: 1px solid #707070;
       border-radius: 4px;
@@ -507,6 +512,7 @@ body {
     .project-detail .project-top .head .rating {
       display: inline-block;
       font-size: 32px;
+      font-weight: 600;
       vertical-align: middle;
       margin: 0px 5px; }
       .project-detail .project-top .head .rating .icon {
@@ -604,9 +610,8 @@ body {
       .project-detail .project-top .head .status, .project-detail .project-top .head .rating {
         font-size: 1.5rem;
       }
-      
-      .pull-left { float: none !important;}
-      .pull-right { float: none !important;}
+      .section .head .pull-left { float: none !important;}
+      .section .head .pull-right { float: none !important;}
       .project-detail .project-info .li {
         display: block; }
         .project-detail .project-info .li:before {
@@ -645,7 +650,7 @@ body {
     left: 0px;
     margin-top: 20px; } }
 .project-detail h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: 0px;
   margin-bottom: 20px; }
 .project-detail .section {
@@ -689,8 +694,11 @@ body {
     .project-detail .section .head .link:hover {
       color: #3b63a1; }
 .project-detail .table-ttpl {
-  border: none;
+  border: 3px solid ;
   background: #f7f7f7;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: #f7f7f7;
+  transition: .2s;
   border-radius: 5px; }
 .project-detail .table-ttpl-detail {
   font-size: 14px;
@@ -1043,4 +1051,51 @@ body {
 }
 .color-red {
   color: red;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* modal style  */
+
+.project-detail__acreage:hover .project-detail__acreage-more {
+  transition: .2s;
+  opacity: 1;
+  visibility: visible;
+}
+.project-detail__acreage-more {
+  bottom: 150%;
+  background-color: #fff;
+  white-space: nowrap;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: .2s;
+  opacity: 0;
+  visibility: hidden;
+}
+.project-detail__acreage-more-contaniner::before {
+  top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+  pointer-events: none;
+  border-color: rgba(194, 225, 245, 0);
+	border-top-color:#ffffff;
+	border-width: 24px;
+	margin-left: -24px;
+}
+.project-detail__acreage-more table tr td {
+  white-space: nowrap;
+}
+.project-detail__acreage-more table tr td:not(:first-child) {
+  padding-top:7.5px;
+  padding-bottom:7.5px;
+  padding-right:20px;       
+}
+.project-detail__acreage-more table tr td:first-child {
+  color: #707070;
+  padding-right: 10px;
 }
