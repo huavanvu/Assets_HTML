@@ -674,7 +674,8 @@ body {
   margin-bottom: 20px; }
 .project-detail .section {
   padding: 20px 0px;
-  border-bottom: 1px solid #e5e5e5; }
+  /* border-bottom: 1px solid #e5e5e5;  */
+}
   .project-detail .section:last-child {
     border-bottom: 0px; }
 .project-detail .project-related .head {
@@ -1081,6 +1082,10 @@ body {
   transition: .2s;
   opacity: 1;
   visibility: visible;
+}
+.project-detail__acreage:hover {
+  transition: .2s;
+  border-bottom: 1px #fff solid;
 }
 .project-detail__acreage-more {
   bottom: 150%;
