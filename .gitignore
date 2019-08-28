@@ -27,3 +27,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 yarn.lock
+
+# personal dev Hieu
+/src/note.txt
+/src/.editorconfig

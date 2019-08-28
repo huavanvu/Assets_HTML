@@ -159,7 +159,8 @@
   height: 0;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
   border: solid 1px #F0F0F0;
-  z-index: 1020; }
+  /* z-index: 1020; */
+ }
 
 .result-pages__body::after {
   position: absolute;
@@ -408,6 +409,14 @@
 
   .layout-footer__quick-views {
     margin: 0; } }
+  .box-company-info .map-canvas .map-canvas__address {
+    bottom: 0px;
+    background-color: #1a73e8c7;
+    width: 100%;
+    max-height: 60px;
+    padding: 10px;
+    color: #fff;
+  }
 @media (max-width: 991px) {
   .rp-header-top__container {
     padding: 0 !important;
@@ -469,7 +478,11 @@
   .rp-search-result-item .sr-item__modal {
     top: 14px;
     right: 10px;
-    max-width: 20px; } }
+    max-width: 20px; }
+  
+  }
+  @media only screen and (min-width: 991px) {
+  }
 .bold {
   font-weight: bold; }
 
@@ -528,8 +541,8 @@
       top: 0px;
       right: 0px;
       font-size: 20px; }
-      .realestate-item .post-image .like.actived {
-        color: #ff0000; }
+      /* .realestate-item .post-image .like.actived {
+        color: #ff0000; } */
         .realestate-item .post-image .like.actived:before {
           content: "\f004"; }
   .realestate-item .post-content {
@@ -539,7 +552,8 @@
     display: table-cell;
     position: relative;
     padding-bottom: 40px;
-    padding-right: 115px; }
+    /* padding-right: 115px;  */
+  }
   .realestate-item .top {
     font-size: 20px;
     color: #363636;
@@ -616,7 +630,7 @@
     width: 100%;
     right: 0px; }
     .realestate-item .bottom-info span {
-      width: 25%;
+      /* width: 25%; */
       padding: 0px 5px;
       display: table-cell; }
     .realestate-item .bottom-info img {
@@ -628,10 +642,17 @@
     .realestate-item {
       display: block; }
       .realestate-item .post-image, .realestate-item .post-content {
-        display: block; }
+        display: inline-block; }
       .realestate-item .post-image {
-        margin: auto;
-        margin-bottom: 10px; } }
+        /* margin: auto; */
+        float: left;
+        margin-bottom: 10px; } 
+      .realestate-item .map {
+        display: none !important;}
+    .box-company-info .company-info .avatar {
+      margin: 0 !important;
+    }
+      }
   @media (max-width: 768px) {
     .realestate-item .post-content {
       padding-right: 10px;
@@ -648,10 +669,17 @@
       position: relative; }
     .realestate-item .bottom-info {
       position: relative;
-      display: block; }
+      display: flex;
+      justify-content: space-between; }
       .realestate-item .bottom-info span {
-        width: 100%;
-        display: block; } }
+        /* width: 100%;
+        display: block;  */
+      }
+  
+  .item-details__title .ids-title--category .ids-title--category {
+    font-size: 13px;
+    }
+  }
 
 .info-line {
   display: inline-block; }
@@ -701,7 +729,7 @@
   padding: 20px;
   font-size: 14px; }
   .box-company-info .company-info {
-    padding-left: 140px;
+    /* padding-left: 140px; */
     position: relative;
     margin-bottom: 20px; }
     .box-company-info .company-info .avatar {
@@ -746,7 +774,11 @@
           top: 0px;
           left: 0px;
           margin: auto;
-          margin-bottom: 20px; } }
+          margin-bottom: 20px; }
+      .item-details__title .title--rate {
+        padding-left: 0 !important;
+        width: 100%;
+      }}
   .box-company-info .rating-box {
     margin-top: 10px; }
     .box-company-info .rating-box .rating {
@@ -881,6 +913,12 @@
 .ids-title__content:hover .user-info {
   visibility: visible;
   opacity: 1;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.ids-title__content:hover {
+  cursor: pointer;
 }
 
 .user-info__button button {
@@ -889,4 +927,59 @@
   background-color: white;
   border: solid 1px #969696;
   color: #3c4043;
+}
+.opacity {
+  opacity: 1!important;
+}
+
+
+/*  footer fixed  */
+.result-pages__body {
+  margin-bottom: 88px;
+}
+.rs-footer__quick-views.layout-footer__quick-views.d-flex {
+  position: fixed;
+  bottom: 0;
+}
+
+@media (min-width: 991px) {
+  .result-pages__footer.layout-footer {
+    position: fixed;
+    bottom: 0;
+  }
+}
+@media (max-width: 991px) {
+  .rs-footer__links.layout-footer__links {
+    position: absolute;
+    margin-bottom: 50px
+  }
+}
+/* shadown styles  */
+.shadown-item__result {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.16)
+}
+
+/* pointer styles */
+.cursor-pointer {
+  cursor: pointer;
+}
+.like.fa.fa-heart-o:hover {
+  color: red;
+  transition: .35s;
+}
+.like.fa.fa-heart-o {
+  transition: .35s;
+}
+/* .result-pages__header-navigation {
+  overflow-x: scroll;
+}
+.result-pages__header-navigation::-webkit-scrollbar {
+  width: 0;
+} */
+.color-3636 {
+  color: #363636;
+}
+
+.color-blue {
+  color: #189655;
 }

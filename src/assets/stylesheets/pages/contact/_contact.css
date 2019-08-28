@@ -1,0 +1,214 @@
+/* Sub category  */
+.rp-header-category {
+    padding: 10px 0;
+}
+.rp-category__item {
+    color: #707070;
+    padding: 12px, 15px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.rp-category__item.active {
+    color: black;
+}
+
+.rp-category__item:hover {
+    transition: .2s;
+    background-color: #f0f0f0;
+}
+.nav.rp-category__container {
+    flex-wrap: unset;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+.nav.rp-category__container::-webkit-scrollbar {
+    width: 0;
+    display: none;
+}
+.rp-category::before {
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 100%;
+    content: "";
+    height: 0;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+    border: solid 1px #F0F0F0;
+    z-index: 1020;
+}
+.rp-category__total-result {
+    font-size: 13px;
+    color: #707070;
+}
+.nav-link.rp-category__item.dropdown {
+    position: unset;
+}
+.nav-link.rp-category__item.dropdown .dropdown-item:hover {
+    background-color: rgba(0, 0, 0, 0.12) !important;
+}
+.nav-link.rp-category__item .dropdown-menu {
+    top: 30px !important;
+}
+
+
+/* end Sub Category  */
+
+/* contact item  */
+.result-item__contact .result-item__contact__avatar {
+    width: 70px;
+}
+.result-item__contact {
+    padding: 30px 20px;
+}
+.result-item__contact__action {
+    right: 10px;
+    top: 10px;
+}
+.result-item__contact .contact-info__name {
+    font-size: 1.2rem;
+    color: #3b63a1;
+}
+.contact-info__address, .contact-info__phone {
+    font-size: .9rem
+}
+.contact-address__map__description {
+    font-size: xx-small;
+    background-color: #0abde3;
+    color: #fff;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.contact__footer__item {
+    font-size: 12px;
+    color: #707070;
+    padding: 5px 7px;
+    font-weight: 500;
+}
+.result-item__contact-info__like {
+    color: #62A8C4;
+    border-color: #62A8C4;
+    transition: .2s;
+}
+.result-item__contact-info__like:hover {
+    transition: .2s;
+    background-color: #CFCBC5;
+    border-color: #CFCBC5;
+}
+.rp-search-result__items {
+    overflow-x: hidden;
+}
+.contact-address__map img {
+    object-fit: unset;
+}
+.result-item__contact__container:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    transition: .35s;
+    border-radius: 5px;
+}
+.result-item__contact__container {
+    transition: .4s;
+}
+/* end contact item  */
+
+/* rating */
+
+.rating-container .rating__total__text {
+    color: #1a73e8;
+    font-size: .7rem;
+}
+.rating-container .rating__item.active {
+    color: #e8bb20;
+}
+.rating-container .rating__item {
+    font-size: .7rem;
+}
+.item-footer__social a{
+    font-size: 12px;
+    color: #707070;
+    padding: 5px 7px;
+    font-weight: 500;
+}
+.item-footer__social a:hover {
+    color: #1a73e8;
+}
+.result-item__category {
+    font-size: 18px;
+    font-weight: 500;
+    color: #3b63a1;
+}
+.price-container__content-info_others span {
+    margin-bottom: 7px;
+}
+/* end rating */
+
+
+/* Reset vendor */
+
+nav a:hover {
+    color:  #707070 !important;
+}
+.separator::after {
+    height: 15px;
+    content: "";
+    display: inline-block;
+    width: 1px;
+    background: rgba(0, 0, 0, 0.16);
+    vertical-align: middle;
+    margin: 0px 10px;
+}
+.separator:last-child:after {
+    display: none !important;
+} 
+/* Responsive  */
+
+@media (min-width: 576px) { }
+
+@media (min-width: 768px) { 
+    .result-item__contact .result-item__contact__avatar {
+        width: 100px;
+    }
+    .result-item__contact {
+        padding: 15px 7,5px;
+    }
+ }
+
+@media (min-width: 992px) { 
+    .rp-category__container {
+        margin-left: 125px;
+        /* padding: 15px 0; */
+    }
+    .rp-category__total-result {
+        padding-left: calc(125px + 1rem);
+    }
+    .result-item__contact .result-item__contact__avatar {
+        width: 120px;
+    }
+ }
+
+ 
+ @media (max-width: 992px) { 
+    .rp-category__total-result {
+        padding-left: 1rem;
+    }
+    .result-item__contact .contact-address__map {
+        width: 100%;
+    }
+    .result-item__contact-address {
+        height: 190px;
+    }
+    .contact-address__map__description {
+        font-size: medium;
+    }
+    .contact-address__map img {
+        height: 100% !important;
+    }
+ }
+ @media (max-width: 768px) { 
+    .price-container__content-map .map{
+        display: none;
+    }
+ }
+
+@media (min-width: 1200px) {  }
