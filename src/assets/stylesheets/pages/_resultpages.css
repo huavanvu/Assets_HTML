@@ -144,7 +144,9 @@
   background: #1a73e8;
   position: absolute;
   content: ""; }
-
+.header-navigation__items .header-navigation--item.is-actived a.hn-item--text {
+  color: #1A73E8;
+}
 /* Styles of body result pages */
 .result-pages__body {
   position: relative; }
