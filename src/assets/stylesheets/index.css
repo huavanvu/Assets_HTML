@@ -109,6 +109,11 @@ img,
     font-size: 14px;
     margin-right: 5px; }
 
+.border-item {
+  position: relative;
+    border: solid 5px #F0F0F0;
+    border-top: none;
+}
 /*# sourceMappingURL=index.css.map */
 
 
