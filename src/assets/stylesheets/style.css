@@ -611,7 +611,8 @@ body {
   @media (max-width: 991px) {
     .project-detail .project-info {
       margin-bottom: 0px;
-      margin-top: 10px; } }
+      /* margin-top: 10px;  */
+    } }
   .project-detail .project-info .li {
     display: inline-block; }
     .project-detail .project-info .li:before {
@@ -622,18 +623,14 @@ body {
       margin: 0px 15px;
       border-left: 1px solid #ddd; }
     .project-detail .project-info .li:first-child:before {
-      display: none; }
+      display: none; 
+    }
     @media (max-width: 480px) {
       .project-detail .project-top .head .status, .project-detail .project-top .head .rating {
         font-size: 1.5rem;
       }
       .section .head .pull-left { float: none !important;}
       .section .head .pull-right { float: none !important;}
-      .project-detail .project-info .li {
-        /* display: block;  */
-      }
-        .project-detail .project-info .li:before {
-          display: none; } 
         }
   .project-detail .project-info.-important {
     font-weight: 500; }
@@ -700,7 +697,32 @@ body {
   .project-detail .project-related .tabs {
     overflow: auto;
     white-space: nowrap;
-    margin-bottom: 0px; } }
+    margin-bottom: 0px; }
+  .project-detail .project-info {
+    font-size: 13px;
+  }
+  .project-detail .project-info .li:before {
+    margin: 0px 6px !important;
+  }
+  .project-detail .separator::after {
+    height: 14px;
+    content: "";
+    display: inline-block;
+    width: 1px;
+    background: #dadcdf;
+    vertical-align: middle;
+    margin: 0px 8px;
+  }
+  .project-detail .content__mobile .project-info {
+    margin-bottom: 8px;
+  }
+  .project-detail  .content__mobile +  .project-info, .project-detail  .content__mobile {
+    font-weight: 500;
+  }
+  .project-detail  .content__mobile .project-info__price-suggest {
+    color: #1a73e8;
+  }
+  }
 .project-detail .section .head {
   margin-bottom: 15px; }
   .project-detail .section .head:after {

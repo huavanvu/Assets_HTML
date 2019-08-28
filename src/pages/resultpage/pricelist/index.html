@@ -72,7 +72,9 @@
                             <div class="header-navigation__items d-flex">
                                 <div class="header-navigation--item"><a class="hn-item--text" href="/ket-qua">T&#x1EA5;t c&#x1EA3;</a></div>
                                 <div class="header-navigation--item"><a class="hn-item--text" href="/ket-qua/thong-tin">Th&ocirc;ng tin</a></div>
-                                <div class="header-navigation--item"><a class="hn-item--text" href="/ban-do">B&#x1EA3;n &dstrok;&#x1ED3;</a></div>
+                                <div id="header-navigation--item__dynamic header-navigation--item">
+                                    <a class="hn-item--text" href="/ket-qua/bang-gia"></a>
+                                </div>
                                 <div class="header-navigation--item is-actived"><a class="hn-item--text" href="/ket-qua/bang-gia">B&#x1EA3;ng gi&aacute;</a></div>
                                 <div class="header-navigation--item dropdown">
                                     <div class="hn-item--text dropdown-toggle"  id="navbarDropdown" data-toggle="dropdown">Thêm <span class="fa icon"></span></div>
@@ -146,22 +148,24 @@
                                             <div class="row ">
                                             <div class="col-3 col-md-1 pr-0">
                                                 <div class="result-item__price__avatar text-center">
-                                                    <img class="rounded-circle w-75 border" src="https://dongphucocean.vn/wp-content/uploads/2018/12/logo-dong-phuc-ocean.jpg" alt="">
+                                                    <img class="rounded-circle w-100 border" src="https://dongphucocean.vn/wp-content/uploads/2018/12/logo-dong-phuc-ocean.jpg" alt="">
                                                 </div>
                                                 </div>
                                                 <div class="col-9 col-md-10">
-                                                <div class="price-header__info-name  d-block d-md-inline-block">
-                                                    Asset data team
-                                                </div>
-                                                <div class="price-header__info-rating d-md-inline-block">
-                                                    [Chuyên gia 4,5 + <i class="star-icon active far fas fa-star"></i>]
-                                                </div>
-                                                <div class="price-header__info-category">
-                                                    đã đang một bài viết trong<a class="result-item__category " href="/ket-qua/bang-gia"> Dự án chung cư </a>
-                                                </div>
-                                                <div class="price-header__resource-info__post-time pt-1">
-                                                    20 ngày trước
-                                                </div>
+                                                  <div class="price-header__container">
+                                                      <div class="price-header__info-name  d-block d-md-inline-block">
+                                                          Asset data team
+                                                      </div>
+                                                      <div class="price-header__info-rating d-md-inline-block">
+                                                          [Chuyên gia 4,5 + <i class="star-icon active far fas fa-star"></i>]
+                                                      </div>
+                                                      <div class="price-header__info-category">
+                                                          đã đang một bài viết trong<a class="result-item__category " href="/ket-qua/bang-gia"> Dự án chung cư </a>
+                                                      </div>
+                                                      <div class="price-header__resource-info__post-time pt-1">
+                                                          20 ngày trước
+                                                      </div>
+                                                  </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -193,7 +197,7 @@
                                                             7112321-15 Thi Sach, P Dakao, Quan 1, Ho Chi Minh
                                                         </div>
                                                         <div class="price-container__content-info_status mb-1">
-                                                            <span class="separator color-3636 fw-5">Sản phẩm của</span> <span class="separator"> <a  href="/#" style="color: #3b63a1;">Novaland</a> </span> <span class="color-3636 fw-5"> Bàn giao T2.2022</span> 
+                                                            <span class="separator color-3636 fw-5">Sản phẩm của</span> <span class="separator"> <a  href="/#" class="company">Novaland</a> </span> <span class="color-3636 fw-5"> Bàn giao T2.2022</span> 
                                                         </div>
                                                         <div class="price-container__content-info_vendor color-3636 mb-1 fw-5">
                                                             Đang làm móng   | Giấy phép xây dựng
@@ -202,11 +206,13 @@
                                                             <span class="separator"><strong class="color-3636 fw-5">24.567m</strong> <sup>2</sup></span>
                                                             <span class="separator"> 2 Blocks</span>
                                                             <span class="separator"> <strong class="color-3636 fw-5">24.567<sup>2</sup> </strong></span>
-                                                            <span class="separator"> <strong class="color-3636 fw-5">-- SH  </strong></span>
+                                                            <span> <strong class="color-3636 fw-5">-- SH  </strong></span>
+                                                            <div></div>
                                                             <span class="separator"><strong class="color-3636 fw-5">120 OFT</strong> </span>
                                                             <span class="separator"><strong class="color-3636 fw-5">8.467m <sup>2</sup></strong> </span>
                                                             <span class="separator"> <strong class="color-3636 fw-5">TMDV</strong>  </span>
-                                                            <span class="separator"><strong class="color-3636 fw-5"> 1.7 tỷ/ 60,8 m </strong> <sup>2</sup> </span>
+                                                            <span><strong class="color-3636 fw-5"> 1.7 tỷ/ 60,8 m </strong> <sup>2</sup> </span>
+                                                            <div></div>
                                                             <span class="separator"> trả trước:  <strong class="color-3636 fw-5">200 triệu </strong> </span>
                                                             <span class="separator"> Thanh toán: <strong class="color-3636 fw-5">22,3 triệu/tháng</strong> </span>
                                                         </div>
@@ -268,22 +274,24 @@
                                                 <div class="row ">
                                                 <div class="col-3 col-md-1 pr-0">
                                                     <div class="result-item__price__avatar text-center">
-                                                        <img class="rounded-circle w-75 border" src="https://dongphucocean.vn/wp-content/uploads/2018/12/logo-dong-phuc-ocean.jpg" alt="">
+                                                        <img class="rounded-circle w-100 border" src="https://dongphucocean.vn/wp-content/uploads/2018/12/logo-dong-phuc-ocean.jpg" alt="">
                                                     </div>
                                                     </div>
                                                     <div class="col-9 col-md-10">
-                                                    <div class="price-header__info-name  d-block d-md-inline-block">
-                                                        Asset data team
-                                                    </div>
-                                                    <div class="price-header__info-rating d-md-inline-block">
-                                                        [Chuyên gia 4,5 + <i class="star-icon active far fas fa-star"></i>]
-                                                    </div>
-                                                    <div class="price-header__info-category">
-                                                        đã đang một bài viết trong<a class="result-item__category" href="/ket-qua/tai-nguyen"> Nhà riêng </a> cùng với <a class="result-item__category" href="/ket-qua/danh-ba"> Homekeys 97891 </a> cập nhập trạng thái <span class="color-red f-18 fw-5"> Bán </span>
-                                                    </div>
-                                                    <div class="price-header__resource-info__post-time pt-1">
-                                                        20 ngày trước
-                                                    </div>
+                                                        <div class="price-header__container">
+                                                          <div class="price-header__info-name  d-block d-md-inline-block">
+                                                              Asset data team
+                                                          </div>
+                                                          <div class="price-header__info-rating d-md-inline-block">
+                                                              [Chuyên gia 4,5 + <i class="star-icon active far fas fa-star"></i>]
+                                                          </div>
+                                                          <div class="price-header__info-category">
+                                                              đã đang một bài viết trong<a class="result-item__category" href="/ket-qua/tai-nguyen"> Nhà riêng </a> cùng với <a class="result-item__category" href="/ket-qua/danh-ba"> Homekeys 97891 </a> cập nhập trạng thái <span class="color-red  fw-5"> Bán </span>
+                                                          </div>
+                                                          <div class="price-header__resource-info__post-time pt-1">
+                                                              20 ngày trước
+                                                          </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -309,7 +317,9 @@
                                                                             <img src="../../assets/img/baseline-map-24px.svg" alt="">
                                                                         </button>
                                                                     </div>
-                                                                <span class="separator">2,66 tỷ </span><span class=" separator color-blue"> 60,78 150,0m<sup>2</sup> sàn </span>
+                                                                    <div>
+                                                                        <span class="separator">2,66 tỷ </span> <span class=" separator color-blue"> 60,78m<sup>2</sup> </span>  <span class=" separator color-blue"> 150,0m<sup>2</sup> sàn  <span> 
+                                                                    </div>
                                                             </div>
                                                             <div class="price-container__content-info_address mb-1">
                                                                 7112321-15 Thi Sach, P Dakao, Quan 1, Ho Chi Minh
@@ -318,34 +328,18 @@
                                                                 <span class=" color-3636 fw-5">Nhà xây dựng  |  Bàn giao T2.2022  |  Đã hoàn công   |  Sổ hồng </span> 
                                                             </div>
                                                             <div class="price-container__content-info_others mb-1">
+                                                                <span> <strong class="color-3636 fw-5">47,2 triệu/m<sup>2</sup> </strong></span>
+                                                                <div></div>
                                                                 <span class="color-red"> <i class="fas fa-circle"></i> Bán </span>
                                                                 <span class="separator pl-2"> Avalue: <strong class="color-3636 fw-5"> 2,65 tỷ bán </strong></span>
-                                                                <span class="separator"> Arent: <strong class="color-3636 fw-5"> 7,5 triêu/tháng </strong></span>
-                                                                <span class="separator"> <strong class="color-3636 fw-5">47,2 triệu/m<sup>2</sup> </strong></span>
+                                                                <span> Arent: <strong class="color-3636 fw-5"> 7,5 triêu/tháng </strong></span>
+                                                                <div></div>
                                                                 <span class="separator"> Trả trước: <strong class="color-3636 fw-5"> 700 triệu </strong></span>
                                                                 <span> Thanh toán: <strong class="color-3636 fw-5"> 13,2 triệu/tháng </strong></span>
                                                                 <div class="pt-3">
                                                                     <span class="separator">Hẻm xe hơi</span><span class="separator">Đường vào 4.5m (LG 5,0m)</span>
                                                                 </div>
                                                             </div>
-                                                            <div class="row">
-                                                                    <div class="col-12">
-                                                                        <div class="price-container__utilities mt-2 d-flex justify-content-between">
-                                                                                <span>
-                                                                                    <img src="../../assets/img/cauthang.svg" alt=""> 3 tầng
-                                                                                </span>
-                                                                                <span>
-                                                                                    <img src="../../assets/img/icons/bx-bed.svg" alt=""> 2
-                                                                                </span>
-                                                                                <span>
-                                                                                    <img src="../../assets/img/icons/bx-bath.svg" alt=""> 2
-                                                                                </span>
-                                                                                <span>
-                                                                                    <img src="../../assets/img/icons/location.svg" alt=""> Đông Nam
-                                                                                </span>
-                                                                            </div>
-                                                                    </div>
-                                                                </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-12 col-md-2 order-1 d-none d-md-block order-md-3 pt-2 pt-md-0">
@@ -369,6 +363,24 @@
                                                 </div>
                                             </div>
                                             <div class="col-12 result-item__footer mt-3 mt-md-0 ">
+                                                <div class="row">
+                                                    <div class="col-9 offset-3 mb-2">
+                                                        <div class="price-container__utilities mt-2 d-flex justify-content-between">
+                                                            <span>
+                                                                <img src="../../assets/img/cauthang.svg" alt=""> 3 tầng
+                                                            </span>
+                                                            <span>
+                                                                <img src="../../assets/img/icons/bx-bed.svg" alt=""> 2
+                                                            </span>
+                                                            <span>
+                                                                <img src="../../assets/img/icons/bx-bath.svg" alt=""> 2
+                                                            </span>
+                                                            <span>
+                                                                <img src="../../assets/img/icons/location.svg" alt=""> Đông Nam
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                                 <div class="row">
                                                     <div class="col-12 d-flex justify-content-end">
                                                         <div class="item-footer__social">
@@ -403,22 +415,24 @@
                                                 <div class="row ">
                                                 <div class="col-3 col-md-1 pr-0">
                                                     <div class="result-item__price__avatar text-center">
-                                                        <img class="rounded-circle w-75 border" src="https://dongphucocean.vn/wp-content/uploads/2018/12/logo-dong-phuc-ocean.jpg" alt="">
+                                                        <img class="rounded-circle w-100 border" src="https://dongphucocean.vn/wp-content/uploads/2018/12/logo-dong-phuc-ocean.jpg" alt="">
                                                     </div>
                                                     </div>
                                                     <div class="col-9 col-md-10">
-                                                    <div class="price-header__info-name  d-block d-md-inline-block">
-                                                        Asset data team
-                                                    </div>
-                                                    <div class="price-header__info-rating d-md-inline-block">
-                                                        [Chuyên gia 4,5 + <i class="star-icon active far fas fa-star"></i>]
-                                                    </div>
-                                                    <div class="price-header__info-category">
-                                                        đã đang một bài viết trong<a class="result-item__category" href="/ket-qua/tai-nguyen"> Căn hộ chung cư </a>
-                                                    </div>
-                                                    <div class="price-header__resource-info__post-time pt-1">
-                                                        20 ngày trước
-                                                    </div>
+                                                        <div class="price-header__container">
+                                                          <div class="price-header__info-name  d-block d-md-inline-block">
+                                                              Asset data team
+                                                          </div>
+                                                          <div class="price-header__info-rating d-md-inline-block">
+                                                              [Chuyên gia 4,5 + <i class="star-icon active far fas fa-star"></i>]
+                                                          </div>
+                                                          <div class="price-header__info-category">
+                                                              đã đang một bài viết trong<a class="result-item__category" href="/ket-qua/tai-nguyen"> Căn hộ chung cư </a>
+                                                          </div>
+                                                          <div class="price-header__resource-info__post-time pt-1">
+                                                              20 ngày trước
+                                                          </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -444,13 +458,15 @@
                                                                             <img src="../../assets/img/baseline-map-24px.svg" alt="">
                                                                         </button>
                                                                     </div>
-                                                                <span class="separator">2,66 tỷ </span><span class=" separator color-blue"> 60,78 150,0m<sup>2</sup> sàn </span>
+                                                                    <div>
+                                                                        <span class="separator">2,66 tỷ </span> <span class=" separator color-blue"> 60,78m<sup>2</sup> </span>  <span class=" separator color-blue"> 150,0m<sup>2</sup> sàn  <span> 
+                                                                    </div>
                                                             </div>
                                                             <div class="price-container__content-info_address mb-1">
                                                                 7112321-15 Thi Sach, P Dakao, Quan 1, Ho Chi Minh
                                                             </div>
                                                             <div class="price-container__content-info_status mb-1">
-                                                                    <span class="separator color-3636 fw-5">Sản phẩm của</span> <span class="separator"> <a href="/#" style="color: #3b63a1;">Novaland</a> </span> <span class="color-3636 fw-5"> Bàn giao T2.2022</span> 
+                                                                    <span class="separator color-3636 fw-5">Sản phẩm của</span> <span class="separator"> <a href="/#" class="company">Novaland</a> </span> <span class="color-3636 fw-5"> Bàn giao T2.2022</span> 
                                                             </div>
                                                             <div class="price-container__content-info_status mb-1">
                                                                 <span class=" color-3636 fw-5">Đang làm móng  |  Giấy phép xây dựng  |  Đất ở </span> 
@@ -463,24 +479,6 @@
                                                                     <span class="separator">Căn góc</span><span class="separator">Đường vào 4.5m (LG 5,0m)</span>
                                                                 </div>
                                                             </div>
-                                                            <div class="row">
-                                                                    <div class="col-12">
-                                                                        <div class="price-container__utilities mt-2 d-flex justify-content-between">
-                                                                                <span>
-                                                                                    <img src="../../assets/img/cauthang.svg" alt=""> 3 tầng
-                                                                                </span>
-                                                                                <span>
-                                                                                    <img src="../../assets/img/icons/bx-bed.svg" alt=""> 2
-                                                                                </span>
-                                                                                <span>
-                                                                                    <img src="../../assets/img/icons/bx-bath.svg" alt=""> 2
-                                                                                </span>
-                                                                                <span>
-                                                                                    <img src="../../assets/img/icons/location.svg" alt=""> Đông Nam
-                                                                                </span>
-                                                                            </div>
-                                                                    </div>
-                                                                </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-12 col-md-2 order-1 d-none d-md-block order-md-3 pt-2 pt-md-0">
@@ -504,6 +502,24 @@
                                                 </div>
                                             </div>
                                             <div class="col-12 result-item__footer mt-3 mt-md-0 ">
+                                                <div class="row">
+                                                    <div class="col-9 offset-3">
+                                                        <div class="price-container__utilities mt-2 d-flex justify-content-between mb-3">
+                                                            <span>
+                                                                <img src="../../assets/img/cauthang.svg" alt=""> 3 tầng
+                                                            </span>
+                                                            <span>
+                                                                <img src="../../assets/img/icons/bx-bed.svg" alt=""> 2
+                                                            </span>
+                                                            <span>
+                                                                <img src="../../assets/img/icons/bx-bath.svg" alt=""> 2
+                                                            </span>
+                                                            <span>
+                                                                <img src="../../assets/img/icons/location.svg" alt=""> Đông Nam
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                                 <div class="row">
                                                     <div class="col-12 d-flex justify-content-end">
                                                         <div class="item-footer__social">
@@ -538,22 +554,24 @@
                                             <div class="row ">
                                             <div class="col-3 col-md-1 pr-0">
                                                 <div class="result-item__price__avatar text-center">
-                                                    <img class="rounded-circle w-75 border" src="https://dongphucocean.vn/wp-content/uploads/2018/12/logo-dong-phuc-ocean.jpg" alt="">
+                                                    <img class="rounded-circle w-100 border" src="https://dongphucocean.vn/wp-content/uploads/2018/12/logo-dong-phuc-ocean.jpg" alt="">
                                                 </div>
                                                 </div>
                                                 <div class="col-9 col-md-10">
-                                                <div class="price-header__info-name  d-block d-md-inline-block">
-                                                    Asset data team
-                                                </div>
-                                                <div class="price-header__info-rating d-md-inline-block">
-                                                    [Chuyên gia 4,5 + <i class="star-icon active far fas fa-star"></i>]
-                                                </div>
-                                                <div class="price-header__info-category">
-                                                    đã đang một bài viết trong<a class="result-item__category " href="/ket-qua/tai-nguyen"> Biệt thự nghỉ dưỡng </a>
-                                                </div>
-                                                <div class="price-header__resource-info__post-time pt-1">
-                                                    20 ngày trước
-                                                </div>
+                                                    <div class="price-header__container">
+                                                      <div class="price-header__info-name  d-block d-md-inline-block">
+                                                          Asset data team
+                                                      </div>
+                                                      <div class="price-header__info-rating d-md-inline-block">
+                                                          [Chuyên gia 4,5 + <i class="star-icon active far fas fa-star"></i>]
+                                                      </div>
+                                                      <div class="price-header__info-category">
+                                                          đã đang một bài viết trong<a class="result-item__category " href="/ket-qua/tai-nguyen"> Biệt thự nghỉ dưỡng </a>
+                                                      </div>
+                                                      <div class="price-header__resource-info__post-time pt-1">
+                                                          20 ngày trước
+                                                      </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -579,7 +597,9 @@
                                                                         <img src="../../assets/img/baseline-map-24px.svg" alt="">
                                                                     </button>
                                                                 </div>
-                                                            <span class="separator">2,66 tỷ</span> <span class="separator color-blue"> 60,78 150,0m<sup>2</sup> sàn </span>
+                                                                <div>
+                                                                    <span class="separator">2,66 tỷ </span> <span class=" separator color-blue"> 60,78m<sup>2</sup> </span>  <span class=" separator color-blue"> 150,0m<sup>2</sup> sàn  <span> 
+                                                                </div>
                                                         </div>
                                                         <div class="price-container__content-info_address mb-1">
                                                             7112321-15 Thi Sach, P Dakao, Quan 1, Ho Chi Minh
@@ -588,34 +608,18 @@
                                                             <span class=" color-3636 fw-5">Đang làm móng  | Giấy phép xây dựng | Đất ở </span> 
                                                         </div>
                                                         <div class="price-container__content-info_others mb-1">
+                                                            <span> <strong class="color-3636 fw-5">47,2 triệu/m<sup>2</sup> </strong></span>
+                                                            <div></div>
                                                             <span class="color-red"> <i class="fas fa-circle"></i> Bán </span>
                                                             <span class="separator pl-2"> Avalue: <strong class="color-3636 fw-5"> 2,65 tỷ bán </strong></span>
-                                                            <span class="separator"> Arent: <strong class="color-3636 fw-5"> 7,5 triêu/tháng </strong></span>
-                                                            <span class="separator"> <strong class="color-3636 fw-5">47,2 triệu/m<sup>2</sup> </strong></span>
+                                                            <span> Arent: <strong class="color-3636 fw-5"> 7,5 triêu/tháng </strong></span>
+                                                            <div></div>
                                                             <span class="separator"> Trả trước: <strong class="color-3636 fw-5"> 700 triệu </strong></span>
                                                             <span > Thanh toán: <strong class="color-3636 fw-5"> 13,2 triệu/tháng </strong></span>
                                                             <div class="pt-3">
                                                                 <span class="separator">Căn góc</span><span class="separator">Đường vào 4.5m (LG 5,0m)</span>
                                                             </div>
                                                         </div>
-                                                        <div class="row">
-                                                                <div class="col-12">
-                                                                    <div class="price-container__utilities mt-2 d-flex justify-content-between">
-                                                                            <span>
-                                                                                <img src="../../assets/img/cauthang.svg" alt=""> 3 tầng
-                                                                            </span>
-                                                                            <span>
-                                                                                <img src="../../assets/img/icons/bx-bed.svg" alt=""> 2
-                                                                            </span>
-                                                                            <span>
-                                                                                <img src="../../assets/img/icons/bx-bath.svg" alt=""> 2
-                                                                            </span>
-                                                                            <span>
-                                                                                <img src="../../assets/img/icons/location.svg" alt=""> Đông Nam
-                                                                            </span>
-                                                                        </div>
-                                                                </div>
-                                                            </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-12 col-md-2 order-1 d-none d-md-block order-md-3 pt-2 pt-md-0">
@@ -639,6 +643,24 @@
                                             </div>
                                         </div>
                                         <div class="col-12 result-item__footer mt-3 mt-md-0 ">
+                                            <div class="row">
+                                                <div class="col-9 offset-3">
+                                                    <div class="price-container__utilities mt-2 d-flex justify-content-between mb-3">
+                                                        <span>
+                                                            <img src="../../assets/img/cauthang.svg" alt=""> 3 tầng
+                                                        </span>
+                                                        <span>
+                                                            <img src="../../assets/img/icons/bx-bed.svg" alt=""> 2
+                                                        </span>
+                                                        <span>
+                                                            <img src="../../assets/img/icons/bx-bath.svg" alt=""> 2
+                                                        </span>
+                                                        <span>
+                                                            <img src="../../assets/img/icons/location.svg" alt=""> Đông Nam
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <div class="row">
                                                 <div class="col-12 d-flex justify-content-end">
                                                     <div class="item-footer__social">
@@ -673,22 +695,24 @@
                                             <div class="row ">
                                             <div class="col-3 col-md-1 pr-0">
                                                 <div class="result-item__price__avatar text-center">
-                                                    <img class="rounded-circle w-75 border" src="https://dongphucocean.vn/wp-content/uploads/2018/12/logo-dong-phuc-ocean.jpg" alt="">
+                                                    <img class="rounded-circle w-100 border" src="https://dongphucocean.vn/wp-content/uploads/2018/12/logo-dong-phuc-ocean.jpg" alt="">
                                                 </div>
                                                 </div>
                                                 <div class="col-9 col-md-10">
-                                                <div class="price-header__info-name  d-block d-md-inline-block">
-                                                    Asset data team
-                                                </div>
-                                                <div class="price-header__info-rating d-md-inline-block">
-                                                    [Chuyên gia 4,5 + <i class="star-icon active far fas fa-star"></i>]
-                                                </div>
-                                                <div class="price-header__info-category">
-                                                    đã đang một bài viết trong<a class="result-item__category " href="/ket-qua/bang-gia"> Đất</a>
-                                                </div>
-                                                <div class="price-header__resource-info__post-time pt-1">
-                                                    20 ngày trước
-                                                </div>
+                                                    <div class="price-header__container">
+                                                      <div class="price-header__info-name  d-block d-md-inline-block">
+                                                          Asset data team
+                                                      </div>
+                                                      <div class="price-header__info-rating d-md-inline-block">
+                                                          [Chuyên gia 4,5 + <i class="star-icon active far fas fa-star"></i>]
+                                                      </div>
+                                                      <div class="price-header__info-category">
+                                                          đã đang một bài viết trong<a class="result-item__category " href="/ket-qua/bang-gia"> Đất</a>
+                                                      </div>
+                                                      <div class="price-header__resource-info__post-time pt-1">
+                                                          20 ngày trước
+                                                      </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -714,7 +738,9 @@
                                                                         <img src="../../assets/img/baseline-map-24px.svg" alt="">
                                                                     </button>
                                                                 </div>
-                                                            <span class="separator"> 2,66 tỷ </span> <span class=" separator color-blue"> 60,78 150,0m<sup>2</sup> sàn </span>
+                                                                <div>
+                                                                    <span class="separator">2,66 tỷ </span> <span class=" separator color-blue"> 60,78m<sup>2</sup> </span>  <span class=" separator color-blue"> 150,0m<sup>2</sup> sàn  <span> 
+                                                                </div>
                                                         </div>
                                                         <div class="price-container__content-info_address mb-1">
                                                             7112321-15 Thi Sach, P Dakao, Quan 1, Ho Chi Minh
@@ -731,24 +757,6 @@
                                                                 <span class="separator">Đất mặt tiền </span><span class="separator">Đường vào 6,0m ( Lộ giới 7,0m)</span>
                                                             </div>
                                                         </div>
-                                                        <div class="row">
-                                                                <div class="col-12">
-                                                                    <div class="price-container__utilities mt-2 d-flex justify-content-between">
-                                                                            <span>
-                                                                                <img src="../../assets/img/cauthang.svg" alt=""> 3 tầng
-                                                                            </span>
-                                                                            <span>
-                                                                                <img src="../../assets/img/icons/bx-bed.svg" alt=""> 2
-                                                                            </span>
-                                                                            <span>
-                                                                                <img src="../../assets/img/icons/bx-bath.svg" alt=""> 2
-                                                                            </span>
-                                                                            <span>
-                                                                                <img src="../../assets/img/icons/location.svg" alt=""> Đông Nam
-                                                                            </span>
-                                                                        </div>
-                                                                </div>
-                                                            </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-12 col-md-2 order-1 d-none d-md-block order-md-3 pt-2 pt-md-0">
@@ -772,6 +780,24 @@
                                             </div>
                                         </div>
                                         <div class="col-12 result-item__footer mt-3 mt-md-0 ">
+                                            <div class="row">
+                                                <div class="col-9 offset-3">
+                                                    <div class="price-container__utilities mt-2 d-flex justify-content-between mb-3">
+                                                        <span>
+                                                            <img src="../../assets/img/cauthang.svg" alt=""> 3 tầng
+                                                        </span>
+                                                        <span>
+                                                            <img src="../../assets/img/icons/bx-bed.svg" alt=""> 2
+                                                        </span>
+                                                        <span>
+                                                            <img src="../../assets/img/icons/bx-bath.svg" alt=""> 2
+                                                        </span>
+                                                        <span>
+                                                            <img src="../../assets/img/icons/location.svg" alt=""> Đông Nam
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <div class="row">
                                                 <div class="col-12 d-flex justify-content-end">
                                                     <div class="item-footer__social">
@@ -806,22 +832,24 @@
                                             <div class="row ">
                                             <div class="col-3 col-md-1 pr-0">
                                                 <div class="result-item__price__avatar text-center">
-                                                    <img class="rounded-circle w-75 border" src="https://dongphucocean.vn/wp-content/uploads/2018/12/logo-dong-phuc-ocean.jpg" alt="">
+                                                    <img class="rounded-circle w-100 border" src="https://dongphucocean.vn/wp-content/uploads/2018/12/logo-dong-phuc-ocean.jpg" alt="">
                                                 </div>
                                                 </div>
                                                 <div class="col-9 col-md-10">
-                                                <div class="price-header__info-name  d-block d-md-inline-block">
-                                                    Asset data team
-                                                </div>
-                                                <div class="price-header__info-rating d-md-inline-block">
-                                                    [Chuyên gia 4,5 + <i class="star-icon active far fas fa-star"></i>]
-                                                </div>
-                                                <div class="price-header__info-category">
-                                                    đã đang một bài viết trong<a class="result-item__category " href="/ket-qua/bang-gia"> Dự án nghỉ dưỡng </a>
-                                                </div>
-                                                <div class="price-header__resource-info__post-time pt-1">
-                                                    20 ngày trước
-                                                </div>
+                                                  <div class="price-header__container">
+                                                    <div class="price-header__info-name  d-block d-md-inline-block">
+                                                        Asset data team
+                                                    </div>
+                                                    <div class="price-header__info-rating d-md-inline-block">
+                                                        [Chuyên gia 4,5 + <i class="star-icon active far fas fa-star"></i>]
+                                                    </div>
+                                                    <div class="price-header__info-category">
+                                                        đã đang một bài viết trong<a class="result-item__category " href="/ket-qua/bang-gia"> Dự án nghỉ dưỡng </a>
+                                                    </div>
+                                                    <div class="price-header__resource-info__post-time pt-1">
+                                                        20 ngày trước
+                                                    </div>
+                                                  </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -853,7 +881,7 @@
                                                             KCN Nam Phan, phường Phú Hữu, Quận 9
                                                         </div>
                                                         <div class="price-container__content-info_status mb-1">
-                                                            <span class="separator color-3636 fw-5">Sản phẩm của</span> <span class="separator"> <a  href="/#" style="color: #3b63a1;">Nam Long</a> </span> <span class="color-3636 fw-5"> Bàn giao T2.2022</span> 
+                                                            <span class="separator color-3636 fw-5">Sản phẩm của</span> <span class="separator"> <a  href="/#" class="company">Nam Long</a> </span> <span class="color-3636 fw-5"> Bàn giao T2.2022</span> 
                                                         </div>
                                                         <div class="price-container__content-info_vendor color-3636 mb-1 fw-5">
                                                             Đã bàn giao   | Hợp đồng mua bán
@@ -861,13 +889,17 @@
                                                         <div class="price-container__content-info_others mb-1">
                                                             <span class="separator"><strong class="color-3636 fw-5">24.567m</strong> <sup>2</sup></span>
                                                             <span class="separator"> <strong class="color-3636 fw-5">40 biệt thự</strong> </span>
-                                                            <span class="separator"> <strong class="color-3636 fw-5">120 nhà riêng</sup> </strong></span>
+                                                            <span> <strong class="color-3636 fw-5">120 nhà riêng</sup> </strong></span>
+                                                            <div></div>
                                                             <span class="separator"><strong class="color-3636 fw-5">- - Nhà phố liền kề</strong> </span>
-                                                            <span class="separator"><strong class="color-3636 fw-5">- - Nền đất <sup>2</sup></strong> </span>
+                                                            <span><strong class="color-3636 fw-5">- - Nền đất <sup>2</sup></strong> </span>
+                                                            <div></div>
                                                             <span class="separator"> <strong class="color-3636 fw-5">TMDV</strong>  </span>
-                                                            <span class="separator"><strong class="color-3636 fw-5"> 1.7 tỷ/ 60,8 m </strong> <sup>2</sup> </span>
-                                                            <span class="separator"> trả trước:  <strong class="color-3636 fw-5">200 triệu </strong> </span>
-                                                            <span class="separator"> Thanh toán: <strong class="color-3636 fw-5">22,3 triệu/tháng</strong> </span>
+                                                            <span><strong class="color-3636 fw-5"> 1.7 tỷ/ 60,8 m </strong> <sup>2</sup> </span>
+                                                            <div>
+                                                                <span class="separator"> trả trước:  <strong class="color-3636 fw-5">200 triệu </strong> </span>
+                                                                <span class="separator"> Thanh toán: <strong class="color-3636 fw-5">22,3 triệu/tháng</strong> </span>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -926,22 +958,24 @@
                                                 <div class="row ">
                                                 <div class="col-3 col-md-1 pr-0">
                                                     <div class="result-item__price__avatar text-center">
-                                                        <img class="rounded-circle w-75 border" src="https://dongphucocean.vn/wp-content/uploads/2018/12/logo-dong-phuc-ocean.jpg" alt="">
+                                                        <img class="rounded-circle w-100 border" src="https://dongphucocean.vn/wp-content/uploads/2018/12/logo-dong-phuc-ocean.jpg" alt="">
                                                     </div>
                                                     </div>
                                                     <div class="col-9 col-md-10">
-                                                    <div class="price-header__info-name  d-block d-md-inline-block">
-                                                        Asset data team
-                                                    </div>
-                                                    <div class="price-header__info-rating d-md-inline-block">
-                                                        [Chuyên gia 4,5 + <i class="star-icon active far fas fa-star"></i>]
-                                                    </div>
-                                                    <div class="price-header__info-category">
-                                                        đã đang một bài viết trong<a class="result-item__category " href="/ket-qua/bang-gia"> Dự án đô thị </a>
-                                                    </div>
-                                                    <div class="price-header__resource-info__post-time pt-1">
-                                                        20 ngày trước
-                                                    </div>
+                                                      <div class="price-header__container">
+                                                        <div class="price-header__info-name  d-block d-md-inline-block">
+                                                            Asset data team
+                                                        </div>
+                                                        <div class="price-header__info-rating d-md-inline-block">
+                                                            [Chuyên gia 4,5 + <i class="star-icon active far fas fa-star"></i>]
+                                                        </div>
+                                                        <div class="price-header__info-category">
+                                                            đã đang một bài viết trong<a class="result-item__category " href="/ket-qua/bang-gia"> Dự án đô thị </a>
+                                                        </div>
+                                                        <div class="price-header__resource-info__post-time pt-1">
+                                                            20 ngày trước
+                                                        </div>
+                                                      </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -973,7 +1007,7 @@
                                                                 KCN Nam Phan, phường Phú Hữu, Quận 9
                                                             </div>
                                                             <div class="price-container__content-info_status mb-1">
-                                                                <span class="separator color-3636 fw-5">Sản phẩm của</span> <span class="separator"> <a  href="/#" style="color: #3b63a1;">Nam Long</a> </span> <span class="color-3636 fw-5"> Bàn giao T2.2022</span> 
+                                                                <span class="separator color-3636 fw-5">Sản phẩm của</span> <span class="separator"> <a  href="/#" class="company">Nam Long</a> </span> <span class="color-3636 fw-5"> Bàn giao T2.2022</span> 
                                                             </div>
                                                             <div class="price-container__content-info_vendor color-3636 mb-1 fw-5">
                                                                 Đã bàn giao   | Hợp đồng mua bán
@@ -981,10 +1015,13 @@
                                                             <div class="price-container__content-info_others mb-1">
                                                                 <span class="separator"><strong class="color-3636 fw-5">24.567m</strong> <sup>2</sup></span>
                                                                 <span class="separator"> <strong class="color-3636 fw-5">40 biệt thự</strong> </span>
-                                                                <span class="separator"> <strong class="color-3636 fw-5">120 nhà riêng</sup> </strong></span>
+                                                                <span> <strong class="color-3636 fw-5">120 nhà riêng</sup> </strong></span>
+                                                                <div></div>
                                                                 <span class="separator"><strong class="color-3636 fw-5">- - Nhà phố liền kề</strong> </span>
-                                                                <span class="separator"><strong class="color-3636 fw-5">- - Nền đất <sup>2</sup></strong> </span>
-                                                                <span class="separator"> <strong class="color-3636 fw-5">7,540 tỷ/căn biệt thự (45 triệu/m<sup>2</sup></strong>  </span>
+                                                                <span><strong class="color-3636 fw-5">- - Nền đất <sup>2</sup></strong> </span>
+                                                                <div></div>
+                                                                <span> <strong class="color-3636 fw-5">7,540 tỷ/căn biệt thự (45 triệu/m<sup>2</sup></strong>  </span>
+                                                                <div></div>
                                                                 <span class="separator"> trả trước:  <strong class="color-3636 fw-5">200 2,2 tỷ </strong> </span>
                                                                 <span class="separator"> Thanh toán: <strong class="color-3636 fw-5">22,3 triệu/tháng</strong> </span>
                                                             </div>
@@ -1045,22 +1082,24 @@
                                             <div class="row ">
                                             <div class="col-3 col-md-1 pr-0">
                                                 <div class="result-item__price__avatar text-center">
-                                                    <img class="rounded-circle w-75 border" src="https://dongphucocean.vn/wp-content/uploads/2018/12/logo-dong-phuc-ocean.jpg" alt="">
+                                                    <img class="rounded-circle w-100 border" src="https://dongphucocean.vn/wp-content/uploads/2018/12/logo-dong-phuc-ocean.jpg" alt="">
                                                 </div>
                                                 </div>
                                                 <div class="col-9 col-md-10">
-                                                <div class="price-header__info-name  d-block d-md-inline-block">
-                                                    Asset data team
-                                                </div>
-                                                <div class="price-header__info-rating d-md-inline-block">
-                                                    [Chuyên gia 4,5 + <i class="star-icon active far fas fa-star"></i>]
-                                                </div>
-                                                <div class="price-header__info-category">
-                                                    đã đang một bài viết trong<a class="result-item__category " href="/ket-qua/bang-gia"> Dự án phức hợp </a>
-                                                </div>
-                                                <div class="price-header__resource-info__post-time pt-1">
-                                                    20 ngày trước
-                                                </div>
+                                                  <div class="price-header__container">
+                                                    <div class="price-header__info-name  d-block d-md-inline-block">
+                                                        Asset data team
+                                                    </div>
+                                                    <div class="price-header__info-rating d-md-inline-block">
+                                                        [Chuyên gia 4,5 + <i class="star-icon active far fas fa-star"></i>]
+                                                    </div>
+                                                    <div class="price-header__info-category">
+                                                        đã đang một bài viết trong<a class="result-item__category " href="/ket-qua/bang-gia"> Dự án phức hợp </a>
+                                                    </div>
+                                                    <div class="price-header__resource-info__post-time pt-1">
+                                                        20 ngày trước
+                                                    </div>
+                                                  </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -1092,14 +1131,15 @@
                                                                 Phường Phú Hữu, Quận 9
                                                         </div>
                                                         <div class="price-container__content-info_status mb-1">
-                                                            <span class="separator color-3636 fw-5">Sản phẩm của</span> <span class="separator"> <a href="/#"  style="color: #3b63a1;">Nam Long</a> </span> <span class="color-3636 fw-5"> Bàn giao T2.2022</span> 
+                                                            <span class="separator color-3636 fw-5">Sản phẩm của</span> <span class="separator"> <a href="/#"  class="company">Nam Long</a> </span> <span class="color-3636 fw-5"> Bàn giao T2.2022</span> 
                                                         </div>
                                                         <div class="price-container__content-info_vendor color-3636 mb-1 fw-5">
                                                             Đang làm móng   | Hợp đồng mua bán
                                                         </div>
                                                         <div class="price-container__content-info_others mb-1">
                                                             <span class="separator"><strong class="color-3636 fw-5">24.567m</strong> <sup>2</sup></span>
-                                                            <span class="separator"> <strong class="color-3636 fw-5">2 dự án chung cư</sup> </strong></span>
+                                                            <span> <strong class="color-3636 fw-5">2 dự án chung cư</sup> </strong></span>
+                                                            <div></div>
                                                             <span class="separator"> <strong class="color-3636 fw-5">2 dự án đô thị </strong></span>
                                                             <span class="separator"> <strong class="color-3636 fw-5">- -Dự án nghỉ dưỡng</strong> </span>
                                                         </div>
