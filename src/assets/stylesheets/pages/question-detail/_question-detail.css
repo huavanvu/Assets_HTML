@@ -74,7 +74,7 @@
   transition: .2s;
 }
 .sub-comment-item {
-  left: 60px;
+  margin-left: 64px;
 }
 .question-detail__login {
   text-align: center;
