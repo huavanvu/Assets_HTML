@@ -84,6 +84,14 @@ nav a:hover {
   color: 1a73e8;
   font-weight: 500;
 }
+#price-list__filterBar {
+  position: relative;
+}
+#price-list__filterBar #filterBar {
+  position: sticky;
+  height: 48px;
+  padding-left: calc(115px + 1rem);
+}
 /* Responsive  */
 
 @media (min-width: 576px) { }
