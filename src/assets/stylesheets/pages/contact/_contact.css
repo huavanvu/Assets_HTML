@@ -30,6 +30,7 @@
     position: absolute;
     top: 0;
     display: block;
+    left: -15px;;
     width: 100%;
     content: "";
     height: 0;
@@ -97,7 +98,7 @@
     border-color: #CFCBC5;
 }
 .rp-search-result__items {
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 .contact-address__map img {
     object-fit: unset;
