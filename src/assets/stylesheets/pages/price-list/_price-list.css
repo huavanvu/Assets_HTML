@@ -114,7 +114,10 @@ nav a:hover {
   .price-container__content-info_address, .price-container__content-info_vendor, .price-container__content-info_others, .price-container__content-info_status{
     font-size: 13px;
   }
-
+  /* .price-container__header .price-header {
+    padding-left: 0px;
+  } */
+  
 }
 
 @media (max-width: 576px) {
