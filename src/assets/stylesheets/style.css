@@ -302,6 +302,43 @@ body {
     background: #3b63a1 !important;
     color: #fff; }
 @media (max-width: 768px) {
+  .modal-body .user--info .avatar {
+    width: 60px;
+    height: 60px;
+  }
+  .modal-body .user--info {
+    padding-left: 75px;
+  }
+  .modal-body .user--info .name, .modal-body .user--info .post-info, .modal-body .user--info .post-info .cat {
+    font-size: 13px;
+  }
+  .modal-body .user--info .name .rating-pos, .modal-body .user--info .name .rating-pos .rating, .modal-body .user--info .date {
+    font-size: 10px;
+  }
+  .modal-body .project-detail h2 {
+    font-size: 16px;
+  }
+  .modal-body .project-detail .article {
+    font-size: 13px;
+  }
+  .modal-body .list-check span.name {
+    font-size: 13px;
+  }
+  .modal-body .box-tt-chung .head-top {
+    font-size: 13px;
+  }
+  .modal-body .project-detail .table-ttpl-detail {
+    font-size: 13px;
+  }
+  .modal-body .mobile-show .rating.pull-left {
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+  }
+  #myModal .modal-body .list-check .check-action .name img {
+    margin: 0px 8.9px 0px 4px;
+    width: 17.4px;
+  }
   .box-comments .comment-content {
     display: -webkit-box;
   -webkit-line-clamp: 3;
@@ -544,7 +581,7 @@ body {
         width: 100%;
       }
       .project-detail .project-top .head .title {
-        font-size: 1rem;
+        font-size: 15px;
       }
       }
   .project-detail .project-top .info-price {
@@ -588,10 +625,14 @@ body {
             display: none; }
       .project-detail .project-top .sub {
         color: #3b63a1;
-        font-size: 15px; }
-        .project-detail .project-top .sub.location {
+        font-size: 15px;
+        font-weight: bold;
+      }
+      .project-detail .project-top .sub.location {
           color: #707070;
-          font-size: 13px; }
+          font-size: 13px; 
+        font-weight: normal;
+      }
       .project-detail .project-top .content {
         color: #363636;
         padding-bottom: 0px; }
@@ -627,10 +668,10 @@ body {
     }
     @media (max-width: 480px) {
       .project-detail .project-top .head .status, .project-detail .project-top .head .rating {
-        font-size: 1.5rem;
+        font-size: 15px;
       }
-      .section .head .pull-left { float: none !important;}
-      .section .head .pull-right { float: none !important;}
+      /* .section .head .pull-left { float: none !important;}
+      .section .head .pull-right { float: none !important;} */
         }
   .project-detail .project-info.-important {
     font-weight: 500; }
@@ -1075,6 +1116,11 @@ body {
   .modal-dialog {
     max-width: 90%;
     width: 100%; } }
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 90%;
+    width: 100%; } }
+
 @media (max-width: 768px) {
   .modal-body {
     padding: 10px 15px; } }
@@ -1185,6 +1231,10 @@ body {
 .modal-question__info-time-comment, .modal-question__info-id-comment {
   color: #707070;
   font-size: 12px;
+}
+#myModal .list-check .check-action .name img {
+  margin: 0px 8px 0px 16px;
+  width: 17.4px;
 }
 @media (max-width: 576px) {
   .modal-question__info-time-comment {
