@@ -140,6 +140,9 @@ nav a:hover {
   display: flex;
   align-items: center;
 }
+#price-list__filter-container .filters-project.show {
+  display: flex;
+}
 /* Responsive  */
 
 @media (min-width: 576px) { }
@@ -199,6 +202,12 @@ nav a:hover {
 @media (max-width: 992px) { 
   .price-header__container {
     margin-left: 15px;
+  }
+  #price-list__filter-container .filters-project.show {
+    overflow-x: auto;
+  }
+  #price-list__filter-container  .filter__content {
+    position: unset;
   }
 }
 
