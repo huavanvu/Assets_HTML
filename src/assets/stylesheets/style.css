@@ -74,6 +74,32 @@ body {
       .check-action .name * {
         padding: 0px 10px;
       }
+      .modal-body__top__description *  {
+        border-top: 0 !important;
+        font-family: Roboto;
+        font-size: 15px;
+        line-height: 1.33;
+      }
+      .table-borderless *{
+        padding: 6px 0px !important;
+      }
+      .table-borderless td{
+        padding-left: 70px;
+      }
+      .modal-body__top__container{
+        display: flex;
+
+      }
+      .modal-body__top__image{
+        width: 50%;
+        float: left;
+      }
+      .modal-body__top__image img{
+        width: 100%;
+      }
+      .modal-body__top__description{
+        width: 50%
+      }
   .check-action input:checked + .name:before {
     border-color: rgba(0, 0, 0, 0.1);
     background: #1a73e8;
