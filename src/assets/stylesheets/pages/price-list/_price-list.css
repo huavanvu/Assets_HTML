@@ -142,7 +142,7 @@ nav a:hover {
   width: auto !important;
 }
 #price-list__filter-container .filters-project-container .col5 .filter--text {
-  overflow: unset;
+  /* overflow: unset; */
 }
 #price-list__filter-container .rp-category__item:hover {
   background-color: transparent;

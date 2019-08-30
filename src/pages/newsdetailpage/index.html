@@ -23,7 +23,6 @@
       $(document).ready(function() {
         $("#newsDetailsModal").scroll(function() {
           var $height = $("#newsDetailsModal").scrollTop();
-          console.log($height);
           if($height > 1612) {
             $('#info-fix').addClass('hide');
           } else {
@@ -38,10 +37,10 @@
 <body>
     <section class="News-Detail-Page">
         <!-- Button to Open the Modal -->
-        <button class="btn btn-primary mt-3" data-toggle="modal" data-target="#newsDetailsModal">
+        <button class="btn btn-primary mt-3"  data-toggle="modal" data-target="#newsDetailsModal">
             Open modal
         </button>
-        <div class="modal news-details__modal" id="newsDetailsModal">
+        <div class="modal news-details__modal " id="newsDetailsModal" tabindex="-1" style="padding-left: 0px">
             <div class="ndt-modal__container">
                 <div class="modal-content">
                     <!-- Modal Header -->
@@ -51,10 +50,9 @@
                     </div>
                     <!-- Modal body -->
                     <div class="modal-body">
-                        
-                        <div class="modal-body__container container">
+                        <div class="modal-body__container position-relative">
                             <div class="news-details__content-top">
-                                <div class="news-details__header d-flex">
+                                <div class="news-details__header d-flex align-items-center">
                                     <div class="nd-header__logo">
                                         <img class="nd-header--logo" src="../../assets/img/avatar-user.png" />
                                     </div>
@@ -72,9 +70,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="nd-header__title-text">Vì sao hầu hết người đi mua nhà đều ưa chuộng những căn hộ đã hoàn
-                                    thiện, đủ tiện nghi và sẵn sàng vào ở? </div>
-                                <img class="edit-picture" src="../../assets/img/phong_detail.png" />
+                                <div class="nd-header__title-text mobile-show">Vì sao hầu hết người đi mua nhà đều ưa chuộng những căn hộ đã hoàn
+                                  thiện, đủ tiện nghi và sẵn sàng vào ở?
+                                </div>
+                                <img class="edit-picture w-100 " src="../../assets/img/phong_detail.png" />
+                                <div class="nd-header__title-text desktop-show">Vì sao hầu hết người đi mua nhà đều ưa chuộng những căn hộ đã hoàn
+                                  thiện, đủ tiện nghi và sẵn sàng vào ở?
+                                </div>
                                 <div class="nd-content__texts">
                                     <p class="text-1">
                                         Giảm áp lực căn hộ hình thành trong tương lai khác biệt quá lớn so với truyền thông,
@@ -116,10 +118,10 @@
                                         <div class="swiper-container">
                                             <div class="swiper-wrapper swiper-content">
                                                 <div class="swiper-slide">
-                                                    <img src="../../assets/img/toa_nha_2.png" />
+                                                    <img class="w-100" src="../../assets/img/toa_nha_2.png" />
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <img src="../../assets/img/phong_detail.png" />
+                                                    <img class="w-100" src="../../assets/img/phong_detail.png" />
                                                 </div>
                                             </div>
                                             <!-- Add Arrows -->
@@ -217,7 +219,7 @@
                                 </div>
                             </div>
                             <!----------- Content-bottom --------->
-                            <div class="divider-gray"></div>
+                            <div class="divider-blue"></div>
                             <div class="news-details__content-bottom">
                                 <div class="box-comments" style="padding-top: 20px;">
                                     <h2 class="title-main">Bình luận</h2>
@@ -447,7 +449,6 @@
             } else {
                 $(".info-fix").removeClass("nonfix");
             }
-          
         });
     </script>
 </body>

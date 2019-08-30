@@ -120,6 +120,9 @@ img,
 .w-auto {
   width: auto !important;
 }
+.divider-blue {
+  border-bottom: 1px solid #3b63a1;
+}
 /*# sourceMappingURL=index.css.map */
 
 
