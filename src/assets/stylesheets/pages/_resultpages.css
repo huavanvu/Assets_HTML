@@ -1,6 +1,7 @@
 /* RESULT PAGES STYLES */
 @import url(../_fonts.css);
 .section__result-pages {
+  overflow: hidden;
   position: relative; }
 
 /* Header top of result pages */

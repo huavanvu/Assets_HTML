@@ -143,6 +143,10 @@ nav a:hover {
 #price-list__filter-container .filters-project.show {
   display: flex;
 }
+#price-list__filter-container .nav.rp-category__container {
+  overflow-y: hidden;
+}
+
 /* Responsive  */
 
 @media (min-width: 576px) { }
@@ -165,7 +169,7 @@ nav a:hover {
   #price-list__filter-container .filters-project-container .col5:first-child {
     padding-left: 0px;
   }
-  
+ 
 }
 
 @media (max-width: 768px) {  
@@ -208,6 +212,11 @@ nav a:hover {
   }
   #price-list__filter-container  .filter__content {
     position: unset;
+  }
+  #price-list__filter-container .filters-project .col5  .dropdown-menu {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    top: 165px !important;
   }
 }
 
