@@ -3554,7 +3554,9 @@ readers do not read off random characters that represent icons */
 
 .fa-star:before {
   content: "\f005"; }
-
+.fa-star.active {
+  color: #e8bb20;
+}
 .fa-star-and-crescent:before {
   content: "\f699"; }
 

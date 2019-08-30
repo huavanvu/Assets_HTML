@@ -87,10 +87,61 @@ nav a:hover {
 #price-list__filterBar {
   position: relative;
 }
-#price-list__filterBar #filterBar {
-  position: sticky;
-  height: 48px;
-  padding-left: calc(115px + 1rem);
+#price-list__filter-container #filterBar {
+  position: unset;
+  /* height: 48px; */
+}
+#price-list__filter-container .top-additional--filter {
+  border: none !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
+}
+#price-list__filter-container .top-additional--filter:hover {
+
+}
+#price-list__filter-container .nav.rp-category__container {
+  display: flex;
+  align-items: center;
+}
+#price-list__filter-container .filterBar__top .filter-type {
+  position: unset !important;
+}
+#price-list__filter-container .nav.rp-category__container {
+  margin-left: 0px !important;
+}
+#price-list__filter-container {
+  padding: 0px 10px;
+}
+#price-list__filter-container .filter--text, #price-list__filter-container {
+  /* padding-left: 0px !important; */
+  padding: 10px !important;
+}
+#price-list__filter-container .filterBar__top {
+  padding:  0 !important;
+}
+#price-list__filter-container .rp-category__total-result {
+  padding: 0px !important;
+}
+#price-list__filter-container .dropdown-toggle::after {
+  display: none !important;
+}
+/* #price-list__filter-container .rp-header-category {
+  padding
+} */
+#price-list__filter-container .rp-category__item {
+  padding: 18px 9px 10px;
+}
+#price-list__filter-container .filters-project-container .col5 {
+  padding: 0px 43.5px;
+  width: auto !important;
+}
+#price-list__filter-container .filters-project-container {
+  height: 56px;
+  display: flex;
+  align-items: center;
+}
+#price-list__filter-container .filters-project.show {
+  display: flex;
 }
 /* Responsive  */
 
@@ -103,6 +154,18 @@ nav a:hover {
   .result-item__price {
       padding: 30px 20px;
   }
+}
+@media (min-width: 992px) {
+  #price-list__filter-container #filterBar {
+    padding-left: 125px;
+  }
+  #price-list__filter-container .rp-category__item:first-child {
+    padding-left: 0px;
+  }
+  #price-list__filter-container .filters-project-container .col5:first-child {
+    padding-left: 0px;
+  }
+  
 }
 
 @media (max-width: 768px) {  
@@ -140,10 +203,21 @@ nav a:hover {
   .price-header__container {
     margin-left: 15px;
   }
+  #price-list__filter-container .filters-project.show {
+    overflow-x: auto;
+  }
+  #price-list__filter-container  .filter__content {
+    position: unset;
+  }
 }
 
 @media (max-width: 992px) { 
-  
+  #price-list__filter-container .filterBar__top {
+    padding: 0 !important;
+  }
+  #price-list__filter-container .filters-project-container .col5:first-child {
+    padding-left: 12px;
+  }
 }
 
 

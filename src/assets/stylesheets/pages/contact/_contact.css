@@ -4,7 +4,7 @@
 }
 .rp-category__item {
     color: #707070;
-    padding: 12px, 15px;
+    padding: 12px 15px;
     cursor: pointer;
     font-size: 14px;
 }
@@ -31,12 +31,12 @@
     top: 0;
     display: block;
     left: -15px;;
-    width: 100%;
+    width: 105%;
     content: "";
     height: 0;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
     border: solid 1px #F0F0F0;
-    z-index: 1020;
+    z-index: -1;
 }
 .rp-category__total-result {
     font-size: 13px;
