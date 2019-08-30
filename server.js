@@ -133,6 +133,12 @@ app.get('/ket-qua/filter', function (request, response) {
   response.sendFile(filePath);
 });
 
+app.get('/landing-page', function (request, response) {
+  const filePath = path.resolve(__dirname, './src/pages/', 'landing-page.html');
+  response.sendFile(filePath);
+});
+
+
 app.use('/', express.static('node_modules'));
 app.use('/', express.static('src'));
 
