@@ -118,7 +118,7 @@
                                                 <div class="row">
                                                     <div class="col-6 d-flex align-items-center"><a href="/dang-nhap">&Dstrok;&abreve;ng nh&#x1EAD;p</a></div>
                                                     <div class="col-6 text-right">
-                                                        <button class="btn btn-primary btn-signin" type="submit">&Dstrok;&abreve;ng k&iacute;</button>
+                                                        <button class="btn btn-primary btn-signin next-step" type="button">Tiếp theo</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -126,6 +126,44 @@
                                     </form>
                                 </div>
                             </div>
+                            <div class="signin-form__referral-code d-flex justify-content-center">
+                              <div class="signin-form__content">
+                                  <!-- Signin Form-->
+                                  <div class="form-header d-flex justify-content-center">
+                                      <div class="form-header__content">
+                                          <div class="form-header--title"><span>Mã giới thiệu</span></div>
+                                      </div>
+                                  </div>
+                                  <form>
+                                      <div class="row">
+                                        <div class="col-12">
+                                            <div class="form-group signin-form__group">
+                                              <input class="form-control" id="referral-code" type="text" name="referral-code" placeholder="Vd: 671435NAN">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                          <span class="notify-referral-code">
+                                              Yêu cầu nhập đúng mã giới thiệu để trải nghiệm trang web tốt hơn.
+                                          </span>
+                                        </div>
+                                      </div>
+                                      <div class="signin-form__actions">
+                                          <div class="signin-form__action">
+                                              <div class="row">
+                                                  <div class="col-6 d-flex align-items-center">
+                                                    <a href="/dang-nhap">Hủy bỏ</a>
+                                                    <a class="ml-4" href="/dang-nhap">Quay lại</a>
+                                                  </div>
+                                                  
+                                                  <div class="col-6 text-right">
+                                                      <button class="btn btn-primary btn-signin" type="button">Đăng ký</button>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </form>
+                              </div>
+                          </div>
                         </div>
                     </div>
                 </div>
@@ -170,6 +208,12 @@
         </div>
     </div>
     <script src="../../assets/scripts/index.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Rảnh em mới dev steper cho form này 
+    })
+    
+    </script>
 </body>
 
 </html>

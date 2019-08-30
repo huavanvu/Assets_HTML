@@ -1258,6 +1258,10 @@
                     text+=$(this).parent().find(".name").text() + ", ";
                 }
             });
+            if(text.trim().length === 0) {
+              $('#fileTypeProperties .filter--text').text('Loại BĐS')
+              return;
+            }
              $('#fileTypeProperties .filter--text').text(text);
             console.log(text);
         });

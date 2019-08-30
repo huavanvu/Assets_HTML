@@ -123,6 +123,16 @@ img,
 .divider-blue {
   border-bottom: 1px solid #3b63a1;
 }
+.signin-form__referral-code .notify-referral-code{
+  font-size: 13px;
+  color: #000000;
+}
+.signin-form__referral-code .signin-form__actions {
+  margin-top: 32px;
+}
+.signin-form__referral-code #referral-code {
+  padding: 10px;
+}
 /*# sourceMappingURL=index.css.map */
 
 
