@@ -90,7 +90,10 @@ document.onreadystatechange = () => {
     inputs.forEach(input => (
       input.addEventListener('click', (event) => checkboxChangeAction(event, input))
     ));
-
+    $('.baseline-trip').click(function(){
+      $('#filterUtility').show();
+      console.log('dasds');
+    });
     //#region MIN-MAX PRICE 
     // MIN-MAX PRICE
     const $rangeMin = $('.min-options'),

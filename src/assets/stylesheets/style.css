@@ -54,7 +54,7 @@ body {
     opacity: 0;
     cursor: pointer; }
   .check-action .name {
-    padding-left: 25px;
+    padding-left: 30px;
     position: relative;
     display: block;
     min-height: 26px; }
@@ -71,6 +71,9 @@ body {
       border: 1px solid #000;
       border-radius: 2px;
       font-size: 11px; }
+      .check-action .name * {
+        padding: 0px 10px;
+      }
   .check-action input:checked + .name:before {
     border-color: rgba(0, 0, 0, 0.1);
     background: #1a73e8;
