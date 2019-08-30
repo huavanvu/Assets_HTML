@@ -155,6 +155,9 @@
                                                 <div class="result-item__contact-info__like btn rounded mt-3">
                                                     <span class="-ap  icon-like2 icon"> &ensp;Thích</span>
                                                 </div>
+                                                <div class="result-item__contact-info__like btn rounded mt-3">
+                                                    <span data-toggle="modal" data-target="#share-link-coppy" class="-ap  icon-like2 icon"> &ensp;Share</span>
+                                                </div>
                                             </div>
                                             <div class="col-12 col-md-3 mt-3 mt-md-0 order-1">
                                                 <div class="result-item__contact-address d-flex justify-content-center">
@@ -636,6 +639,28 @@
             </div>
         </div>
     </section>
+    <div id="share-link-coppy" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <!-- <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true"> -->
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <div class="modal-title"></div>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p class="invitation">
+                    Bạn có thể copy link để chia sẻ
+                  </p>
+                  <div class="link-share-invitation__wrapper">
+                    <input type="text" class="link-share-invitation form-control" placeholder="https://www.youtube.com/watch?v=3o2jX4W6v4w">
+                  </div>
+                </div>
+              </div>
+            </div>
+          <!-- </div> -->
+    </div>
     <script src="../../assets/scripts/index.js"></script>
     <script src="../../assets/scripts/chat/index.js"></script>
     <script src="../../vendor/auto-complete/autocomplete.js"></script>
