@@ -150,7 +150,9 @@ app.get('/ket-qua/filter', function (request, response) {
 
 
 app.get('/landing-page', function (request, response) {
-  const filePath = path.resolve(__dirname, './src/pages/', 'landing-page.html');
+  const filePath = path.resolve(__dirname, './src/pages/', 'landing-page.html')
+  response.sendFile(filePath);
+});
 
 app.get('/con-duong', function (request, response) {
   const filePath = path.resolve(__dirname, './src/pages/modalpage', 'con-duong.html');
