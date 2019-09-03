@@ -955,12 +955,71 @@
                                     <div class="street-view--btn road-perspective__content"><span class="fa fa-road icon"></span></div>
                                 </div>
                                 <div class="street-view--item baseline-trip">
-                                    <div class="street-view--btn baseline-trip__content"><img src="../../../assets/img/baseline-trip.png" alt=""></div>
+                                    <div class="street-view--btn baseline-trip__content">
+                                        <img src="../../../assets/img/baseline-trip.png" alt="">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                        <!-- Filter Price-->
+                        <div class="bottom-additional--filter filter-utility" id="filterUtility">
+                            <div class="align-items-center filter__content">
+                                <div class="dropdown-toggle d-flex" data-toggle="dropdown"> <span class="filter--text filter-category--text text-center" style="max-width: 110px;">Loại tiện ích</span></div>
+                                <div class="dropdown-menu">
+                                        <div class="dropdown-item" href="#">
+                                                <div class=" map-utility-popup">
+                                                         <div class="list-check">
+                                                            <div class="check-action">
+                                                                <input type="checkbox" class="check">
+                                                                <span class="name"><img src="./../../assets/img/icons/MARKER_ ICON UNTILS/icon food.svg" alt="">Ăn uống</span>
+                                                            </div>
+                                                            <div class="check-action">
+                                                                <input type="checkbox" class="check">
+                                                                <span class="name"><img src="./../../assets/img/icons/MARKER_ ICON UNTILS/icon grocery.svg" alt="">Cửa hàng tạp hoá</span>
+                                                            </div>
+                                                            <div class="check-action">
+                                                                <input type="checkbox" class="check">
+                                                                  
+                                                                <span class="name">
+                                                                        <img src="./../../assets/img/icons/MARKER_ ICON UNTILS/icon mall.svg" alt="">
+                                                                    Trung tâm thương mại
+                                                                </span>
+                                                            </div>
+                                                            <div class="check-action">
+                                                                <input type="checkbox" class="check">
+                                                                <span class="name"><img src="./../../assets/img/icons/MARKER_ ICON UNTILS/icon park.svg" alt="">Công viên</span>
+                                                            </div>
+                                                            <div class="check-action">
+                                                                <input type="checkbox" class="check">
+                                                                <span class="name"><img src="./../../assets/img/icons/MARKER_ ICON UNTILS/icon car_park.svg" alt="">Bãi đổ xe</span>
+                                                            </div>
+                                                            <div class="check-action">
+                                                                <input type="checkbox" class="check">
+                                                                <span class="name"><img src="./../../assets/img/icons/MARKER_ ICON UNTILS/icon school.svg" alt="">Trường học</span>
+                                                            </div>
+                                                            <div class="check-action">
+                                                                <input type="checkbox" class="check">
+                                                                <span class="name"><img src="./../../assets/img/icons/MARKER_ ICON UNTILS/icon entertainment.svg" alt="">Văn hoá &amp; Giải trí</span>
+                                                            </div>
+                                                            <div class="check-action">
+                                                                <input type="checkbox" class="check">
+                                                                <span class="name"><img src="./../../assets/img/icons/MARKER_ ICON UNTILS/icon administrative_agencies.svg" alt="">Cơ quan hành chính</span>
+                                                            </div>
+                                                            <div class="check-action">
+                                                                <input type="checkbox" class="check">
+                                                                <span class="name"><img src="./../../assets/img/icons/MARKER_ ICON UNTILS/icon others.svg" alt="">Khác</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                
                 <div class="map-notification" id="map-notification">
                     <div class="map-notification__container">
                         <div class="d-flex map-notification__content justify-content-center">
@@ -1240,6 +1299,7 @@
         $(document).on('click.bs.dropdown', '.filter__content', function (e) {
           e.stopPropagation();
         });
+        let showUtility = false;
         $("#beds .dropdown-menu a").click(function(){
 
             $(this).parents("#beds").find(".filter--text").text("Phòng ngủ: "+$(this).text());
@@ -1279,6 +1339,25 @@
              
             }
         });
+        $('.baseline-trip').click(function(){
+            if(!showUtility){
+            $('#filterUtility').show();
+            $('.baseline-trip').css("background-color"," blue");
+            showUtility = true
+            } else {
+                $('#filterUtility').hide();
+                $('.baseline-trip').css("background-color"," white");
+                showUtility = false;
+            }
+    });
+    $(document).click(function(event){
+        console.log(event.target)
+        if(!$('.baseline-trip')[0].contains(event.target)){
+            $('#filterUtility').hide();
+            $('.baseline-trip').css("background-color"," white");
+            showUtility = false;
+        }
+    });
         
     </script>
 </body>

@@ -93,7 +93,12 @@ img,
 .post-time {
   font-size: 12px;
   color: #707070; }
-
+  .map-utility-popup{
+    width: 250px;
+    background: white;
+    border-radius: 6px;
+    background-color: #ffffff;
+}
 .action-buttons-bottom {
   text-align: right;
   margin-bottom: 10px; }
