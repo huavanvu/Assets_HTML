@@ -110,7 +110,13 @@ body {
 
 .list-check .check-action {
   margin-bottom: 20px; }
-@media (max-width: 768px) {
+@media (min-width: 992px) {
+  .box-chart {
+    text-align: unset !important;
+  }
+}
+@media (max-width: 992px) {
+  #to-top { display: none !important;}
   .list-check .check-action {
     width: 50%;
     float: left;
@@ -325,6 +331,56 @@ body {
     background: #3b63a1 !important;
     color: #fff; }
 @media (max-width: 768px) {
+  .modal-body .user--info .avatar {
+    width: 60px;
+    height: 60px;
+  }
+  .modal-body .user--info {
+    padding-left: 75px;
+  }
+  .modal-body .user--info .name, .modal-body .user--info .post-info, .modal-body .user--info .post-info .cat {
+    font-size: 13px;
+  }
+  .modal-body .user--info .name .rating-pos, .modal-body .user--info .name .rating-pos .rating, .modal-body .user--info .date {
+    font-size: 10px;
+  }
+  .modal-body .project-detail h2 {
+    font-size: 16px;
+  }
+  .modal-body .project-detail .article {
+    font-size: 13px;
+  }
+  .modal-body .list-check span.name {
+    font-size: 13px;
+  }
+  .modal-body .box-tt-chung .head-top {
+    font-size: 13px;
+  }
+  .modal-body .project-detail .table-ttpl-detail {
+    font-size: 13px;
+  }
+  .modal-body .mobile-show .rating.pull-left {
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+  }
+  
+  #myModal .modal-body .list-check .check-action .name img {
+    margin: 0px 8.9px 0px 4px;
+    width: 17.4px;
+  }
+  .box-comments .comment-content {
+    display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  }
+  .li.project-info__untilities .li:not(:first-child){
+    padding-left:  10px; 
+  }
+  .li.project-info__untilities{
+    margin-top: 7px;
+  }
   .nav-page {
     position: absolute;
     bottom: 40px;
@@ -474,7 +530,7 @@ body {
 
 .project-detail .project-top {
   border-radius: 5px;
-  overflow: hidden;
+  /* overflow: hidden; */
   padding: 36px;
   position: relative; }
   .project-detail .project-top .image {
@@ -484,6 +540,7 @@ body {
     right: 0px;
     bottom: 0px; }
   .project-detail .project-top img {
+    max-height: 100%;
     width: 100%; }
   .project-detail .project-top:before {
     position: absolute;
@@ -512,10 +569,10 @@ body {
       margin: 10px 0px; }
     .project-detail .project-top .head .status {
       display: inline-block;
-      padding: 6px 10px;
+      padding: 10px 10px;
       color: #f5343b;
       font-weight: bold;
-      font-size: 15px;
+      font-size: 18px;
       text-transform: uppercase;
       border: 1px solid #707070;
       border-radius: 4px;
@@ -536,6 +593,7 @@ body {
     .project-detail .project-top .head .rating {
       display: inline-block;
       font-size: 32px;
+      font-weight: 600;
       vertical-align: middle;
       margin: 0px 5px; }
       .project-detail .project-top .head .rating .icon {
@@ -546,7 +604,16 @@ body {
       vertical-align: middle; }
     @media (max-width: 991px) {
       .project-detail .project-top .head {
-        margin-bottom: 20px; } }
+        margin-bottom: 20px; } 
+      .project-detail .project-top .head .pull-right {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+      .project-detail .project-top .head .title {
+        font-size: 15px;
+      }
+      }
   .project-detail .project-top .info-price {
     color: #e8bb20; }
   .project-detail .project-top .mobile-show {
@@ -568,7 +635,7 @@ body {
         .project-detail .project-top .mobile-show .rating {
           font-size: 16px;
           color: #ffbf00;
-          margin-top: 10px; }
+          margin-top: 0px; }
           .project-detail .project-top .mobile-show .rating .star {
             margin-right: 5px; }
         .project-detail .project-top .mobile-show .btn {
@@ -582,15 +649,20 @@ body {
         color: #363636; }
         .project-detail .project-top .head .status {
           padding: 10px 0px;
+          font-size: 32px;
           border: 0px; }
           .project-detail .project-top .head .status:before, .project-detail .project-top .head .status:after {
             display: none; }
       .project-detail .project-top .sub {
         color: #3b63a1;
-        font-size: 15px; }
-        .project-detail .project-top .sub.location {
+        font-size: 15px;
+        font-weight: bold;
+      }
+      .project-detail .project-top .sub.location {
           color: #707070;
-          font-size: 13px; }
+          font-size: 13px; 
+        font-weight: normal;
+      }
       .project-detail .project-top .content {
         color: #363636;
         padding-bottom: 0px; }
@@ -610,7 +682,8 @@ body {
   @media (max-width: 991px) {
     .project-detail .project-info {
       margin-bottom: 0px;
-      margin-top: 10px; } }
+      /* margin-top: 10px;  */
+    } }
   .project-detail .project-info .li {
     display: inline-block; }
     .project-detail .project-info .li:before {
@@ -621,12 +694,15 @@ body {
       margin: 0px 15px;
       border-left: 1px solid #ddd; }
     .project-detail .project-info .li:first-child:before {
-      display: none; }
+      display: none; 
+    }
     @media (max-width: 480px) {
-      .project-detail .project-info .li {
-        display: block; }
-        .project-detail .project-info .li:before {
-          display: none; } }
+      .project-detail .project-top .head .status, .project-detail .project-top .head .rating {
+        font-size: 15px;
+      }
+      /* .section .head .pull-left { float: none !important;}
+      .section .head .pull-right { float: none !important;} */
+        }
   .project-detail .project-info.-important {
     font-weight: 500; }
 .project-detail .bottom .rating {
@@ -640,7 +716,7 @@ body {
 .project-detail .bottom .btn {
   background: none;
   border-color: transparent;
-  font-size: 20px;
+  font-size: 30px;
   border-radius: 2px;
   color: #fff; }
   .project-detail .bottom .btn:hover {
@@ -661,12 +737,13 @@ body {
     left: 0px;
     margin-top: 20px; } }
 .project-detail h2 {
-  font-size: 20px;
+  font-size: 1.5rem;
   margin: 0px;
   margin-bottom: 20px; }
 .project-detail .section {
   padding: 20px 0px;
-  border-bottom: 1px solid #e5e5e5; }
+  /* border-bottom: 1px solid #e5e5e5;  */
+}
   .project-detail .section:last-child {
     border-bottom: 0px; }
 .project-detail .project-related .head {
@@ -691,7 +768,32 @@ body {
   .project-detail .project-related .tabs {
     overflow: auto;
     white-space: nowrap;
-    margin-bottom: 0px; } }
+    margin-bottom: 0px; }
+  .project-detail .project-info {
+    font-size: 13px;
+  }
+  .project-detail .project-info .li:before {
+    margin: 0px 6px !important;
+  }
+  .project-detail .separator::after {
+    height: 14px;
+    content: "";
+    display: inline-block;
+    width: 1px;
+    background: #dadcdf;
+    vertical-align: middle;
+    margin: 0px 8px;
+  }
+  .project-detail .content__mobile .project-info {
+    margin-bottom: 8px;
+  }
+  .project-detail  .content__mobile +  .project-info, .project-detail  .content__mobile {
+    font-weight: 500;
+  }
+  .project-detail  .content__mobile .project-info__price-suggest {
+    color: #1a73e8;
+  }
+  }
 .project-detail .section .head {
   margin-bottom: 15px; }
   .project-detail .section .head:after {
@@ -705,8 +807,11 @@ body {
     .project-detail .section .head .link:hover {
       color: #3b63a1; }
 .project-detail .table-ttpl {
-  border: none;
+  border: 3px solid ;
   background: #f7f7f7;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: #f7f7f7;
+  transition: .2s;
   border-radius: 5px; }
 .project-detail .table-ttpl-detail {
   font-size: 14px;
@@ -905,7 +1010,7 @@ body {
 
 @media (max-width: 991px) {
   .box-formvayno .btn {
-    width: 100%;
+    width: 30%;
     margin-top: 5px; } }
 
 .form-vaybo {
@@ -1041,8 +1146,129 @@ body {
   .modal-dialog {
     max-width: 90%;
     width: 100%; } }
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 90%;
+    width: 100%; } }
+
 @media (max-width: 768px) {
   .modal-body {
-    padding: 10px; } }
+    padding: 10px 15px; } }
 
 /*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+
+/* Atomic */
+.color-2929 {
+  color: #292929;
+}
+.over-inherit {
+  overflow: inherit !important;
+}
+.fw-5 {
+  font-weight: 500;
+}
+.color-red {
+  color: red;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* modal style  */
+
+.project-detail__acreage:hover .project-detail__acreage-more {
+  transition: .2s;
+  opacity: 1;
+  visibility: visible;
+}
+.project-detail__acreage:hover {
+  transition: .2s;
+  border-bottom: 1px #fff solid;
+}
+.project-detail__acreage-more {
+  bottom: 150%;
+  background-color: #fff;
+  white-space: nowrap;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: .2s;
+  opacity: 0;
+  visibility: hidden;
+}
+.project-detail__acreage-more-contaniner::before {
+  top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+  pointer-events: none;
+  border-color: rgba(194, 225, 245, 0);
+	border-top-color:#ffffff;
+	border-width: 24px;
+	margin-left: -24px;
+}
+.project-detail__acreage-more table tr td {
+  white-space: nowrap;
+}
+.project-detail__acreage-more table tr td:not(:first-child) {
+  padding-top:7.5px;
+  padding-bottom:7.5px;
+  padding-right:20px;       
+}
+.project-detail__acreage-more table tr td:first-child {
+  color: #707070;
+  padding-right: 10px;
+}
+#to-top {
+  right: 2%;
+  bottom: 2%;
+  z-index: 9990;
+}
+#to-top i {
+  transform: rotateZ(-45deg)
+}
+.col-1-5 {
+  width: 12.49995%;
+}
+.divider-5  {
+  width: 100%;
+  height: 3px;
+  background-color: black;
+}
+.modal-question__section-name {
+  font-size: 1.5rem;
+}
+.login-to-comment {
+  background-color: #FFBF00;
+}
+.modal-question-container .avatar-comment img{
+  width: 36px;
+  height: 36px;
+}
+.modal-question-container .avatar-comment {
+  margin-right: 16px;
+}
+.comment-relative__time {
+  color: #707070;
+  font-size: 12px;
+}
+.modal-question__info-name {
+  font-size: 16px;
+  color: #3B63A1;
+}
+.modal-question__info-time-comment, .modal-question__info-id-comment {
+  color: #707070;
+  font-size: 12px;
+}
+#myModal .list-check .check-action .name img {
+  margin: 0px 8px 0px 16px;
+  width: 17.4px;
+}
+@media (max-width: 576px) {
+  .modal-question__info-time-comment {
+    padding-left: 0 !important;
+  }
+}

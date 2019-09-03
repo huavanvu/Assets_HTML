@@ -114,4 +114,18 @@ img,
     font-size: 14px;
     margin-right: 5px; }
 
+.border-item {
+  position: relative;
+    border: solid 5px #F0F0F0;
+    border-top: none;
+}
+#header-navigation--item__dynamic {
+  width: 0;
+}
+.w-auto {
+  width: auto !important;
+}
 /*# sourceMappingURL=index.css.map */
+
+
+

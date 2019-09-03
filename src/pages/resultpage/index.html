@@ -69,14 +69,17 @@
                             <div class="header-navigation__items d-flex">
                                 <div class="header-navigation--item is-actived"><a class="hn-item--text" href="/ket-qua">T&#x1EA5;t c&#x1EA3;</a></div>
                                 <div class="header-navigation--item"><a class="hn-item--text" href="/ket-qua/thong-tin">Th&ocirc;ng tin</a></div>
-                                <div class="header-navigation--item"><a class="hn-item--text" href="/ban-do">B&#x1EA3;n &dstrok;&#x1ED3;</a></div>
                                 <div class="header-navigation--item"><a class="hn-item--text" href="/ket-qua/bang-gia">B&#x1EA3;ng gi&aacute;</a></div>
+                                <div id="header-navigation--item__dynamic" class="header-navigation--item">
+                                    <a class="hn-item--text" href="/ket-qua/bang-gia"></a>
+                                </div>
                                 <div class="header-navigation--item dropdown">
                                     <div class="hn-item--text dropdown-toggle" data-toggle="dropdown">Thêm <span class="fa icon"></span></div>
-                                    <div class="dropdown-menu hn-menu__add">
-                                        <div class="dropdown-item"><a href="#">Danh b&#x1EA1;</a></div>
-                                        <div class="dropdown-item"><a href="#">T&agrave;i nguy&ecirc;n</a></div>
-                                        <div class="dropdown-item"><a href="#">H&#x1ECF;i &dstrok;&aacute;p</a></div>
+                                    <div class="dropdown-menu hn-menu__add p-0">
+                                        <a class="dropdown-item p-3" href="/ket-qua/danh-ba">Danh bạ</a>
+                                        <a class="dropdown-item p-3" href="/ket-qua/tai-nguyen">Tài nguyên</a>
+                                        <a  class="dropdown-item p-3"href="/ket-qua/hoi-dap">Hỏi đáp</a>
+                                        <a  class="dropdown-item p-3"href="/ban-do">Bản đồ</a>
                                     </div>
                                 </div>
                             </div>
@@ -114,7 +117,7 @@
                                         <div class="item-details__container">
                                             <div class="item-details__title">
                                                 <div class="ids-title__content">
-                                                    <div class="ids-title--header d-flex">
+                                                    <div class="ids-title--header flex-wrap d-flex">
                                                       <a class="title--name" href="#">Asset News</a>
                                                       <div class="title--rate d-flex align-items-center"><span>[Chung c&#x1B0; </span><span class="title_rate--highlight"> 4,5+ </span><img src="../../assets/img/star.png" alt="">]</div>
                                                       <div class="user-info">
@@ -152,7 +155,7 @@
                                                         <span class="fa fa-star icon"></span> 40
                                                     </a>
                                                     <a href="#" class="btn -comment">
-                                                        <span class="fa fa-comment-o icon"></span> 40
+                                                        <img class="ids-action--icon" src="../../../assets/img/ic_chat_bubble_outline_black_24px.png" alt=""> 40
                                                     </a>
                                                     <a href="#" class="btn -liked">
                                                         <span class="-ap  icon-like2 icon"></span> 40
@@ -179,7 +182,7 @@
                                         <div class="item-details__container">
                                             <div class="item-details__title">
                                                 <div class="ids-title__content">
-                                                    <div class="ids-title--header d-flex">
+                                                    <div class="ids-title--header flex-wrap d-flex">
                                                       <a class="title--name" href="#">Duc Le</a>
                                                       <div class="title--rate d-flex align-items-center"><span>[Chung c&#x1B0; </span><span class="title_rate--highlight"> 3,5+ </span><img src="../../assets/img/star.png" alt="">]</div>
                                                       <div class="user-info">
@@ -217,7 +220,7 @@
                                                         <span class="fa fa-star icon"></span> 40
                                                     </a>
                                                     <a href="#" class="btn -comment">
-                                                        <span class="fa fa-comment-o icon"></span> 40
+                                                        <img class="ids-action--icon" src="../../../assets/img/ic_chat_bubble_outline_black_24px.png" alt=""> 40
                                                     </a>
                                                     <a href="#" class="btn -liked">
                                                         <span class="-ap  icon-like2 icon"></span> 40
@@ -243,7 +246,7 @@
                                         <div class="item-details__container">
                                             <div class="item-details__title">
                                                 <div class="ids-title__content">
-                                                    <div class="ids-title--header d-flex">
+                                                    <div class="ids-title--header flex-wrap d-flex">
                                                       <a class="title--name" href="#">Asset data team</a>
                                                       <div class="title--rate d-flex align-items-center"><span>[Chung c&#x1B0; </span><span class="title_rate--highlight"> 3,5+ </span><img src="../../assets/img/star.png" alt="">]</div>
                                                       <div class="user-info">
@@ -269,54 +272,62 @@
                                             </div>
                                             <div class="item-details__post">
                                                 <div class="realestate-item">
-                                                    <div class="post-image" style="background-image: url(https://cdn.tuoitre.vn/thumb_w/640/2019/1/16/photo-1-15476236955311643255083.jpg);">
-                                                        <img src="../../assets/img/125x130.jpg" alt="">
-                                                        <div class="like  fa fa-heart-o"></div>
-                                                    </div>
-                                                    <div class="post-content">
-                                                        <div class="top"><span>2,66 tỷ</span>  <span class="#" style="color: #189655;">60,78m<sub class="subtop">2</sub></span>  <span class="#" style="color: #189655;">150,0m<sub class="subtop">2</sub> <em style="font-weight: normal;">sàn</em> </span> </div>
-                                                        <div class="location">711014P0001- Hồ Thị Kỷ, Phường 4, Quận 6, Hồ Chí Minh</div>
-                                                        <div class="actions">
-                                                            <button class="btn">
-                                                                <img src="../../assets/img/bxs-edit.svg" alt="">
-                                                            </button>
-                                                            <button class="btn">
-                                                                <img src="../../assets/img/earth.svg" alt="">
-                                                            </button>
-                                                            <button class="btn">
-                                                                <img src="../../assets/img/baseline-map-24px.svg" alt="">
-                                                            </button>
+                                                    <div class="row">
+                                                        <div class="col-12 col-md-4 order-1">
+                                                            <div class="post-image text-center w-100">
+                                                                <img class=" opacity" src="https://cdn.tuoitre.vn/thumb_w/640/2019/1/16/photo-1-15476236955311643255083.jpg" alt="">
+                                                                <div class="like actived fa fa-heart-o"></div>
+                                                            </div>
                                                         </div>
-                                                        <div class="map">
-                                                            <img src="../../assets/uploads/map.jpg" alt="">
+                                                        <div class="col-12 col-md-6 order-3">
+                                                            <div class="post-content">
+                                                                <div class="top"><span>2,66 tỷ</span>  <span class="#" style="color: #189655;">60,78m<sub class="subtop">2</sub></span>  <span class="#" style="color: #189655;">150,0m<sub class="subtop">2</sub> <em style="font-weight: normal;">sàn</em> </span> </div>
+                                                                <div class="location ">711014P0001- Hồ Thị Kỷ, Phường 4, Quận 6, Hồ Chí Minh</div>
+                                                                <div class="info -top">
+                                                                    <span>Nhà xây dựng</span>  <span>Bàn giao T2.2010</span>  <span>Đã hoàn công</span>  <span>Sổ hồng</span>
+                                                                </div>
+                                                                <div class="info -ban">
+                                                                    <span class="status -ban">Bán</span>  <span>Avalue: <strong>2,65 tỷ</strong></span>  <span>Arent: <strong>7,5 triệu/ Tháng</strong></span>
+                                                                    
+                                                                    
+                                                                </div>
+                                                                <div class="info">
+                                                                    <span><strong>47,2 triệu/m</strong> <sub class="subtop">2</sub></span>  <span>Trả trước: <strong>700 triệu</strong></span><span>Thanh toán: <strong>13,2 triệu/tháng</strong></span>
+                                                                </div>
+                                                                <div class="location"> <span>Hẻm xe hơi</span> <span>Đường vào 4,5m (LG 5,0m)</span></div>
+                                                                <div class="bottom-info">
+                                                                    <span>
+                                                                        <img src="../../assets/img/cauthang.svg" alt=""> 3 tầng
+                                                                    </span>
+                                                                    <span>
+                                                                        <img src="../../assets/img/icons/bx-bed.svg" alt=""> 2
+                                                                    </span>
+                                                                    <span>
+                                                                        <img src="../../assets/img/icons/bx-bath.svg" alt=""> 2
+                                                                    </span>
+                                                                    <span>
+                                                                        <img src="../../assets/img/icons/location.svg" alt=""> Đông Nam
+                                                                    </span>
+                                                                </div>
+        
+                                                            </div>
                                                         </div>
-                                                        <div class="info -top">
-                                                            <span>Nhà xây dựng</span>  <span>Bàn giao T2.2010</span>  <span>Đã hoàn công</span>  <span>Sổ hồng</span>
+                                                        <div class="col-12 col-md-2 order-2 order-md-3">
+                                                            <div class="actions">
+                                                                <button class="btn">
+                                                                    <img src="../../assets/img/bxs-edit.svg" alt="">
+                                                                </button>
+                                                                <button class="btn">
+                                                                    <img src="../../assets/img/earth.svg" alt="">
+                                                                </button>
+                                                                <button class="btn">
+                                                                    <img src="../../assets/img/baseline-map-24px.svg" alt="">
+                                                                </button>
+                                                            </div>
+                                                            <div class="map w-100">
+                                                                <img src="../../assets/uploads/map.jpg" alt="">
+                                                            </div>
                                                         </div>
-                                                        <div class="info -ban">
-                                                            <span class="status -ban">Bán</span>  <span>Avalue: <strong>2,65 tỷ</strong></span>  <span>Arent: <strong>7,5 triệu/ Tháng</strong></span>
-                                                            
-                                                           
-                                                        </div>
-                                                        <div class="info">
-                                                            <span><strong>47,2 triệu/m</strong> <sub class="subtop">2</sub></span>  <span>Trả trước: <strong>700 triệu</strong></span><span>Thanh toán: <strong>13,2 triệu/tháng</strong></span>
-                                                        </div>
-                                                        <div class="location"> <span>Hẻm xe hơi</span> <span>Đường vào 4,5m (LG 5,0m)</span></div>
-                                                        <div class="bottom-info">
-                                                            <span>
-                                                                <img src="../../assets/img/cauthang.svg" alt=""> 3 tầng
-                                                            </span>
-                                                            <span>
-                                                                <img src="../../assets/img/icons/bx-bed.svg" alt=""> 2
-                                                            </span>
-                                                            <span>
-                                                                <img src="../../assets/img/icons/bx-bath.svg" alt=""> 2
-                                                            </span>
-                                                            <span>
-                                                                <img src="../../assets/img/icons/location.svg" alt=""> Đông Nam
-                                                            </span>
-                                                        </div>
-
                                                     </div>
                                                 </div>      
                                             </div>
@@ -326,7 +337,7 @@
                                                         <span class="fa fa-star icon"></span> 40
                                                     </a>
                                                     <a href="#" class="btn -comment">
-                                                        <span class="fa fa-comment-o icon"></span> 40
+                                                        <img class="ids-action--icon" src="../../../assets/img/ic_chat_bubble_outline_black_24px.png" alt=""> 40
                                                     </a>
                                                     <a href="#" class="btn -liked">
                                                         <span class="-ap  icon-like2 icon"></span> 40
@@ -379,7 +390,7 @@
                                         <div class="item-details__container">
                                             <div class="item-details__title">
                                                 <div class="ids-title__content">
-                                                    <div class="ids-title--header d-flex"><a class="title--name" href="#">Asset data team</a>
+                                                    <div class="ids-title--header flex-wrap d-flex"><a class="title--name" href="#">Asset data team</a>
                                                         <div class="title--rate d-flex align-items-center"><span>[Chung c&#x1B0; </span><span class="title_rate--highlight"> 3,5+ </span><img src="../../assets/img/star.png" alt="">]</div>
                                                         <div class="user-info">
                                                             <div class="col-xs-2">
@@ -398,55 +409,76 @@
                                                             </div>
                                                           </div>
                                                     </div>
-                                                    <p class="mb-0 ids-title--category">đã đăng một <a class="ids-title--category" href="/ket-qua/thong-tin">Con đường</a> </p>
+                                                    <p class="mb-0 ids-title--category">đã đăng một <a class="ids-title--category" href="/ket-qua/thong-tin">Nhà Riêng</a> </p>
                                                     <p class="mb-0 ids-title--date-posted">10 ng&agrave;y tr&#x1B0;&#x1EDB;c</p>
                                                     
                                                 </div>
                                             </div>
                                             <div class="item-details__post">
                                                 <div class="realestate-item">
-                                                    <div class="post-image" style="background-image: url(https://cdn.tuoitre.vn/thumb_w/640/2019/1/16/photo-1-15476236955311643255083.jpg);">
-                                                        <img src="../../assets/img/125x130.jpg" alt="">
-                                                        <div class="like actived fa fa-heart-o"></div>
-                                                    </div>
-                                                    <div class="post-content" style="padding-bottom: 5px;">
-                                                        <div class="top">Madison 15 Thi Sách</div>
-                                                        <div class="location">711014P0001- Hồ Thị Kỷ, Phường 4, Quận 6, Hồ Chí Minh</div>
-                                                        <div class="actions">
-                                                            <button class="btn">
-                                                                <img src="../../assets/img/bxs-edit.svg" alt="">
-                                                            </button>
-                                                            <button class="btn">
-                                                                <img src="../../assets/img/earth.svg" alt="">
-                                                            </button>
-                                                            <button class="btn">
-                                                                <img src="../../assets/img/baseline-map-24px.svg" alt="">
-                                                            </button>
+                                                    <div class="row">
+                                                        <div class="col-12 col-md-4 order-1">
+                                                            <div class="post-image w-100" >
+                                                                <img class="opacity" src="https://cdn.tuoitre.vn/thumb_w/640/2019/1/16/photo-1-15476236955311643255083.jpg" alt="">
+                                                                <div class="like actived fa fa-heart-o"></div>
+                                                            </div>
                                                         </div>
-                                                        <div class="map">
-                                                            <img src="../../assets/uploads/map.jpg" alt="">
+                                                        <div class="col-12 col-md-6 order-3">
+                                                            <div class="post-content" style="padding-bottom: 5px;">
+                                                                <div class="top">Madison 15 Thi Sách</div>
+                                                                <div class="location">711014P0001- Hồ Thị Kỷ, Phường 4, Quận 6, Hồ Chí Minh</div>
+                                                                <!-- <div class="actions">
+                                                                    <button class="btn">
+                                                                        <img src="../../assets/img/bxs-edit.svg" alt="">
+                                                                    </button>
+                                                                    <button class="btn">
+                                                                        <img src="../../assets/img/earth.svg" alt="">
+                                                                    </button>
+                                                                    <button class="btn">
+                                                                        <img src="../../assets/img/baseline-map-24px.svg" alt="">
+                                                                    </button>
+                                                                </div>
+                                                                <div class="map">
+                                                                    <img src="../../assets/uploads/map.jpg" alt="">
+                                                                </div> -->
+                                                                <div class="info -top">
+                                                                    <span>Sản phẩm của <strong style="color: #3b63a1;">Novoland</strong></span>  <span>Bàn giao T2.2010</span>
+                                                                </div>
+                                                                <div class="info -top">
+                                                                    <span>Đang làm móng</span>  <span>Giấy phép xây dựng</span>
+                                                                </div>
+                                                                <div class="info -ban">
+                                                                        <span>Avalue: <strong>24.567m <sub class="subtop">2</sub></strong></span>  
+                                                                        <span><strong>2 Blocks</strong></span>
+                                                                        <span><strong>1.200 CH</strong></span>
+                                                                        <span><strong>- - SH</strong></span>
+                                                                        <span><strong>120 OFT</strong></span>
+                                                                        <span><strong>8.467m <sub class="subtop">2</sub></strong></span>
+                                                                        <span><strong>TMDV</strong></span>
+                                                                    
+                                                                    
+                                                                </div>
+                                                                <div class="info">
+                                                                    <span><strong>47,2 triệu/m</strong> <sub class="subtop">2</sub></span>  <span>Trả trước: <strong>700 triệu</strong></span><span>Thanh toán: <strong>13,2 triệu/tháng</strong></span>
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                        <div class="info -top">
-                                                            <span>Sản phẩm của <strong style="color: #3b63a1;">Novoland</strong></span>  <span>Bàn giao T2.2010</span>
+                                                        <div class="col-12 col-md-2 order-2 order-md-3">
+                                                            <div class="actions">
+                                                                <button class="btn">
+                                                                    <img src="../../assets/img/bxs-edit.svg" alt="">
+                                                                </button>
+                                                                <button class="btn">
+                                                                    <img src="../../assets/img/earth.svg" alt="">
+                                                                </button>
+                                                                <button class="btn">
+                                                                    <img src="../../assets/img/baseline-map-24px.svg" alt="">
+                                                                </button>
+                                                            </div>
+                                                            <div class="map w-100">
+                                                                <img src="../../assets/uploads/map.jpg" alt="">
+                                                            </div>
                                                         </div>
-                                                        <div class="info -top">
-                                                            <span>Đang làm móng</span>  <span>Giấy phép xây dựng</span>
-                                                        </div>
-                                                        <div class="info -ban">
-                                                             <span>Avalue: <strong>24.567m <sub class="subtop">2</sub></strong></span>  
-                                                             <span><strong>2 Blocks</strong></span>
-                                                             <span><strong>1.200 CH</strong></span>
-                                                             <span><strong>- - SH</strong></span>
-                                                             <span><strong>120 OFT</strong></span>
-                                                             <span><strong>8.467m <sub class="subtop">2</sub></strong></span>
-                                                             <span><strong>TMDV</strong></span>
-                                                            
-                                                           
-                                                        </div>
-                                                        <div class="info">
-                                                            <span><strong>47,2 triệu/m</strong> <sub class="subtop">2</sub></span>  <span>Trả trước: <strong>700 triệu</strong></span><span>Thanh toán: <strong>13,2 triệu/tháng</strong></span>
-                                                        </div>
-
                                                     </div>
                                                 </div>      
                                             </div>
@@ -456,7 +488,7 @@
                                                         <span class="fa fa-star icon"></span> 40
                                                     </a>
                                                     <a href="#" class="btn -comment">
-                                                        <span class="fa fa-comment-o icon"></span> 40
+                                                        <img class="ids-action--icon" src="../../../assets/img/ic_chat_bubble_outline_black_24px.png" alt=""> 40
                                                     </a>
                                                     <a href="#" class="btn -liked">
                                                         <span class="-ap  icon-like2 icon"></span> 40
@@ -485,7 +517,7 @@
                                         <div class="item-details__container">
                                             <div class="item-details__title">
                                                 <div class="ids-title__content">
-                                                    <div class="ids-title--header d-flex"><a class="title--name" href="#">Asset data team</a>
+                                                    <div class="ids-title--header flex-wrap d-flex"><a class="title--name" href="#">Asset data team</a>
                                                         <div class="title--rate d-flex align-items-center"><span>[Chung c&#x1B0; </span><span class="title_rate--highlight"> 3,5+ </span><img src="../../assets/img/star.png" alt="">]</div>
                                                         <div class="user-info">
                                                           <div class="col-xs-2">
@@ -508,9 +540,9 @@
                                                     <p class="mb-0 ids-title--date-posted">10 ng&agrave;y tr&#x1B0;&#x1EDB;c</p>
                                                 </div>
                                             </div>
-                                            <div class="item-details__post box-info-line">
+                                            <div class="item-details__post box-info-line shadown-item__result cursor-pointer rounded border p-3">
                                                 <div class="row">
-                                                    <div class="col-sm-4 col-xs-12">
+                                                    <div class="col-sm-12 col-md-4 order-2 order-lg-1">
                                                         <div class="name">Lý Chính Thắng</div>
                                                         <div class="location">Phường 7, Quận Tân Bình, Hồ Chí Minh</div>
                                                         <p class="info-left">Bất động sản trên đường này</p>
@@ -525,12 +557,12 @@
                                                             </span>
                                                         </div>  
                                                     </div>
-                                                    <div class="col-sm-4 col-xs-12">
-                                                        <div class="map">
+                                                    <div class="col-12 col-md-4 order-1 order-lg-2">
+                                                        <div class="map text-center">
                                                             <img src="../../assets/uploads/map.jpg" alt="">
                                                         </div>
                                                     </div>
-                                                    <div class="col-sm-4 col-xs-12 box-right">
+                                                    <div class="col-12 col-md-4 order-3 ">
                                                         <p class="info-right">Phân đoạn: <span style="color: #707070;">Toàn đường</span></p>
                                                         <div class="info-line">
                                                             <span>Hiện hữu 15,5m</span>
@@ -548,7 +580,7 @@
                                                         <span class="fa fa-star icon"></span> 40
                                                     </a>
                                                     <a href="#" class="btn -comment">
-                                                        <span class="fa fa-comment-o icon"></span> 40
+                                                        <img class="ids-action--icon" src="../../../assets/img/ic_chat_bubble_outline_black_24px.png" alt=""> 40
                                                     </a>
                                                     <a href="#" class="btn -liked">
                                                         <span class="-ap  icon-like2 icon"></span> 40
@@ -568,10 +600,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="rp-search-result-item">
+                            <!-- <div class="rp-search-result-item">
                                 <div class="box-company-info">
                                     <div class="row">
-                                        <div class="col-sm-8 col-xs-12">
+                                        <div class="col-sm-12 col-lg-8">
                                             <div class="company-info">
                                                 <div class="avatar">
                                                     <span class="img" style="background-image: url(https://dongphucocean.vn/wp-content/uploads/2018/12/logo-dong-phuc-ocean.jpg)">
@@ -599,13 +631,13 @@
                                                 
                                             </div>
                                         </div>
-                                        <div class="col-sm-4 col-xs-12">
+                                        <div class="col-sm-12 col-lg-4">
                                             <div class="map-canvas">
                                                 <img src="../../assets/uploads/map.jpg" alt="">
                                             </div>
                                             <div class="action-buttons-bottom">
                                                 <a href="#" class="btn -comment">
-                                                    <span class="fa fa-comment-o icon"></span> 40
+                                                    <img class="ids-action--icon" src="../../../assets/img/ic_chat_bubble_outline_black_24px.png" alt=""> 40
                                                 </a>
                                                 <a href="#" class="btn -liked">
                                                     <span class="-ap  icon-like2 icon"></span> 40
@@ -620,6 +652,108 @@
                                         </div>
                                     </div>
                                 </div>
+                            </div> -->
+                            <div class="rp-search-result-item">
+                                <div class="search-result__item-container d-flex"><img class="sr-item__modal" src="../../../assets/img/icon-modal.png">
+                                    <div class="sr-item__poster">
+                                        <div class="poster--avatar"><a href="#"><img src="../../../assets/img/1pcs-hot-kawaii-small-teddy-bears-plush-toys.png" alt=""></a></div>
+                                    </div>
+                                    <div class="sr-item__details">
+                                        <div class="item-details__container">
+                                            <div class="item-details__title">
+                                                <div class="ids-title__content">
+                                                    <div class="ids-title--header flex-wrap d-flex"><a class="title--name" href="#">Asset data team</a>
+                                                        <div class="title--rate d-flex align-items-center"><span>[Chung c&#x1B0; </span><span class="title_rate--highlight"> 3,5+ </span><img src="../../assets/img/star.png" alt="">]</div>
+                                                        <div class="user-info">
+                                                            <div class="col-xs-2">
+                                                            <img src="../../../assets/img/Rectangle 97.png" alt="">
+                                                            </div>
+                                                            <div class="col-xs-10 pl-2">
+                                                            <div class="user-info__desc">
+                                                                <a class="title--name" href="#">Asset News</a> <b></b>
+                                                                <div class="title--rate d-flex align-items-center p-0"><i class="fas fa-globe-americas"></i> &nbsp; <span>[Chung c&#x1B0; </span><span class="title_rate--highlight"> 4,5+ </span><img src="../../assets/img/star.png" alt="">]</div>
+                                                                <div class=""><i class="fas fa-user-friends"></i> Bạn chung với <a class="font-weight-bold">Trung Hoàng</a>, <a class="font-weight-bold">Thuong Huỳnh.</a></div>
+                                                                <div class="user-info__button">
+                                                                    <button>Nhắn tin</button>
+                                                                    <button>Kết bạn</button>
+                                                                </div>
+                                                            </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p class="mb-0 ids-title--category">đã đăng một <a class="ids-title--category" href="/ket-qua/thong-tin">Doanh Nghiệp</a> </p>
+                                                    <p class="mb-0 ids-title--date-posted">10 ng&agrave;y tr&#x1B0;&#x1EDB;c</p>
+                                                </div>
+                                            </div>
+                                            <div class="box-company-info cursor-pointer shadown-item__result rounded border mt-1 p-3">
+                                                <div class="row">
+                                                    <div class="col-sm-12 col-lg-8 order-2 order-lg-1">
+                                                        <div class="company-info pt-3 p-md-0 mb-0">
+                                                            <div class="row">
+                                                                <div class="col-4 d-flex justify-content-center">
+                                                                        <div class="avatar position-static">
+                                                                            <img class="img " src="https://dongphucocean.vn/wp-content/uploads/2018/12/logo-dong-phuc-ocean.jpg" />
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-8">
+                                                                        <div>
+                                                                            <div class="name">Song Kim Land</div>
+                                                                            <div class="info">89 Lý Chính Thắng Phường 7, Quận Tân Bình, Hồ Chí Minh</div>
+                                                                            <div class="info">(+84) 098176761</div>
+                                                                            <div class="rating-box">
+                                                                                <div class="rating">
+                                                                                    <span class="star fa fa-star -good"></span>
+                                                                                    <span class="star fa fa-star -good"></span>
+                                                                                    <span class="star fa fa-star"></span>
+                                                                                    <span class="star fa fa-star"></span>
+                                                                                    <span class="star fa fa-star"></span>
+                                                                                </div>
+                                                                                <span class="total">540 total reviews</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                            </div>
+                                                            <div class="actions d-none d-md-block">
+                                                                <button class="btn btn-like">
+                                                                    <span class="-ap  icon-like2 icon"></span> Thích
+                                                                </button>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-12 col-lg-4 order-1 order-lg-2">
+                                                        <div class="map-canvas text-center position-relative" >
+                                                            <img src="../../assets/uploads/map.jpg" alt="">
+                                                            <div class="map-canvas__address position-absolute d-md-block d-lg-none text-left" >
+                                                                <span>89 Lý Chính Thắng Phường 7, </span>
+                                                                <span>Quận Tân Bình, Hồ Chí Minh</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item-details__actions">
+                                                <div class="action-buttons-bottom">
+                                                    <a href="#" class="btn -marked">
+                                                        <span class="fa fa-star icon"></span> 40
+                                                    </a>
+                                                    <a href="#" class="btn -comment">
+                                                        <img class="ids-action--icon" src="../../../assets/img/ic_chat_bubble_outline_black_24px.png" alt=""> 40
+                                                    </a>
+                                                    <a href="#" class="btn -liked">
+                                                        <span class="-ap  icon-like2 icon"></span> 40
+                                                    </a>
+                                                    <a href="#" class="btn -share">
+                                                        <span class="-ap  icon-share4 icon"></span> 40
+                                                    </a>
+                                                    <a href="#" class="btn -mail">
+                                                        <span class="-ap  icon-mail6 icon"></span> 10
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="rp-search-result-item">
                                 <div class="search-result__item-container d-flex"><img class="sr-item__modal" src="../../../assets/img/icon-modal.png">
@@ -630,7 +764,7 @@
                                         <div class="item-details__container">
                                             <div class="item-details__title">
                                                 <div class="ids-title__content">
-                                                    <div class="ids-title--header d-flex"><a class="title--name" href="#">Asset data team</a>
+                                                    <div class="ids-title--header flex-wrap d-flex "><a class="title--name" href="#">Asset data team</a>
                                                         <div class="title--rate d-flex align-items-center"><span>[Chung c&#x1B0; </span><span class="title_rate--highlight"> 3,5+ </span><img src="../../assets/img/star.png" alt="">]</div>
                                                         <div class="user-info">
                                                           <div class="col-xs-2">
@@ -649,7 +783,7 @@
                                                           </div>
                                                         </div>
                                                     </div>
-                                                    <p class="mb-0 ids-title--category">đã đăng một <a class="ids-title--category" href="/ket-qua/thong-tin">Con đường</a> </p>
+                                                    <p class="mb-0 ids-title--category">đã đăng một <a class="ids-title--category" href="/ket-qua/thong-tin">Tài Nguyên</a> </p>
                                                     <p class="mb-0 ids-title--date-posted">10 ng&agrave;y tr&#x1B0;&#x1EDB;c</p>
                                                 </div>
                                             </div>
@@ -668,7 +802,7 @@
                                                         <span class="fa fa-star icon"></span> 40
                                                     </a>
                                                     <a href="#" class="btn -comment">
-                                                        <span class="fa fa-comment-o icon"></span> 40
+                                                        <img class="ids-action--icon" src="../../../assets/img/ic_chat_bubble_outline_black_24px.png" alt=""> 40
                                                     </a>
                                                     <a href="#" class="btn -liked">
                                                         <span class="-ap  icon-like2 icon"></span> 40
@@ -697,7 +831,7 @@
                                         <div class="item-details__container">
                                             <div class="item-details__title">
                                                 <div class="ids-title__content">
-                                                    <div class="ids-title--header d-flex"><a class="title--name" href="#">Asset data team</a>
+                                                    <div class="ids-title--header flex-wrap d-flex"><a class="title--name" href="#">Asset data team</a>
                                                         <div class="title--rate d-flex align-items-center"><span>[Chung c&#x1B0; </span><span class="title_rate--highlight"> 3,5+ </span><img src="../../assets/img/star.png" alt="">]</div>
                                                         <div class="user-info">
                                                           <div class="col-xs-2">
@@ -735,7 +869,7 @@
                                                         <span class="fa fa-star icon"></span> 40
                                                     </a>
                                                     <a href="#" class="btn -comment">
-                                                        <span class="fa fa-comment-o icon"></span> 40
+                                                        <img class="ids-action--icon" src="../../../assets/img/ic_chat_bubble_outline_black_24px.png" alt=""> 40
                                                     </a>
                                                     <a href="#" class="btn -liked">
                                                         <span class="-ap  icon-like2 icon"></span> 40
@@ -758,7 +892,7 @@
                         </div>
                         <div class="rp-search-result__pagination">
                             <div class="search-result__pagination-container container">
-                                <div class="search-result__pagination-content d-flex align-items-center justify-content-center justify-content-sm-end"><a class="sr-pagination--btn sr-pagination--previous" href="#">Tr&#x1B0;&#x1EDB;c</a>
+                                <div class="search-result__pagination-content d-flex align-items-center justify-content-center justify-content-lg-end"><a class="sr-pagination--btn sr-pagination--previous" href="#">Tr&#x1B0;&#x1EDB;c</a>
                                     <div class="sr-pagination__items d-flex align-items-center"><a class="sr-pagination--item is-actived" href="#">1</a><a class="sr-pagination--item" href="#">2</a><a class="sr-pagination--item" href="#">3</a><a class="sr-pagination--item" href="#">4</a><a class="sr-pagination--item" href="#">5</a></div><a class="sr-pagination--btn sr-pagination--next" href="#">Ti&#x1EBF;p</a>
                                 </div>
                             </div>
@@ -766,7 +900,7 @@
                     </div>
                 </div>
             </div>
-            <div class="result-pages__footer layout-footer">
+            <div class="result-pages__footer layout-footer w-100">
                 <div class="result-pages__footer-container">
                     <div class="rs-footer__links layout-footer__links d-flex justify-content-center justify-content-lg-start">
                         <div class="rs-footer--link layout-footer--link"><a href="#">Gi&#x1EDB;i thi&#x1EC7;u</a></div>

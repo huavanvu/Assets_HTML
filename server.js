@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express();
-const port = 3000;
+const port = 4000;
 const path = require('path');
 
 /* Homepage */
@@ -67,6 +67,11 @@ app.get('/nha-rieng', function (request, response) {
   response.sendFile(filePath);
 });
 
+app.get('/hoi-dap', function (request, response) {
+  const filePath = path.resolve(__dirname, './src/pages/modalpage/', 'hoi-dap.html');
+  response.sendFile(filePath);
+});
+
 app.get('/thong-tin-mo-rong-duong', function (request, response) {
   const filePath = path.resolve(__dirname, './src/pages/modalpage/', 'thong-tin-mo-rong-duong.html');
   response.sendFile(filePath);
@@ -118,6 +123,22 @@ app.get('/ket-qua/hoi-dap', function (request, response) {
   response.sendFile(filePath);
 });
 
+
+app.get('/ket-qua/danh-ba', function (request, response) {
+  const filePath = path.resolve(__dirname, './src/pages/resultpage/contact/', 'index.html');
+  response.sendFile(filePath);
+});
+
+app.get('/ket-qua/tai-nguyen', function (request, response) {
+  const filePath = path.resolve(__dirname, './src/pages/resultpage/resource/', 'index.html');
+  response.sendFile(filePath);
+});
+
+app.get('/ket-qua/hoi-dap', function (request, response) {
+  const filePath = path.resolve(__dirname, './src/pages/resultpage/question/', 'index.html');
+  response.sendFile(filePath);
+});
+
 app.get('/ket-qua/hoi-dap-chi-tiet', function (request, response) {
   const filePath = path.resolve(__dirname, './src/pages/resultpage/question-detail', 'index.html');
   response.sendFile(filePath);
@@ -126,10 +147,13 @@ app.get('/ket-qua/filter', function (request, response) {
   const filePath = path.resolve(__dirname, './src/pages/resultpage/map', 'demo.html');
   response.sendFile(filePath);
 });
+
 app.get('/con-duong', function (request, response) {
   const filePath = path.resolve(__dirname, './src/pages/modalpage', 'con-duong.html');
   response.sendFile(filePath);
 });
+
+
 app.use('/', express.static('node_modules'));
 app.use('/', express.static('src'));
 

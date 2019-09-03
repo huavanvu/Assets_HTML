@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Dự án chung cư</title>
+    <title>Căn hộ chung cư</title>
     <meta content="width=device-width, initial-scale=1" name="viewport" id="viewport">
     </meta>
     <meta content="900" http-equiv="refresh">
@@ -25,18 +25,19 @@
     <script type="text/javascript" src="../../vendor/slick/slick.min.js"></script>
     <script type="text/javascript" src="../../vendor/swiper/js/swiper.min.js"></script>
     <script type="text/javascript" src="../../vendor/highchart/highcharts.js"></script>
+
     <script type="text/javascript" src="../../vendor/fancybox/jquery.fancybox.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../../vendor/fancybox/jquery.fancybox.min.css">
 </head>
 
-<body>
+<body class="modal-open">
     <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
-    <div id="myModal" class="modal fade" role="dialog">
+    <div id="myModal" class="modal fade show" role="dialog">
         <div class="modal-dialog">
             <!-- Modal content-->
             <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">Dự án chung cư</h4>
+                <div class="modal-header pt-1 pb-4">
+                    <h4 class="modal-title">Căn hộ chung cư</h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
@@ -44,9 +45,9 @@
                         <div class="avatar" style="background-image: url(https://www.bitgab.com/uploads/profile/files/default.png)">
                         </div>
                         <div class="name">Asset News <span class="rating-pos">[Chuyên gia <span class="rating">4,5+
-                        <span class="fa fa-star icon"></span></span>]</span></div>
+                                    <span class="fa fa-star icon"></span></span>]</span></div>
                         <div class="post-info">
-                            đã đăng một bài viết trong <a href="#" class="cat">Thông tin Quy hoạch</a>
+                            đã đăng một bài viết trong <a href="#" class="cat">Căn hộ chung cư</a>
                         </div>
                         <div class="date">15 ngày trước</div>
                     </div>
@@ -54,26 +55,42 @@
                         <div class="project-top">
                             <div class="head">
                                 <div class="pull-left">
-                                    <div class="sub">Dự án chung cư</div>
-                                    <h1 class="title">Madison 15 Thi Sách</h1>
-                                    <div class="sub location">Số 15 Đường Thi Sách, phường Bến Nghé, quận 1</div>
+                                    <div class="sub">Căn hộ chung cư</div>
+                                    <h1 class="title">4.500 Triệu &nbsp; |  
+                                        <span class="project-detail__acreage cursor-pointer position-relative">
+                                            &nbsp; 68m<sup>2</sup> &nbsp;
+                                            <div class="project-detail__acreage-more  position-absolute rounded p-2">
+                                            <div class="project-detail__acreage-more-contaniner position-relative">
+                                                <table>
+                                                    <tbody><tr>
+                                                    <td>60m<sup>2</sup></td>
+                                                    <td>Diện tích được công nhận</td>
+                                                    </tr>
+                                                    <tr>
+                                                    <td>8m<sup>2</sup></td>
+                                                    <td>Diện tích quốc lộ giới</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>60m<sup>2</sup></td>
+                                                        <td>Diện tích được công nhận</td>
+                                                    </tr>
+                                                </tbody></table>
+                                            </div>
+                                            </div>
+                                        </span>
+                                        | &nbsp; 10,0 x 6,8m 
+                                    </h1>
+                                    <div class="sub location">71144P001 - Dự án Madison 15 Thi Sách, Đường 19, KP1, Phường Phú Hữu, Quận 9, Hồ Chí Min</div>
                                 </div>
-                                <div class="pull-right" style="margin-top: 10px;">
+                                <div class="pull-right d-flex align-items-center" style="margin-top: 10px;">
                                     <div class="status">Đang mở bán</div>
-                                    <div class="rating">
-                                        3.5/5
-                                    </div>
-                                    <span class="icon fa fa-star" style="vertical-align: middle; color: #e8bb20; margin-right: 10px;"></span>
-                                    <div class="capture">
-                                        <img src="../../assets/img/icons/1244.png" alt="">
-                                    </div>
                                 </div>
                                 <div class="clearfix"></div>
                             </div>
                             <div class="image">
                                 <img src="https://cdn.vietnambiz.vn/stores/news_dataimages/tinnv/012018/28/15/2617_phoi-canh-chung-cu-gamuda-ho-yen-so-5.jpg" alt="">
                             </div>
-                            <div class="mobile-show">
+                            <div class="mobile-show mt-3">
                                 <div class="rating pull-left">
                                     <span class="star fa fa-star"></span>
                                     <span class="star fa fa-star"></span>
@@ -94,34 +111,108 @@
                                 </div>
                             </div>
                             <div class="content">
-
-                                <div class="project-info -important">
-                                    <div class="li">Sản phẩm của <strong>NovaLand</strong></div>
-                                    <div class="li">Bàn giao T2.2022</div>
-                                    <div class="li">Đang làm móng</div>
-                                    <div class="li">Giấy phép xây dựng</div>
-                                    <div class="li">Đất ở</div>
-                                </div>
-                                <div class="project-info">
-                                    <div class="li">24.567m2</div>
-                                    <div class="li">2 block</div>
-                                    <div class="li">15 - 20 tầng</div>
-                                    <div class="li">1.240 CH</div>
-                                    <div class="li">- -SH</div>
-                                    <div class="li">- 120OFT</div>
-                                    <div class="li">8.560m2 TMDV</div>
-                                </div>
-                                <div class="project-info">
-                                    <div class="li">Avalue: - - triệu</div>
-                                    <div class="li">Avalue: - - triệu</div>
-                                </div>
-                                <div class="project-info info-price">
-                                    <div class="li"><span>7.540tr/ căn 2PN (120tr/m2)</span></div>
-                                    <div class="li">Trả trước: <span>2.200tr</span></div>
-                                    <div class="li">Thanh toán: <span>20.4tr/tháng</span></div>
-                                </div>
-                                <div class="project-info">
+                                <div class="content__desktop d-none d-md-block">
+                                  <div class="project-info -important">
+                                      <div class="li">Sản phẩm của <strong>NovaLand</strong></div>
+                                      <div class="li">Bàn giao T2.2022</div>
+                                      <div class="li">Đang làm móng</div>
+                                      <div class="li">Giấy phép xây dựng</div>
+                                      <div class="li">Đất ở</div>
+                                  </div>
+                                  <div class="project-info">
+                                      <div class="li">24.567m2</div>
+                                      <div class="li">1 + 1 PN</div>
+                                      <div class="li">1 WC</div>
+                                      <div class="li">Căn giữa</div>
+                                  </div>
+                                  <div class="project-info">
+                                      <div class="li"> <i class="fa fa-circle color-red"></i> Bán</div>
+                                      <div class="li">Avalue: - - triệu</div>
+                                      <div class="li">Arent: - - triệu</div>
+                                  </div>
+                                  <div class="project-info info-price">
+                                      <div class="li"><span>7.540tr/m2</span></div>
+                                      <div class="li">Trả trước: <span>2.200tr</span></div>
+                                      <div class="li">Thanh toán: <span>20.4tr/tháng</span></div>
+                                  </div>
+                                  <div class="project-info">
+                                    <div class="li">Căn góc</div>
                                     <div class="li">Đường vào 15,0m (LG 15,0m)</div>
+                                    <div class="li project-info__untilities">
+                                      <div class="li"><span><i class="fa fa-bed" aria-hidden="true"></i> </span>3</div>
+                                      <div class="li">
+                                          <span><img style="width: 20px;" src="./../../assets/img/SVG/bx-bath.svg" alt="">  3 </span>
+                                      </div>
+                                      <div class="li"><span><i class="fa fa-location-arrow pr-2"></i>Đông nam</span></div>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                <div class="content__mobile d-block d-md-none">
+                                    <div class="project-info -important mt-3">
+                                        <div>
+                                          <span class="separator"> Sản phẩm của <strong class="project-info__price-suggest">NovaLand</strong> </span> <span>Bàn giao T2.2010</span>
+                                        </div>
+                                        <div>
+                                            <span class="separator">Đang làm móng </span><span class="separator">Giấy phép xây dựng</span>Đất ở
+                                        </div>
+                                    </div>
+                                    <div class="project-info">
+                                        <span class="separator">
+                                          200.91m <sup>2</sup>
+                                        </span>
+                                      <span class="separator">
+                                        1 + 1 PN
+                                      </span>
+                                      <span>
+                                        Căn giữa
+                                      </span>
+                                    </div>
+                                    <div class="project-info">
+                                        <span class="separator">
+                                          <i class="fa fa-circle color-red"></i> Bán
+                                        </span>
+                                      <span class="separator">
+                                        Avalue: - - triệu
+                                      </span>
+                                      <span>
+                                        Arent: - - triệu
+                                      </span>
+                                    </div>
+                                    <div class="project-info info-price">
+                                      <span class="project-info__price-suggest">
+                                        731,8tr/m2
+                                      </span>
+                                    </div>
+                                    <div class="project-info">
+                                      <span class="separator">
+                                        Trả trước: <span class="project-info__price-suggest">2.200tr</span>
+                                      </span>
+                                      <span>
+                                        Thanh toán: <span class="project-info__price-suggest">20.4tr/tháng </span>
+                                      </span>
+                                    </div>
+                                    <div class="project-info">
+                                      <span class="separator">
+                                        Căn góc
+                                      </span>
+                                      <span>
+                                        Đường vào 15,0m (LG 15,0m)
+                                      </span>
+                                    </div>
+                                    <div class="project-info">
+                                      <div class="li project-info__untilities d-flex justify-content-between align-items-center">
+                                        <div class="li">
+                                            <span><i class="fa fa-bed pr-2" aria-hidden="true"></i> 3</span>
+                                        </div>
+                                        <div class="li">
+                                            <span><img style="width: 18px;" src="./../../assets/img/SVG/shower-black.svg" alt="">  3 </span>
+                                        </div>
+                                        <div class="li">
+                                        <span><i class="fa fa-location-arrow pr-2"></i>Đông nam</span>
+                                        </div>
+                                      </div>
+                                    </div>
                                 </div>
                                 <div class="bottom">
                                     <div class="rating">
@@ -146,7 +237,7 @@
                                                 <img src="http://farm8.staticflickr.com/7289/16207238089_0124105172_m.jpg" alt="" />
                                             </a>
                                         </div>
-                                        <a class="btn gallery" data-fancybox="images"  data-type="image" href="http://farm6.staticflickr.com/5444/17679973232_568353a624_b.jpg" >
+                                        <a class="btn pb-0 gallery" data-fancybox="images"  data-type="image" href="http://farm6.staticflickr.com/5444/17679973232_568353a624_b.jpg" >
                                             <span class="fa fa-image icon"></span>
                                         </a>
                                         <script type="text/javascript">
@@ -157,10 +248,10 @@
                                                 }
                                             });
                                         </script>
-                                        <button class="btn">
+                                        <button class="btn pb-0">
                                             <span class="fa fa-cube  icon"></span>
                                         </button>
-                                        <button class="btn">
+                                        <button class="btn pb-0">
                                             <span class="fa fa-play-circle-o  icon"></span>
                                         </button>
                                         <div class="mapbox">
@@ -171,452 +262,6 @@
                         </div>
                     </div>
                     <div class="collapse project-detail" id="content">
-                        <div class="project-related section">
-                            <div class="head">
-                                <div class="pull-left">
-                                    <h2 class="title">Các bất động sản trong dự án</h2>
-                                    <ul class="tabs nav" role="tablist">
-                                        <li><a href="#blocka"  class="active"   data-toggle="tab" role="tab" aria-controls="home" aria-selected="true">Block A</a></li>
-                                        <li><a  data-toggle="tab" href="#blockb"    data-toggle="tab" role="tab" aria-controls="home" aria-selected="false">Block B</a></li>
-                                        <li><a  data-toggle="tab" href="#tmdv"    data-toggle="tab" role="tab" aria-controls="home" aria-selected="false">TMDV</a></li>
-                                    </ul>
-                                </div>
-                                <div class="pull-right">
-                                    <div class="dropdown">
-                                        <button class="btn" data-toggle="dropdown">
-                                            Phòng ngủ <span class="fa fa-caret-down"></span>
-                                        </button>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#">0</a></li>
-                                            <li><a href="#">1+</a></li>
-                                            <li><a href="#">2+</a></li>
-                                            <li><a href="#">3+</a></li>
-                                            <li><a href="#">4+</a></li>
-                                            <li><a href="#">5+</a></li>
-                                            <li><a href="#">6+</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="dropdown">
-                                        <button class="btn" data-toggle="dropdown">
-                                            Loại bất động sản <span class="fa fa-caret-down"></span>
-                                        </button>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#">Căn hộ</a></li>
-                                            <li><a href="#">Shop house</a></li>
-                                            <li><a href="#">Officetel</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="dropdown">
-                                        <button class="btn" data-toggle="dropdown">
-                                            Tình trạng <span class="fa fa-caret-down"></span>
-                                        </button>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#">Căn hộ</a></li>
-                                            <li><a href="#">Shop house</a></li>
-                                            <li><a href="#">Officetel</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="pull-right nav-page" id="navapartment">
-                                        <div class="btn btn-prev">
-                                            <span class="fa fa-angle-left icon"></span>
-                                        </div>
-                                        <div class="btn btn-next">
-                                            <span class="fa fa-angle-right icon"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
-                            <div class="tab-content" >
-                                <div role="tabpanel" class="tab-pane in active" id="blocka">
-                                    <div class="list-realestate ">
-                                        <div class="item">
-                                            <div class="realestate-item">
-                                                <div class="post-image" style="background-image: url(https://cdn.tuoitre.vn/thumb_w/586/2019/4/9/condotel-anh-1554815917361678998923.jpg);">
-                                                    <img src="../../assets/img/125x130.jpg" alt="">
-                                                </div>
-                                                <div class="box-info">
-                                                    <div class="head">
-                                                        <span>5.5 triệu</span>
-                                                        <span style="color: #189655;">60,78m <sub class="subtop">2</sub></span>
-                                                        <span style="color: #189655;">10 x 6,8m</span>
-                                                    </div>
-                                                    <div class="cat">NHÀ RIÊNG</div>
-                                                    <div class="info">
-                                                        <span class="type">Thuê</span>
-                                                        <span>Số tờ 30</span>
-                                                        <span>Số thửa - -</span>
-                                                    </div>
-                                                    <div class="bottom-info">
-                                                        <span>
-                                                            <img src="../../assets/img/icons/bx-bed.svg" alt=""> 2
-                                                        </span>
-                                                        <span>
-                                                            <img src="../../assets/img/icons/bx-bath.svg" alt=""> 2
-                                                        </span>
-                                                        <span>
-                                                            <img src="../../assets/img/icons/location.svg" alt=""> Đông Nam
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="realestate-item">
-                                                <div class="post-image" style="background-image: url(https://cdn.tuoitre.vn/thumb_w/586/2019/4/9/condotel-anh-1554815917361678998923.jpg);">
-                                                    <img src="../../assets/img/125x130.jpg" alt="">
-                                                </div>
-                                                <div class="box-info">
-                                                    <div class="head">
-                                                        <span>4.650 triệu</span>
-                                                        <span style="color: #189655;">60,78m <sub class="subtop">2</sub></span>
-                                                        <span style="color: #189655;">10 x 6,8m</span>
-                                                    </div>
-                                                    <div class="cat">NHÀ RIÊNG</div>
-                                                    <div class="info">
-                                                        <span class="type">Thuê</span>
-                                                        <span>Số tờ 30</span>
-                                                        <span>Số thửa - -</span>
-                                                    </div>
-                                                    <div class="bottom-info">
-                                                        <span>
-                                                            <img src="../../assets/img/icons/bx-bed.svg" alt=""> 2
-                                                        </span>
-                                                        <span>
-                                                            <img src="../../assets/img/icons/bx-bath.svg" alt=""> 2
-                                                        </span>
-                                                        <span>
-                                                            <img src="../../assets/img/icons/location.svg" alt=""> Đông Nam
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="realestate-item">
-                                                <div class="post-image" style="background-image: url(https://cdn.tuoitre.vn/thumb_w/586/2019/4/9/condotel-anh-1554815917361678998923.jpg);">
-                                                    <img src="../../assets/img/125x130.jpg" alt="">
-                                                </div>
-                                                <div class="box-info">
-                                                    <div class="head">
-                                                        <span>3.80 triệu</span>
-                                                        <span style="color: #189655;">60,78m <sub class="subtop">2</sub></span>
-                                                        <span style="color: #189655;">10 x 6,8m</span>
-                                                    </div>
-                                                    <div class="cat">NHÀ RIÊNG</div>
-                                                    <div class="info">
-                                                        <span class="type">Thuê</span>
-                                                        <span>Số tờ 30</span>
-                                                        <span>Số thửa - -</span>
-                                                    </div>
-                                                    <div class="bottom-info">
-                                                        <span>
-                                                            <img src="../../assets/img/icons/bx-bed.svg" alt=""> 2
-                                                        </span>
-                                                        <span>
-                                                            <img src="../../assets/img/icons/bx-bath.svg" alt=""> 2
-                                                        </span>
-                                                        <span>
-                                                            <img src="../../assets/img/icons/location.svg" alt=""> Đông Nam
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="realestate-item">
-                                                <div class="post-image" style="background-image: url(https://cdn.tuoitre.vn/thumb_w/586/2019/4/9/condotel-anh-1554815917361678998923.jpg);">
-                                                    <img src="../../assets/img/125x130.jpg" alt="">
-                                                </div>
-                                                <div class="box-info">
-                                                    <div class="head">
-                                                        <span>8.666 triệu</span>
-                                                        <span style="color: #189655;">60,78m <sub class="subtop">2</sub></span>
-                                                        <span style="color: #189655;">10 x 6,8m</span>
-                                                    </div>
-                                                    <div class="cat">NHÀ RIÊNG</div>
-                                                    <div class="info">
-                                                        <span class="type">Thuê</span>
-                                                        <span>Số tờ 30</span>
-                                                        <span>Số thửa - -</span>
-                                                    </div>
-                                                    <div class="bottom-info">
-                                                        <span>
-                                                            <img src="../../assets/img/icons/bx-bed.svg" alt=""> 2
-                                                        </span>
-                                                        <span>
-                                                            <img src="../../assets/img/icons/bx-bath.svg" alt=""> 2
-                                                        </span>
-                                                        <span>
-                                                            <img src="../../assets/img/icons/location.svg" alt=""> Đông Nam
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div role="tabpanel" class="tab-pane in" id="blockb">
-                                    <div class="list-realestate">
-                                        <div class="item">
-                                            <div class="realestate-item">
-                                                <div class="post-image" style="background-image: url(https://image.theleader.vn/thumbs/788x0/upload/ngocson/2018/1/9/phoi-canh-cua-chung-cu-hinode-city.png);">
-                                                    <img src="../../assets/img/125x130.jpg" alt="">
-                                                </div>
-                                                <div class="box-info">
-                                                    <div class="head">
-                                                        <span>2.660 triệu</span>
-                                                        <span style="color: #189655;">60,78m <sub class="subtop">2</sub></span>
-                                                        <span style="color: #189655;">10 x 6,8m</span>
-                                                    </div>
-                                                    <div class="cat">NHÀ RIÊNG</div>
-                                                    <div class="info">
-                                                        <span class="type">Thuê</span>
-                                                        <span>Số tờ 30</span>
-                                                        <span>Số thửa - -</span>
-                                                    </div>
-                                                    <div class="bottom-info">
-                                                        <span>
-                                                            <img src="../../assets/img/icons/bx-bed.svg" alt=""> 2
-                                                        </span>
-                                                        <span>
-                                                            <img src="../../assets/img/icons/bx-bath.svg" alt=""> 2
-                                                        </span>
-                                                        <span>
-                                                            <img src="../../assets/img/icons/location.svg" alt=""> Đông Nam
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="realestate-item">
-                                                <div class="post-image" style="background-image: url(https://cdn.tuoitre.vn/thumb_w/586/2019/4/9/condotel-anh-1554815917361678998923.jpg);">
-                                                    <img src="../../assets/img/125x130.jpg" alt="">
-                                                </div>
-                                                <div class="box-info">
-                                                    <div class="head">
-                                                        <span>2.660 triệu</span>
-                                                        <span style="color: #189655;">60,78m <sub class="subtop">2</sub></span>
-                                                        <span style="color: #189655;">10 x 6,8m</span>
-                                                    </div>
-                                                    <div class="cat">NHÀ RIÊNG</div>
-                                                    <div class="info">
-                                                        <span class="type">Thuê</span>
-                                                        <span>Số tờ 30</span>
-                                                        <span>Số thửa - -</span>
-                                                    </div>
-                                                    <div class="bottom-info">
-                                                        <span>
-                                                            <img src="../../assets/img/icons/bx-bed.svg" alt=""> 2
-                                                        </span>
-                                                        <span>
-                                                            <img src="../../assets/img/icons/bx-bath.svg" alt=""> 2
-                                                        </span>
-                                                        <span>
-                                                            <img src="../../assets/img/icons/location.svg" alt=""> Đông Nam
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="realestate-item">
-                                                <div class="post-image" style="background-image: url(https://cdn.tuoitre.vn/thumb_w/586/2019/4/9/condotel-anh-1554815917361678998923.jpg);">
-                                                    <img src="../../assets/img/125x130.jpg" alt="">
-                                                </div>
-                                                <div class="box-info">
-                                                    <div class="head">
-                                                        <span>2.660 triệu</span>
-                                                        <span style="color: #189655;">60,78m <sub class="subtop">2</sub></span>
-                                                        <span style="color: #189655;">10 x 6,8m</span>
-                                                    </div>
-                                                    <div class="cat">NHÀ RIÊNG</div>
-                                                    <div class="info">
-                                                        <span class="type">Thuê</span>
-                                                        <span>Số tờ 30</span>
-                                                        <span>Số thửa - -</span>
-                                                    </div>
-                                                    <div class="bottom-info">
-                                                        <span>
-                                                            <img src="../../assets/img/icons/bx-bed.svg" alt=""> 2
-                                                        </span>
-                                                        <span>
-                                                            <img src="../../assets/img/icons/bx-bath.svg" alt=""> 2
-                                                        </span>
-                                                        <span>
-                                                            <img src="../../assets/img/icons/location.svg" alt=""> Đông Nam
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="realestate-item">
-                                                <div class="post-image" style="background-image: url(https://cdn.tuoitre.vn/thumb_w/586/2019/4/9/condotel-anh-1554815917361678998923.jpg);">
-                                                    <img src="../../assets/img/125x130.jpg" alt="">
-                                                </div>
-                                                <div class="box-info">
-                                                    <div class="head">
-                                                        <span>2.660 triệu</span>
-                                                        <span style="color: #189655;">60,78m <sub class="subtop">2</sub></span>
-                                                        <span style="color: #189655;">10 x 6,8m</span>
-                                                    </div>
-                                                    <div class="cat">NHÀ RIÊNG</div>
-                                                    <div class="info">
-                                                        <span class="type">Thuê</span>
-                                                        <span>Số tờ 30</span>
-                                                        <span>Số thửa - -</span>
-                                                    </div>
-                                                    <div class="bottom-info">
-                                                        <span>
-                                                            <img src="../../assets/img/icons/bx-bed.svg" alt=""> 2
-                                                        </span>
-                                                        <span>
-                                                            <img src="../../assets/img/icons/bx-bath.svg" alt=""> 2
-                                                        </span>
-                                                        <span>
-                                                            <img src="../../assets/img/icons/location.svg" alt=""> Đông Nam
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div role="tabpanel" class="tab-pane in" id="tmdv">
-                                    <div class="list-realestate">
-                                        <div class="item">
-                                            <div class="realestate-item">
-                                                <div class="post-image" style="background-image: url(https://cdn.tuoitre.vn/thumb_w/640/2019/1/16/photo-1-15476236955311643255083.jpg);">
-                                                    <img src="../../assets/img/125x130.jpg" alt="">
-                                                </div>
-                                                <div class="box-info">
-                                                    <div class="head">
-                                                        <span>2.660 triệu</span>
-                                                        <span style="color: #189655;">60,78m <sub class="subtop">2</sub></span>
-                                                        <span style="color: #189655;">10 x 6,8m</span>
-                                                    </div>
-                                                    <div class="cat">NHÀ RIÊNG</div>
-                                                    <div class="info">
-                                                        <span class="type">Thuê</span>
-                                                        <span>Số tờ 30</span>
-                                                        <span>Số thửa - -</span>
-                                                    </div>
-                                                    <div class="bottom-info">
-                                                        <span>
-                                                            <img src="../../assets/img/icons/bx-bed.svg" alt=""> 2
-                                                        </span>
-                                                        <span>
-                                                            <img src="../../assets/img/icons/bx-bath.svg" alt=""> 2
-                                                        </span>
-                                                        <span>
-                                                            <img src="../../assets/img/icons/location.svg" alt=""> Đông Nam
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="realestate-item">
-                                                <div class="post-image" style="background-image: url(https://cdn.tuoitre.vn/thumb_w/586/2019/4/9/condotel-anh-1554815917361678998923.jpg);">
-                                                    <img src="../../assets/img/125x130.jpg" alt="">
-                                                </div>
-                                                <div class="box-info">
-                                                    <div class="head">
-                                                        <span>2.660 triệu</span>
-                                                        <span style="color: #189655;">60,78m <sub class="subtop">2</sub></span>
-                                                        <span style="color: #189655;">10 x 6,8m</span>
-                                                    </div>
-                                                    <div class="cat">NHÀ RIÊNG</div>
-                                                    <div class="info">
-                                                        <span class="type">Thuê</span>
-                                                        <span>Số tờ 30</span>
-                                                        <span>Số thửa - -</span>
-                                                    </div>
-                                                    <div class="bottom-info">
-                                                        <span>
-                                                            <img src="../../assets/img/icons/bx-bed.svg" alt=""> 2
-                                                        </span>
-                                                        <span>
-                                                            <img src="../../assets/img/icons/bx-bath.svg" alt=""> 2
-                                                        </span>
-                                                        <span>
-                                                            <img src="../../assets/img/icons/location.svg" alt=""> Đông Nam
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="realestate-item">
-                                                <div class="post-image" style="background-image: url(https://cdn.tuoitre.vn/thumb_w/586/2019/4/9/condotel-anh-1554815917361678998923.jpg);">
-                                                    <img src="../../assets/img/125x130.jpg" alt="">
-                                                </div>
-                                                <div class="box-info">
-                                                    <div class="head">
-                                                        <span>2.660 triệu</span>
-                                                        <span style="color: #189655;">60,78m <sub class="subtop">2</sub></span>
-                                                        <span style="color: #189655;">10 x 6,8m</span>
-                                                    </div>
-                                                    <div class="cat">NHÀ RIÊNG</div>
-                                                    <div class="info">
-                                                        <span class="type">Thuê</span>
-                                                        <span>Số tờ 30</span>
-                                                        <span>Số thửa - -</span>
-                                                    </div>
-                                                    <div class="bottom-info">
-                                                        <span>
-                                                            <img src="../../assets/img/icons/bx-bed.svg" alt=""> 2
-                                                        </span>
-                                                        <span>
-                                                            <img src="../../assets/img/icons/bx-bath.svg" alt=""> 2
-                                                        </span>
-                                                        <span>
-                                                            <img src="../../assets/img/icons/location.svg" alt=""> Đông Nam
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="realestate-item">
-                                                <div class="post-image" style="background-image: url(https://cdn.tuoitre.vn/thumb_w/586/2019/4/9/condotel-anh-1554815917361678998923.jpg);">
-                                                    <img src="../../assets/img/125x130.jpg" alt="">
-                                                </div>
-                                                <div class="box-info">
-                                                    <div class="head">
-                                                        <span>2.660 triệu</span>
-                                                        <span style="color: #189655;">60,78m <sub class="subtop">2</sub></span>
-                                                        <span style="color: #189655;">10 x 6,8m</span>
-                                                    </div>
-                                                    <div class="cat">NHÀ RIÊNG</div>
-                                                    <div class="info">
-                                                        <span class="type">Thuê</span>
-                                                        <span>Số tờ 30</span>
-                                                        <span>Số thửa - -</span>
-                                                    </div>
-                                                    <div class="bottom-info">
-                                                        <span>
-                                                            <img src="../../assets/img/icons/bx-bed.svg" alt=""> 2
-                                                        </span>
-                                                        <span>
-                                                            <img src="../../assets/img/icons/bx-bath.svg" alt=""> 2
-                                                        </span>
-                                                        <span>
-                                                            <img src="../../assets/img/icons/location.svg" alt=""> Đông Nam
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
                         <article class="article section">
                             <div class="head"><h2 class="title">Đăc điểm nổi bật.</h2></div>
@@ -740,433 +385,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="section" style="margin-bottom: 40px;">
-                            <div class="head">
-                                <div class="pull-left">
-                                    <h2 class="title">Thông tin thiết kế và xây dựng</h2>
-                                </div>
-                                <div class="pull-right">
-                                    <buton class="icon-collapse btn">
-                                        <span class="fa fa-angle-down iocn"></span>
-                                    </button>
-                                </div>
-
-
-                            </div>
-                            <div class="section-content">
-                                <div class="box-tt-chung">
-                                    <div class="head-top">
-                                        <span class="icon fa fa-minus-square"></span>
-                                        Thông tin chung
-                                    </div>
-                                    <div class="content">
-                                        <div class="box">
-                                            <div class="row">
-                                                <div class="col-sm-6 col-xs-12">
-                                                    <h2 class="text">Thông tin thiết kế</h2>
-                                                    <table class="table-info">
-                                                        <tr>
-                                                            <td>Loại BĐS:</td>
-                                                            <td>Có</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Loại thiết kế:</td>
-                                                            <td>Không có khối đế riêng, biệt lập</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Phong cách thiết kế:</td>
-                                                            <td>Tân cổ điển</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Tiêu chuẩn Thiết kế:</td>
-                                                            <td>LEED, Landmark, TCVN    </td>
-                                                        </tr>
-                                                    </table>
-
-                                                </div>
-                                                <div class="col-sm-6 col-xs-12">
-                                                    <h2 class="text">Chủ đầu tư và các đơn vị liên quan</h2>
-                                                    <table class="table-info">
-                                                        <tr>
-                                                            <td>Chủ đầu tư:</td>
-                                                            <td>Có</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Nhà thầu:</td>
-                                                            <td>Hoà bình</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Đơn vị quản lý:</td>
-                                                            <td>Tân cổ điển</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Đơn vị thiết kế:</td>
-                                                            <td>LEED, Landmark, TCVN    </td>
-                                                        </tr>
-                                                    </table>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="box-tt-chung">
-                                    <div class="head-top">
-                                        <span class="icon fa fa-minus-square"></span>
-                                        Vật liệu kết cấu
-                                    </div>
-                                    <div class="content">
-                                        <div class="box">
-                                            <div class="row">
-                                                <div class="col-sm-6 col-xs-12">
-                                                    <h2 class="text">Móng và gầm</h2>
-                                                    <table class="table-info">
-                                                        <tr>
-                                                            <td>Số lượng hầm:</td>
-                                                            <td>Bên trên</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Loại móng:</td>
-                                                            <td>Cọc thép</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Kết cấu hầm: </td>
-                                                            <td>BTCT</td>
-                                                        </tr>
-                                                    </table>
-
-                                                </div>
-                                                <div class="col-sm-6 col-xs-12">
-                                                    <h2 class="text">Phần thô</h2>
-                                                    <table class="table-info">
-                                                        <tr>
-                                                            <td>Số tầng:</td>
-                                                            <td>Bên trên</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Kết cấu:</td>
-                                                            <td>Dầm sàn</td>
-                                                        </tr>
-                                                    </table>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="box">
-                                            <div class="row">
-                                                <div class="col-sm-6 col-xs-12">
-                                                    <h2 class="text">Phần PCCC</h2>
-                                                    <table class="table-info">
-                                                        <tr>
-                                                            <td>Tiêu chuẩn PCCC:</td>
-                                                            <td>TCVN năm 2018</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Báo cháy:</td>
-                                                            <td>Báo cháy khu vực 4 căn</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Vật liệu: </td>
-                                                            <td>Châu Âu </td>
-                                                        </tr>
-                                                    </table>
-
-                                                </div>
-                                                <div class="col-sm-6 col-xs-12">
-                                                    <h2 class="text">Hệ thông M&E bên ngoài</h2>
-                                                    <table class="table-info">
-                                                        <tr>
-                                                            <td>Số lượng thang máy:</td>
-                                                            <td>TCVN năm 2018</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Loại thang máy</td>
-                                                            <td>--</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Máy phát điện dự phòng:</td>
-                                                            <td>--</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Máy bơm:</td>
-                                                            <td>--</td>
-                                                        </tr>
-                                                    </table>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="box">
-                                            <div class="row">
-                                                <div class="col-sm-6 col-xs-12">
-                                                    <h2 class="text">Phần hoàn thiện bên ngoài</h2>
-                                                    <table class="table-info">
-                                                        <tr>
-                                                            <td>Tường bao:</td>
-                                                            <td>TCVN năm 2018</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Kính:</td>
-                                                            <td>Báo cháy khu vực 4 căn</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Hệ thống ống: </td>
-                                                            <td>Châu Âu </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Cửa căn hộ: </td>
-                                                            <td>Châu Âu </td>
-                                                        </tr>
-                                                    </table>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="divider-gray">
-
-                                </div>
-                                <div class="box-tt-chung">
-                                    <div class="head-top">
-                                        <span class="icon fa fa-minus-square"></span>
-                                        Hoàn thiện bên trong & Nội thất bàn giao
-                                    </div>
-                                    <div class="content">
-                                        <div class="box">
-                                            <div class="row">
-                                                <div class="col-sm-6 col-xs-12">
-                                                    <h2 class="text">Phòng khách</h2>
-                                                    <table class="table-info">
-                                                        <tr>
-                                                            <td>Sàn:</td>
-                                                            <td>Gạch không nung</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Tường:</td>
-                                                            <td>- -</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Trần: </td>
-                                                            <td>- -</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Cửa chính/ cửa đi: </td>
-                                                            <td>- -</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Khoá cửa chính/ cửa đi: </td>
-                                                            <td>- -</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Cửa sổ: </td>
-                                                            <td>- -</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Máy lạnh:</td>
-                                                            <td>- -</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Tủ giày:</td>
-                                                            <td>- -</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Thiết bị điện:</td>
-                                                            <td>- -</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Thiết bị điện:</td>
-                                                            <td>- -</td>
-                                                        </tr>
-                                                    </table>
-
-                                                </div>
-                                                <div class="col-sm-6 col-xs-12">
-                                                    <h2 class="text">Phòng khách</h2>
-                                                    <table class="table-info">
-                                                        <tr>
-                                                            <td>Sàn:</td>
-                                                            <td>Gạch không nung</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Tường:</td>
-                                                            <td>- -</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Trần: </td>
-                                                            <td>- -</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Cửa chính/ cửa đi: </td>
-                                                            <td>- -</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Khoá cửa chính/ cửa đi: </td>
-                                                            <td>- -</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Cửa sổ: </td>
-                                                            <td>- -</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Máy lạnh:</td>
-                                                            <td>- -</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Tủ giày:</td>
-                                                            <td>- -</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Thiết bị điện:</td>
-                                                            <td>- -</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Thiết bị điện:</td>
-                                                            <td>- -</td>
-                                                        </tr>
-                                                    </table>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="box">
-                                            <div class="row">
-                                                <div class="col-sm-6 col-xs-12">
-                                                    <h2 class="text">Phòng vệ sinh và phòng tắm</h2>
-                                                    <table class="table-info">
-                                                        <tr>
-                                                            <td>Sàn:</td>
-                                                            <td>Gạch không nung</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Tường:</td>
-                                                            <td>- -</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Trần: </td>
-                                                            <td>- -</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Cửa chính/ cửa đi: </td>
-                                                            <td>- -</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Khoá cửa chính/ cửa đi: </td>
-                                                            <td>- -</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Cửa sổ: </td>
-                                                            <td>- -</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Lavarbo:</td>
-                                                            <td>- -</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Bồn rửa mặt:</td>
-                                                            <td>- -</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Phòng tắm:</td>
-                                                            <td>- -</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Bồn tắm:</td>
-                                                            <td>- -</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Bồn cầu:</td>
-                                                            <td>- -</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Thiết bị điện:</td>
-                                                            <td>- -</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Phụ kiện:</td>
-                                                            <td>- -</td>
-                                                        </tr>
-                                                    </table>
-
-                                                </div>
-                                                <div class="col-sm-6 col-xs-12">
-                                                    <h2 class="text">Bếp ăn</h2>
-                                                    <table class="table-info">
-                                                        <tr>
-                                                            <td>Sàn:</td>
-                                                            <td>Gạch không nung</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Tường:</td>
-                                                            <td>- -</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Trần: </td>
-                                                            <td>- -</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Tủ bếp trên: </td>
-                                                            <td>- -</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Tủ bếp dưới: </td>
-                                                            <td>- -</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Mắt bếp:</td>
-                                                            <td>- -</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Thiết bị điện:</td>
-                                                            <td>- -</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Máy hút mùi:</td>
-                                                            <td>- -</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Lò nướng:</td>
-                                                            <td>- -</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Bếp từ:</td>
-                                                            <td>- -</td>
-                                                        </tr>
-                                                    </table>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="box">
-                                            <div class="row">
-                                                <div class="col-sm-6 col-xs-12">
-                                                    <h2 class="text">Ban công và Logia</h2>
-                                                    <table class="table-info">
-                                                        <tr>
-                                                            <td>Sàn:</td>
-                                                            <td>Gạch không nung</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Tường:</td>
-                                                            <td>- -</td>
-                                                        </tr>
-
-                                                    </table>
-
-                                                </div>
-                                                <div class="col-sm-6 col-xs-12">
-                                                    <h2 class="text">Khác</h2>
-                                                    <table class="table-info">
-
-                                                    </table>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                       
                         <div class="section">
                             <div class="head">
                                 <h2 class="title pull-left">Bản đồ tiện ích lân cận</h2>
@@ -1179,10 +398,10 @@
                             </div>
                             <div class="section-content">
                                 <div class="row">
-                                    <div class=" col-md-9 col-sm-12 col-xs-12">
+                                    <div class=" col-lg-9 col-sm-12 col-xs-12">
                                         <img src="../../assets/img/map_PM@3x.png" alt="placeholder+image" class="img-responsive">
                                     </div>
-                                    <div class="col-md-3 col-sm-12 col-xs-12">
+                                    <div class="col-lg-3 col-sm-12 col-xs-12">
                                         <div class="head"><h2 class="title">Tiện ích</h2></div>
                                          <div class="list-check">
                                             <div class="check-action">
@@ -1267,7 +486,7 @@
                                             </div>
                                             <div class="banmotatt">
                                                 <div class="title">Bản đồ mô tả giá thị trường</div>
-                                                <div class="map" style="max-width: 745px;">
+                                                <div class="map">
                                                     <img src="../../assets/img/map_PM@3x.png" alt="" style="width: 100%;">
                                                 </div>
                                             </div>
@@ -1422,7 +641,7 @@
                                             <div class="title">
                                                 Biểu đồ lịch sử giá
                                             </div>
-                                            <div id="chart-ls"></div>
+                                            <div id="chart-ls" class="over-inherit"></div>
                                         </div>
 
                                     </div>
@@ -1445,7 +664,7 @@
                                 <div class="section-desc">Bạn đang tìm kiếm BĐS/ dự án trong mơ, hãy để Asset.vn hỗ trợ bạn gói vay phù hợp nhất</div>
                                 <div class="box-formvayno">
                                     <div class="row">
-                                        <div class="col-sm-9 col-xs-12">
+                                        <div class="col-lg-9 col-xs-12">
                                             <div class="form-vaybo">
                                                 <div class="row">
                                                     <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
@@ -1460,7 +679,7 @@
                                                         <div class="form-group">
                                                             <div class="label-text">Khoản vay</div>
                                                             <div class="input">
-                                                                <input type="text"class="form-control" value="8.400.000.000">
+                                                                <input type="text"class="form-control fw-5 color-2929" value="8.400.000.000">
                                                             </div>
                                                             <div class="note" style="font-size: 12px;color: #505050;margin-top: 5px;">Tám tỷ bốn trăm đồng</div>
                                                         </div>
@@ -1513,7 +732,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-sm-3 col-xs-12 textcenter" style="padding-top: 20px;">
+                                        <div class="col-lg-3 col-xs-12 textcenter d-flex justify-content-around align-items-center" >
                                             <button class="btn btn-main">
                                                 Tải ngay
                                             </button>
@@ -1523,13 +742,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="box-chart">
+                                <div class="box-chart text-center">
                                     <div class="chart-content">
                                         <div id="chart" style="width: 250px;"> </div>
                                         <div class="total">~123,9 triệu/ tháng</div>
                                     </div>
-                                    <div class="note">
-                                        <div class="item -tg">
+                                    <div class="note text-justify">
+                                        <div class="item -tg mb-2">
                                             Trả gốc: ~70 triệu
                                         </div>
                                         <div class="item -tl">
@@ -1837,6 +1056,7 @@
             }
 
         });
+        $('#myModal').modal('show')
 
     </script>
     <style>

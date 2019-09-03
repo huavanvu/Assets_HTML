@@ -1,0 +1,267 @@
+/* 
+/* end Sub Category  */
+
+/* price item  */
+.price-container__content-map .actions button {
+  /* top: 10px; */
+  padding: 3px;
+}
+.result-item__price__action {
+  top: 10px;
+  right: 10px;
+}
+.price-container__content-info_name {
+  font-size: 20px;
+  color: #363636;
+  font-weight: bold;
+  letter-spacing: 0.01px;
+  margin-bottom: 10px;
+}
+.price-container__content-info_address {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.price-container__content-info_others {
+  font-size: 14px;
+}
+/* .price-container__content-info_status, */
+ .price-container__content-info_vendor {
+  font-size: 14px;
+  font-weight: 500;
+  color: #363636;
+}
+.price-header__info-name {
+  font-size: 18px;
+  font-weight: 500;
+  color: #3b63a1;
+}
+.price-container__utilities span img {
+  width: 24px;
+  height: 24px;
+  opacity: .6;
+  padding-right: 5px;
+}
+.color-red  {
+  color: red;
+}
+.f-18 {
+  font-size: 18px;
+}
+.price-container__content-info_others .fa-circle {
+  font-size: 9px;
+}
+
+/* end price item  */
+
+/* rating */
+
+
+/* end rating */
+
+
+/* Reset vendor */
+
+nav a:hover {
+  color:  #707070 !important;
+}
+
+.star-icon.active {
+  color: #e8bb20;
+
+}
+.status__love-icon {
+    color: #fff;
+    top: 5px;
+    font-weight: 500;
+    font-size: 20px;
+    right: 10px;
+}
+.status__love-icon.active {
+  color: red;
+  font-weight: 900;
+}
+.price-container__content-info_status .company {
+  color: 1a73e8;
+  font-weight: 500;
+}
+#price-list__filterBar {
+  position: relative;
+}
+#price-list__filter-container #filterBar {
+  position: unset;
+  /* height: 48px; */
+}
+#price-list__filter-container .top-additional--filter {
+  border: none !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
+}
+#price-list__filter-container .top-additional--filter:hover {
+
+}
+#price-list__filter-container .nav.rp-category__container {
+  display: flex;
+  align-items: center;
+}
+#price-list__filter-container .filterBar__top .filter-type {
+  position: unset !important;
+}
+#price-list__filter-container .nav.rp-category__container {
+  margin-left: 0px !important;
+}
+#price-list__filter-container {
+  padding: 0px 10px;
+}
+#price-list__filter-container .filter--text, #price-list__filter-container {
+  /* padding-left: 0px !important; */
+  padding: 0px 10px !important;
+}
+#price-list__filter-container .filterBar__top {
+  padding:  0 !important;
+}
+#price-list__filter-container .rp-category__total-result {
+  padding-left: 10px !important;
+}
+#price-list__filter-container .col5 .dropdown-toggle::after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -10px;
+}
+.p-0-15 {
+  padding: 0 15px;
+}
+/* #price-list__filter-container .rp-header-category {
+  padding
+} */
+#price-list__filter-container .rp-category__item {
+  padding: 18px 9px 0px;
+}
+#price-list__filter-container .filters-project-container .col5 {
+  padding: 0px 43.5px;
+  width: auto !important;
+}
+#price-list__filter-container .filters-project-container .col5 .filter--text {
+  overflow: unset;
+}
+#price-list__filter-container .rp-category__item:hover {
+  background-color: transparent;
+}
+#price-list__filter-container .filters-project-container {
+  height: 56px;
+  display: flex;
+  align-items: center;
+}
+#price-list__filter-container .filters-project.show {
+  display: flex;
+}
+#price-list__filter-container .nav.rp-category__container {
+  overflow-y: hidden;
+}
+#price-list__filter-container .filters-project .col5  .dropdown-menu {
+  /* left: 50% !important;
+  transform: translateX(-50%) !important; */
+  /* transform: translate3d(0, 0, 0) !important; */
+  top: 20% !important;
+}
+
+/* Responsive  */
+
+@media (min-width: 576px) { }
+
+@media (min-width: 768px) { 
+  .result-item__contact .result-item__contact__avatar {
+      width: 100px;
+  }
+  .result-item__price {
+      padding: 30px 20px;
+  }
+  
+}
+@media (min-width: 992px) {
+  #price-list__filter-container #filterBar {
+    padding-left: 125px;
+  }
+  #price-list__filter-container .rp-category__item:first-child {
+    padding-left: 0px;
+  }
+  #price-list__filter-container .filters-project-container .col5:first-child {
+    padding-left: 0px;
+  }
+ 
+}
+
+@media (max-width: 768px) {  
+  .price-header__info-name, .price-header__info-category, .result-item__category {
+    font-size: 13px !important;
+  }
+  .price-header__info-rating, .price-header__resource-info__post-time {
+    font-size: 10px;
+  }
+  .result-item__price__avatar {
+    width: 60px;
+    height: 60px;
+  }
+  .price-container__content-info_name {
+    font-size: 15px;
+  }
+  .price-container__content-info_address, .price-container__content-info_vendor, .price-container__content-info_others, .price-container__content-info_status{
+    font-size: 13px;
+  }
+  #price-list__filter-container .rp-category__total-result {
+    padding-left: 20px !important;
+  }
+  #price-list__filter-container .filters-project::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* .price-container__header .price-header {
+    padding-left: 0px;
+  } */
+  
+}
+
+@media (max-width: 576px) {
+  .result-item__price__avatar { 
+    margin-left: 14px;
+  }
+  #price-list__filter-container .filters-project .col5  .dropdown-menu {
+    /* transform: translate3d(0, 0, 0) !important;
+    top: 65% !important; */
+    max-width: 65%;
+  }
+  #price-list__filter-container .filters-project .dropdown-menu .form-control:not(:first-child) {
+    text-align: center;
+    margin-left: 0px !important;
+  }
+}
+
+
+@media (max-width: 992px) { 
+  .price-header__container {
+    margin-left: 15px;
+  }
+  #price-list__filter-container .filters-project.show {
+    overflow-x: auto;
+    position: unset;
+  }
+  #price-list__filter-container  .filter__content {
+    position: unset;
+  }
+  
+}
+
+@media (max-width: 992px) { 
+  #price-list__filter-container .filterBar__top {
+    padding: 0 !important;
+  }
+  #price-list__filter-container .filters-project-container .col5:first-child {
+    padding-left: 10px;
+  }
+  #price-list__filter-container .filters-project-container .col5 {
+    padding: 0px 22.5px;
+  }
+}
+
+
+@media (min-width: 1200px) {  } */

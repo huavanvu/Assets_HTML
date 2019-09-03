@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trang kết quả</title>
+    <!-- VENDORS STYLES-->
+    <link rel="stylesheet" href="../../vendor/ap8/css/style.css">
+    <link rel="stylesheet" href="../../vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../vendor/bootstrap/css/bootstrap.min.css">
+    <!-- INCLUDES STYLES-->
+    <link rel="stylesheet" href="../../assets/stylesheets/index.css">
+    <link rel="stylesheet" href="../../assets/stylesheets/pages/_resultpages.css">
+    <link rel="stylesheet" href="../../assets/stylesheets/partials/map/filter-bar.css">
+    <link rel="stylesheet" href="../../assets/stylesheets/partials/map/bootstrap-tagsinput.css">
+    <link rel="stylesheet" href="../../assets/stylesheets/partials/chat/index.css">
+    <link href="../../../vendor/font-awesome@4/css/all.css" rel="stylesheet">
+    <!-- INCLUDES Selft -->
+    <link rel="stylesheet" href="../../../assets/stylesheets/pages/contact/_contact.css">
+    <link rel="stylesheet" href="../../../assets/stylesheets/pages/resource/_resource.css">
+    <!-- INCLUDES SCRIPTS-->
+    <script src="../../vendor/jquery/jquery-3.2.1.slim.min.js"></script>
+    <script src="../../vendor/popper.js/popper.min.js"></script>
+    <script src="../../vendor/bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <section class="section__result-pages">
+        <div class="container-fluid result-pages__container">
+            <div class="result-pages__header layout-header">
+                <div class="result-pages__header-container layout-header__container">
+                    <div class="result-pages__header-top layout-header__top">
+                        <div class="d-flex align-items-center rp-header-top__container lh-top__container">
+                            <div class="rp-header-top__logo lh-top__logo">
+                                <div class="header-top--logo lh-top--logo"><a href="/"><img src="../../../assets/img/icon-asset.png" alt=""></a></div>
+                            </div>
+                            <div class="rp-header-top__search-input lh-top__search-input">
+                                <div class="search-input">
+                                    <div class="w-100 input-search__content collapsed" id="autoComplete__content">
+                                        <input class="form-control" id="autoComplete" type="text" placeholder="Search ..." tabindex="1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ml-auto rp-header-top__menu lh-top__menu">
+                                <div class="d-flex align-items-center ht-menu__items">
+                                    <div class="ht-menu--item ht-menu--item__tools ht-menu-tools dropdown">
+                                        <div class="menu-tools__btn-toggle dropdown-toggle" data-toggle="dropdown"><img class="ht-menu--icon" src="../../../assets/img/Group 1.png" alt=""></div>
+                                        <div class="menu-tools__dropdown-menu dropdown-menu">
+                                            <div class="mt--dropdown-item dropdown-item"><a href="#"><img src="../../../assets/img/Group 1569.png" alt=""><span class="ht-menu--text">
+                                                        T&iacute;nh
+                                                        to&aacute;n
+                                                        kho&#x1EA3;n
+                                                        vay</span></a></div>
+                                            <div class="mt--dropdown-item dropdown-item"><a href="#"><img src="../../../assets/img/baseline-insert_chart-24px.png" alt=""><span class="ht-menu--text">
+                                                        T&iacute;nh
+                                                        to&aacute;n hi&#x1EC7;u qu&#x1EA3; d&#x1EF1; &aacute;n</span></a></div>
+                                            <div class="mt--dropdown-item dropdown-item"><a href="#"><img src="../../../assets/img/baseline-monetization_on-24px.png" alt=""><span class="ht-menu--text">T&agrave;i ch&iacute;nh c&aacute; nh&acirc;n</span></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="ht-menu--item">
+                                        <div class="ht-menu__notify"><a href="#"><img class="ht-menu--icon" src="../../assets/img/Group 22.png" alt=""></a></div>
+                                    </div>
+                                    <div class="ht-menu--item"><a class="ht-menu__login menu-tools--btn-login" href="/dang-nhap"><img class="ht-menu--icon ht-menu--icon-avatar" src="../../assets/img/icon-avatar.png" alt=""></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result-pages__header-navigation">
+                        <div class="rp-header-navigation header-navigation__container">
+                            <div class="header-navigation__items d-flex">
+                                <div class="header-navigation--item"><a class="hn-item--text" href="/ket-qua">T&#x1EA5;t c&#x1EA3;</a></div>
+                                <div class="header-navigation--item"><a class="hn-item--text" href="/ket-qua/thong-tin">Th&ocirc;ng tin</a></div>
+                                <div class="header-navigation--item"><a class="hn-item--text" href="/ket-qua/bang-gia">B&#x1EA3;ng gi&aacute;</a></div>
+                                <div class="header-navigation--item is-actived"><a class="hn-item--text is-actived" href="/ket-qua/hoi-dap">Hỏi đáp</a></div>
+                                <div class="header-navigation--item dropdown">
+                                    <div class="hn-item--text dropdown-toggle" data-toggle="dropdown">Thêm <span class="fa icon"></span></div>
+                                    <div class="dropdown-menu hn-menu__add p-0">
+                                        <a class="dropdown-item p-3" href="/ket-qua/danh-ba">Danh bạ</a>
+                                        <a class="dropdown-item p-3" href="/ket-qua/tai-nguyen">Tài nguyên</a>
+                                        <a class="dropdown-item p-3" href="/ket-qua/hoi-dap">Hỏi đáp</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Sub Category Search  -->
+               <div class="rp-category overflow-auto position-relative">
+                    <div class="rp-header-category">
+                        <div class="rp-header-container">
+                            <nav class="nav rp-category__container ">
+                                <a class="nav-link rp-category__item  active " href="/#">Pháp lý BDS</a>
+                                <a class="nav-link rp-category__item" href="#">Luật liên quan đến BDS</a>
+                                <a class="nav-link rp-category__item " href="/#">Pháp lý hợp đồng</a>
+                                <a class="nav-link rp-category__item " href="/#">Quy trình triển khai dự án</a>
+                                <a class="nav-link rp-category__item " href="/#">Quy trình chuyển nhượng</a>
+                            </nav>
+                        </div>
+                        <div class="rp-category__total-result">
+                            Khoảng <strong>1.99999</strong> kết quả.
+                        </div>
+                    </div>
+               </div>
+            <!-- End Sub Category Search -->
+            <div class="result-pages__body section-resource">
+                <div class="result-pages__body-container container">
+                    <div class="result-pages__search-result">
+                        <div class="rp-search-result__items">
+                            <!-- SEARCH RESULT ITEM-->
+                            <div class="rp-search-result-item question-extend-from-contact-item">
+                                <div class="result-item__resource cursor-pointer position-relative">
+                                    <div class="result-item__resource__container pt-3">
+                                        <div class="result-item__resource-header">
+                                            <div class="row">
+                                                <div class="col-3 col-md-2">
+                                                    <div class="resource-header__avatar text-center">
+                                                        <img class="rounded-circle w-75 border" src="https://dongphucocean.vn/wp-content/uploads/2018/12/logo-dong-phuc-ocean.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-9 col-md-10">
+                                                    <div class="resource-header__info-name d-block d-md-inline-block">
+                                                        Asset data team
+                                                    </div>
+                                                    <div class="resource-header__info-rating d-md-inline-block">
+                                                        [Chuyên gia 4,5 + <i class="start-icon active far fas fa-star"></i>]
+                                                    </div>
+                                                    <div class="resource-header__info-category">
+                                                        đã đang một bài viết trong<a href="/ket-qua/tai-nguyen"> Hỏi Đáp </a>
+                                                    </div>
+                                                    <div class="result-item__resource-info__post-time pt-1">
+                                                        20 ngày trước
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="result-item__resource-content mt-3">
+                                            <div class="row">
+                                                <div class="col-0 col-md-2"></div>
+                                                <div class="col-3 col-md-1 p-0">
+                                                    <div class="result-content_image text-center">
+                                                        <img class="w-75" src="../../assets/img/hoidap.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-9 col-md-9">
+                                                    <div class="result-content__name">
+                                                        <a href="/#">Quy trình làm giấy tờ chuyển nhượng dự án</a>   
+                                                    </div>
+                                                    <div class="result-content__description">
+                                                        Ngày 10-12/05: Có 123 thông báo kế hoạch lựa chọn nhà thầu chậm .... 1527/QĐ-UBND ngày 14/02/2019; KHLCNT của Ban Quản lý dự án đầu tư xây .... KHLCNT của Sở Tài chính tỉnh Hưng …. cho dự án “Mua sắm thiết bị định .... Hạng mục: Xóm Ao Vàng, Cổ Rùa, Gò Chè, Phúc Lộc, Quyết Thắng, Tân ...
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="result-item__resource-footer">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="resource-footer__social d-flex justify-content-end">
+                                                        <a href="#" class="resource-footer__item btn -marked">
+                                                            <span class="fa fa-star icon"></span> 40
+                                                        </a>
+                                                        <a href="#" class="resource-footer__item  btn -comment">
+                                                            <img class="ids-action--icon" src="../../../assets/img/ic_chat_bubble_outline_black_24px.png" alt=""> 40
+                                                        </a>
+                                                        <a href="#" class="resource-footer__item  btn -liked">
+                                                            <span class="-ap  icon-like2 icon"></span> 40
+                                                        </a>
+                                                        <a href="#" class="resource-footer__item  btn -share">
+                                                            <span class="-ap  icon-share4 icon"></span> 40
+                                                        </a>
+                                                        <a href="#" class="resource-footer__item  btn -mail">
+                                                            <span class="-ap  icon-mail6 icon"></span> 10
+                                                        </a>
+                                                    </div>
+                                                </div>                                        
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rp-search-result__pagination">
+                            <div class="search-result__pagination-container container">
+                                <div class="search-result__pagination-content d-flex align-items-center justify-content-center justify-content-lg-end"><a class="sr-pagination--btn sr-pagination--previous" href="#">Tr&#x1B0;&#x1EDB;c</a>
+                                    <div class="sr-pagination__items d-flex align-items-center"><a class="sr-pagination--item is-actived" href="#">1</a><a class="sr-pagination--item" href="#">2</a><a class="sr-pagination--item" href="#">3</a><a class="sr-pagination--item" href="#">4</a><a class="sr-pagination--item" href="#">5</a></div><a class="sr-pagination--btn sr-pagination--next" href="#">Ti&#x1EBF;p</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="result-pages__footer layout-footer w-100">
+                <div class="result-pages__footer-container">
+                    <div class="rs-footer__links layout-footer__links d-flex justify-content-center justify-content-lg-start">
+                        <div class="rs-footer--link layout-footer--link"><a href="#">Gi&#x1EDB;i thi&#x1EC7;u</a></div>
+                        <div class="rs-footer--link layout-footer--link"><a href="#">H&#x1B0;&#x1EDB;ng d&#x1EAB;n</a></div>
+                    </div>
+                    <!-- Desktop-->
+                    <div class="rs-footer__quick-views layout-footer__quick-views d-none d-lg-flex">
+                        <div class="rs-footer__quick-view layout-footer--quick-view w-50">
+                            <marquee>
+                                <div class="quick-view__content"><span><span class="quick-view--title">Tin nhanh 1: </span> Lorem Ipsum. Proin gravida nibh vel velit
+                                        auctor aliquet. Aenean
+                                        sollicitudin, lorem quis biben <a href="#">Xem nhanh</a></span></div>
+                            </marquee>
+                        </div>
+                        <div class="rs-footer__quick-view layout-footer--quick-view w-50">
+                            <marquee>
+                                <div class="quick-view__content"><span><span class="quick-view--title">Tin nhanh 2: </span> Lorem Ipsum. Proin gravida nibh vel velit
+                                        auctor aliquet. Aenean
+                                        sollicitudin, lorem quis biben <a href="#">Xem nhanh</a></span></div>
+                            </marquee>
+                        </div>
+                    </div>
+                    <!-- Mobile-->
+                    <div class="rs-footer__quick-views layout-footer__quick-views d-flex d-lg-none">
+                        <div class="rs-footer__quick-view layout-footer--quick-view">
+                            <marquee>
+                                <div class="quick-view__content d-inline-flex"><span><span class="quick-view--title">Tin nhanh 1: </span> Lorem Ipsum. Proin gravida nibh vel velit
+                                        auctor aliquet. Aenean
+                                        sollicitudin, lorem quis biben <a href="#">Xem nhanh</a></span></div>
+                                <div class="quick-view__content d-inline-flex"><span><span class="quick-view--title">Tin nhanh 2: </span> Lorem Ipsum. Proin gravida nibh vel velit
+                                        auctor aliquet. Aenean
+                                        sollicitudin, lorem quis biben <a href="#">Xem nhanh</a></span></div>
+                            </marquee>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CHAT SIDEBAR-->
+        <div class="d-none d-lg-block chat-sidebar collapsed" id="chat-sidebar">
+            <div class="chat-sidebar__container">
+                <div class="chat-sidebar__content d-flex flex-column justify-content-between">
+                    <!-- Chat Sidebar Top-->
+                    <div class="chat-sidebar__top">
+                        <div class="chat-sidebar--btn-collapse">
+                            <div class="btn-expand__content">
+                                <button class="btn btn-chat--expand" id="btn-chat--expand"><img src="../../assets/img/Path 115.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Chat Sidebar Bottom-->
+                    <div class="chat-sidebar__bottom">
+                        <!-- Chat list-->
+                        <div class="chat-sidebar__list chat-list">
+                            <div class="chat-list__container">
+                                <div class="chat-list__content">
+                                    <div class="chat-list__contact">
+                                        <div class="chat-list--contact-items">
+                                            <!-- Contact items-->
+                                            <div class="contact-items contact-items__active">
+                                                <!-- Contact item-->
+                                                <div class="contact-item d-flex justify-content-center">
+                                                    <div class="contact-item--avatar"><img src="../../assets/img/chat-avt-1.png" alt=""></div>
+                                                    <div class="contact-item--name">L&ecirc; &Aacute;nh H&#x1ED3;ng Nga</div>
+                                                    <div class="contact-item--status"><img src="../../assets/img/icon-chat-active.png" alt=""></div>
+                                                </div>
+                                                <!-- Contact item-->
+                                                <div class="contact-item d-flex justify-content-center">
+                                                    <div class="contact-item--avatar"><img src="../../assets/img/chat-avt-2.png" alt=""></div>
+                                                    <div class="contact-item--name">Peter Parker</div>
+                                                    <div class="contact-item--status"><img src="../../assets/img/icon-chat-active.png" alt=""></div>
+                                                </div>
+                                                <!-- Contact item-->
+                                                <div class="contact-item d-flex justify-content-center">
+                                                    <div class="contact-item--avatar"><img src="../../assets/img/chat-avt-3.png" alt=""></div>
+                                                    <div class="contact-item--name">Tom Hank</div>
+                                                    <div class="contact-item--status"><img src="../../assets/img/icon-chat-active.png" alt=""></div>
+                                                </div>
+                                                <!-- Contact item-->
+                                                <div class="contact-item d-flex justify-content-center">
+                                                    <div class="contact-item--avatar"><img src="../../assets/img/chat-avt-4.png" alt=""></div>
+                                                    <div class="contact-item--name">Amy Lee Johnson</div>
+                                                    <div class="contact-item--status"><img src="../../assets/img/icon-chat-active.png" alt=""></div>
+                                                </div>
+                                                <!-- Contact item-->
+                                                <div class="contact-item d-flex justify-content-center">
+                                                    <div class="contact-item--avatar"><img src="../../assets/img/chat-avt-5.png" alt=""></div>
+                                                    <div class="contact-item--name">Picasa Poo</div>
+                                                    <div class="contact-item--status"><img src="../../assets/img/icon-chat-active.png" alt=""></div>
+                                                </div>
+                                            </div>
+                                            <!-- Contact items-->
+                                            <div class="contact-items contact-items__inactive">
+                                                <!-- Contact item-->
+                                                <div class="contact-item d-flex justify-content-center">
+                                                    <div class="contact-item--avatar"><img src="../../assets/img/chat-avt-6.png" alt=""></div>
+                                                    <div class="contact-item--name">Jessica Snow</div>
+                                                    <div class="contact-item--status"><img src="../../assets/img/icon-chat-active.png" alt=""></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Chat message-->
+                        <div class="chat-sidebar__chat-message">
+                            <div class="chat-message__container">
+                                <div class="chat-message__content">
+                                    <div class="chat-message d-flex justify-content-center align-items-center">
+                                        <div class="chat-message--icon"><img src="../../assets/img/chat-message.png" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Chat Search-->
+                        <div class="chat-sidebar__search-input">
+                            <div class="search-input">
+                                <div class="search-input__container">
+                                    <div class="search-input__content">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <div class="search-icon"><img src="../../assets/img/SVG/search.svg" alt=""></div>
+                                            </div>
+                                            <input class="form-control" type="text" placeholder="Tìm kiếm bạn bè" aria-label="Username" aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Chat pop-up-->
+                        <div id="chat-sidebar__pop-up">
+                            <div class="chat-popup">
+                                <div class="chat-popup__container">
+                                    <div class="chat-popup__content">
+                                        <div class="chat-popup__items" id="chat-popup__items">
+                                            <div class="chat-popup--item">
+                                                <div class="chat-popup--header d-flex">
+                                                    <div class="chat-popup--status"><img src="../../assets/img/icon-chat-active.png" alt=""></div><span class="ml-2 header--text">Test</span>
+                                                    <div class="chat-popup--close">&times;</div>
+                                                </div>
+                                                <div class="chat-popup--body">
+                                                    <div class="message-received">
+                                                        <div class="message-received__content row">
+                                                            <div class="col-2 px-0 received__content--icon"><img src="../../assets/img/chat-avt-1.png" alt=""></div>
+                                                            <div class="col-10 received__content--text"><span>
+                                                                    KHLCNT c&#x1EE7;a Ban Qu&#x1EA3;n l&yacute; d&#x1EF1; &aacute;n &dstrok;&#x1EA7;u t&#x1B0; x&acirc;y .... KHLCNT c&#x1EE7;a S&#x1EDF; T&agrave;i ch&iacute;nh t&#x1EC9;nh H&#x1B0;ng Y&ecirc;n
+                                                                    cho d&#x1EF1;
+                                                                    &aacute;n &ldquo;Mua s&#x1EAF;m thi&#x1EBF;t b&#x1ECB; &dstrok;&#x1ECB;nh .... H&#x1EA1;ng m&#x1EE5;c: X&oacute;m Ao V&agrave;ng, C&#x1ED5; R&ugrave;a, G&ograve; Ch&egrave;, Ph&uacute;c L&#x1ED9;c, Quy&#x1EBF;t
+                                                                    Th&#x1EAF;ng, T&acirc;n ...</span></div>
+                                                            <div class="col-12 received__content--time text-right"><span>12:09 - 18/10/2019</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="message-send">
+                                                        <div class="message-send__content row align-items-end flex-column">
+                                                            <div class="message-send--text"><span>OK</span></div>
+                                                            <div class="message-send--time text-right"><span>1 min</span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="chat-popup--input">
+                                                    <div class="input-group">
+                                                        <input class="form-control" type="text" placeholder="Nhập tin nhắn" aria-label="Username" aria-describedby="basic-addon1">
+                                                        <div class="input-group-append">
+                                                            <div class="send-icon"><img src="../../assets/img/icon-send.png" alt=""></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="../../assets/scripts/index.js"></script>
+    <script src="../../assets/scripts/chat/index.js"></script>
+    <script src="../../vendor/auto-complete/autocomplete.js"></script>
+    <script src="../../assets/scripts/resultpage/generic.js"></script>
+    <script src="./../assets/scripts/resultpage/resultpage-autocomplete.js"></script>
+</body>
+
+</html>
