@@ -148,8 +148,13 @@ app.get('/ket-qua/filter', function (request, response) {
   response.sendFile(filePath);
 });
 
+
+app.get('/landing-page', function (request, response) {
+  const filePath = path.resolve(__dirname, './src/pages/', 'landing-page.html');
+
 app.get('/con-duong', function (request, response) {
   const filePath = path.resolve(__dirname, './src/pages/modalpage', 'con-duong.html');
+
   response.sendFile(filePath);
 });
 

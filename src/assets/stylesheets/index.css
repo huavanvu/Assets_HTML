@@ -125,6 +125,41 @@ img,
 .w-auto {
   width: auto !important;
 }
+.divider-blue {
+  border-bottom: 1px solid #3b63a1;
+}
+.signin-form__referral-code .notify-referral-code{
+  font-size: 13px;
+  color: #000000;
+}
+.signin-form__referral-code .signin-form__actions {
+  margin-top: 32px;
+}
+.signin-form__referral-code #referral-code {
+  padding: 10px;
+}
+#share-link-coppy .modal-header {
+  height: 43px;
+  opacity: .2;
+  background-color: #3b63a1;
+}
+#share-link-coppy .invitation {
+  font-size: 16px;
+  color: #000000;
+  line-height: 21px;
+}
+#share-link-coppy .modal-body {
+  padding: 16px 24px;
+  margin-bottom: 31px;
+}
+#share-link-coppy .link-share-invitation {
+  padding: 13px 24px;
+  font-size: 16px;
+  line-height: 21px;
+  color: #969696;
+  border-radius: 23px;
+  border: solid 1px #707070;
+}
 /*# sourceMappingURL=index.css.map */
 
 
