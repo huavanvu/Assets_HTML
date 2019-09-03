@@ -21,7 +21,9 @@
     color: #3b63a1;
     text-transform: capitalize;
 }
-
+.modal-body__top__image{
+    width: 50%;
+}
 .info--body-header p:nth-child(3){
     font-size: 14px;
     font-style: italic;

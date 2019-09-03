@@ -397,14 +397,39 @@ height: 21px; */
   border: solid 0.2px #c1c1c1;
   box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
   cursor: pointer; }
-
+  #filterUtility {
+    display: none;
+}
 .share--btn:hover {
   border: solid 0.2px #3b63a1; }
+.bottom-additional--filter {
+  position: absolute;
+  bottom: 41px;
+  left: 80px;
+  width: 119px;
+  height: 41px;
+  border-radius: 2px;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
+  border: solid 0.2px #e8bb20;
+  background-color: #ffffff;
+}
+.dropdown-menu.show {
+  transform: translate3d(0px, -440px, 0px) !important;
+}
+.bottom-additional--filter .align-items-center{
+  transform: translateY(5px);
+}
+.check-action{
+  margin: 0px 14px;
+}
+.check-action .name {
+ padding-left: 40px;
 
+}
 /* Street view */
 .filterBar__view {
   position: absolute;
-  bottom: 62px;
+  bottom: 41px;
   left: 20px;
   z-index: 1050; }
 
